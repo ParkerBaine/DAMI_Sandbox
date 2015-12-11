@@ -1,3 +1,71 @@
+body {
+  background-color: #232f63 !important;
+  font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.col-xs-12 {
+  color: white;
+}
+
+.header {
+  height: 157px;
+  background-color: #f48d4e;
+  margin: 0 auto;
+}
+
+.header img {
+  position: relative;
+  top: 33px;
+  width: 170px;
+  z-index: 1;
+}
+
+.highlight {
+  font-size: 1.5em;
+  padding:180px 0px 0px 0px;
+  font-color: rgb(255, 255, 255) !important;
+  background: url(../images/dami_hero.png) no-repeat center center scroll;
+  height: 370px;
+  width: 115%;
+  margin-left: -100px;
+}
+
+.highlight p {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.content_block {
+  margin: 0 auto;
+}
+
+.sub_title {
+  line-height: 30px;
+
+}
+.bio_pic {
+  width: 1000px;
+  float: left;
+}
+
+.bio_pic img {
+  padding-left: 20px;
+}
+
+.sub_title_why {
+  background-color: #315e92;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.sub_title_how {
+  background-color: #232f63;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
 .bullet {
   background-color: rgba(61, 162, 235, 0.2);
   padding: 4px;
@@ -8,17 +76,4 @@
   font-weight: bold;
   padding: 20px 0px 0px 0px;
   color: rgb(54, 93, 209);
-}
-
-
-.highlight {
-  font-size: 1.5em;
-  border: solid 1px black;
-  padding: 20px;
-
-}
-.events_sidebar {
-  background-color: rgb(183, 181, 194);
-  border: solid 1px black;
-  height: 300px;
 }
