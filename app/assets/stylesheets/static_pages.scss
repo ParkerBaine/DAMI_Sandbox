@@ -10,25 +10,26 @@ body {
 .header {
   height: 157px;
   background-color: #f48d4e;
-  margin: 0 auto;
+  margin-right: -100px;
 }
 
 .header img {
   position: relative;
   top: 33px;
-  width: 170px;
+  width: 137px;
+  left: -40px;
   z-index: 1;
 }
 
 .highlight {
   font-size: 1.5em;
-  padding:180px 0px 0px 0px;
-  font-color: rgb(255, 255, 255) !important;
+  padding: 180px 0px 0px 0px;
+  font-color: white !important;
   background: url(../images/dami_hero.png) no-repeat center center scroll;
-  height: 370px;
-  width: 115%;
-  margin-left: -100px;
+  height: 440px;
+  width: 109%;
 }
+
 
 .highlight p {
   max-width: 800px;
@@ -50,13 +51,22 @@ body {
 }
 
 .bio_pic img {
-  padding-left: 20px;
+  padding-left: 60px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
+.sub_title_wrapper {
+  margin-left: -1000px;
+  margin-right: -1000px;
+}
 .sub_title_why {
   background-color: #315e92;
-  margin: 0 auto;
-  padding: 10px;
+  padding-left: 1000px;
+  padding-right: 1000px;
+  padding-top: 20px;
+  padding-bottom: 20px
+
 }
 
 .sub_title_how {
