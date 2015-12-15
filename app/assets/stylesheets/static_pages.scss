@@ -5,6 +5,8 @@ body {
 
 .col-xs-12 {
   color: white;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
 .header {
@@ -26,6 +28,7 @@ body {
   padding: 180px 0px 0px 0px;
   font-color: white !important;
   background: url(../images/dami_hero.png) no-repeat center center scroll;
+  background-size: 1765px 900px;
   height: 440px;
   width: 109%;
 }
@@ -72,7 +75,6 @@ body {
 .sub_title_how {
   background-color: #232f63;
   margin: 0 auto;
-  padding: 10px;
 }
 
 
