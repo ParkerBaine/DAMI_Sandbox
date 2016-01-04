@@ -16,12 +16,17 @@
 //= require_tree .
 
 $(document).ready(function(){
-  console.log("jquery running")
   $('#navigation').affix({
     offset: {
       top: $(".highlight").height() + 10
     }
   })
+})
 
-  // $(".affix").css("display":"block")
+$(document).on('page:load', function(){
+  $('#navigation').affix({
+    offset: {
+      top: $(".highlight").height() + 10
+    }
+  })
 })
