@@ -29,7 +29,7 @@ body {
   font-color: white !important;
   background: url(../images/dami_hero.png) no-repeat center center scroll;
   background-size: 1765px 900px;
-  height: 440px;
+  height: 620px;
   width: 109%;
 }
 
@@ -88,4 +88,130 @@ body {
   font-weight: bold;
   padding: 20px 0px 0px 0px;
   color: rgb(54, 93, 209);
+}
+
+
+
+/* Vertical Navbar */
+
+nav{
+  // position:relative;
+  // left: 0px;
+  // top: 40px;
+  margin-top:-170px;
+  // float:left;
+}
+
+nav:after{
+  clear:both;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width:260px;
+}
+
+
+nav li a {
+  color:white;
+  display:table;
+  background-color: #f48d4e;
+  margin-bottom:3px;
+  height:40px;
+  text-indent:55px;
+  padding-right: 20px;
+  line-height: 40px;
+  font-size:18px;
+}
+
+nav li a:hover{
+  background-color: #6496cc;
+  text-decoration: none;
+  color:white;
+  text-indent:75px;
+  padding-right: 35px;
+}
+
+.active a{
+  background-color:white;
+  color:#f48d4e;
+  display:inline-block;
+  position:relative;
+}
+
+.active a:hover{
+  background-color:white;
+  color:#f48d4e;
+  display:inline-block;
+  position:relative;
+  text-indent:55px;
+  padding-right: 20px;
+
+}
+
+.active a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-top: -20px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid white;
+}
+
+
+/* Horizontal Navbar */
+
+
+#navigation{
+  position: absolute;
+  top:-500px;
+  background-color: #f48d4e;
+  color:white;
+  padding:0;
+  margin:0;
+}
+
+#navigation.affix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:10;
+}
+
+.nav{
+  background-color: #f48d4e;
+}
+
+.nav a{
+  color:white;
+}
+
+.nav-tabs{
+  border:none !important;
+  margin:0;
+  padding:0;
+}
+
+.nav ul{
+  width:100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.nav li{
+  display:inline-block;
+}
+
+.nav-tabs > li > a:hover{
+  background-color: #6496cc !important;
+  border: medium none;
+  border-radius: 0;
+  color:#fff;
 }
