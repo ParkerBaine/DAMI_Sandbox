@@ -1,12 +1,13 @@
 body {
   background-color: #232f63 !important;
   font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color:white !important;
 }
 
 .col-xs-12 {
   color: white;
-  padding-left: 0px !important;
-  padding-right: 0px !important;
+  // padding-left: 0px !important;
+  // padding-right: 0px !important;
 }
 
 .header {
@@ -86,6 +87,7 @@ body {
 
 .title {
   font-weight: bold;
+  font-size:1.2em;
   padding: 20px 0px 0px 0px;
   color: rgb(54, 93, 209);
 }
@@ -232,4 +234,8 @@ nav li a:hover{
   border: medium none;
   border-radius: 0;
   color:#fff;
+}
+
+#studies a{
+  color:#f48d4e;
 }
