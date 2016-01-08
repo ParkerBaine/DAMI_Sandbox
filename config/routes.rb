@@ -3,17 +3,36 @@ Rails.application.routes.draw do
 
   get 'static_pages/home'
 
+  get 'static_pages/background'
+
   get 'static_pages/about'
 
-  get 'static_pages/issues'
+  get 'static_pages/principles'
 
-  get 'static_pages/partnership'
+  get 'static_pages/action'
 
-  get 'static_pages/support'
+  get 'static_pages/studies'
 
   get 'static_pages/directory'
 
-  get 'static_pages/studies'
+
+
+  #
+  # Home
+  # Background
+  # -one pager
+  # About
+  # -staff and hc
+  # Principles
+  # -statement of principles
+  # Action
+  # -illustrative metrics
+  # Studies
+  # -links
+  # Directory
+  # -form
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
