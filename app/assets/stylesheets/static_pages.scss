@@ -4,6 +4,13 @@ body {
   color:white !important;
 }
 
+.container{
+  width:80% !important;
+}
+
+.container p {
+  font-size: 16px !important;
+}
 .col-xs-12 {
   color: white;
   // padding-left: 0px !important;
@@ -28,11 +35,12 @@ body {
   font-size: 1.5em;
   padding: 180px 0px 0px 0px;
   font-color: white !important;
-  background: url(../images/dami_hero.png) no-repeat center center scroll;
+  background: url(../images/dami_hero_skyline.png) no-repeat center center scroll;
   background-size: 1765px 900px;
   height: 620px;
   width: 109%;
 }
+
 
 
 .highlight p {
