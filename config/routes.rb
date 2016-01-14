@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   get 'static_pages/studies'
 
-  get 'static_pages/directory'
+  get 'static_pages/resources'
 
 
 
