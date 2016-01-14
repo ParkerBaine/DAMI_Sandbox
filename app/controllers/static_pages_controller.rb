@@ -17,7 +17,7 @@ class StaticPagesController < ApplicationController
   def support
   end
 
-  def directory
+  def resources
   end
 
   def studies
