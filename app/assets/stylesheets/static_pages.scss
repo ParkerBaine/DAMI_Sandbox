@@ -28,12 +28,16 @@ body {
   font-size: 1.5em;
   padding: 180px 0px 0px 0px;
   font-color: white !important;
-  background: url(../images/dami_hero.png) no-repeat center center scroll;
-  background-size: 1765px 900px;
+  background: url(../images/dami_hero1.png) no-repeat center center scroll;
+  background-size: 1235px 640px;
   height: 620px;
   width: 109%;
 }
-
+.quote {
+  background-color: rgba(#232f63, 0.7);
+  padding: 2em 1em 2em 1em;
+  font-style: italic;
+}
 
 .highlight p {
   max-width: 800px;
@@ -92,7 +96,13 @@ body {
   color: rgb(54, 93, 209);
 }
 
+.address_block {
+  margin-left: 30px;
+  width: 300px;
+  background-color: rgba(61, 162, 235, 0.2);
+  padding: 20px;
 
+}
 
 /* Vertical Navbar */
 
