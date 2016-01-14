@@ -4,6 +4,13 @@ body {
   color:white !important;
 }
 
+.container{
+  width:80% !important;
+}
+
+.container p {
+  font-size: 16px !important;
+}
 .col-xs-12 {
   color: white;
   // padding-left: 0px !important;
@@ -14,6 +21,7 @@ body {
   height: 157px;
   background-color: #f48d4e;
   margin-right: -100px;
+  z-index:10;
 }
 
 .header img {
@@ -21,22 +29,35 @@ body {
   top: 33px;
   width: 137px;
   left: -40px;
-  z-index: 1;
+  z-index: 10;
 }
 
 .highlight {
   font-size: 1.5em;
   padding: 180px 0px 0px 0px;
   font-color: white !important;
+
   background: url(../images/dami_hero1.png) no-repeat center center scroll;
   background-size: 1235px 640px;
+
   height: 620px;
   width: 109%;
+  z-index:1;
 }
+
 .quote {
   background-color: rgba(#232f63, 0.7);
   padding: 2em 1em 2em 1em;
   font-style: italic;
+
+
+.overlay{
+  background-color: rgba(48, 62, 122, .8);
+  height: 620px;
+  width:109%;
+  position: absolute;
+  top:0px;
+  z-index:5;
 }
 
 .highlight p {
@@ -102,12 +123,25 @@ body {
   background-color: rgba(61, 162, 235, 0.2);
   padding: 20px;
 
+
+.highlight_text{
+  position:absolute;
+  top:265px;
+  left:25%;
+  max-width:800px;
+  margin:0 auto;
+  text-align: center;
+  z-index: 10;
+  font-size:1.5em;
 }
 
 /* Vertical Navbar */
 
 nav{
   margin-top:-170px;
+  z-index: 10;
+  position: absolute;
+  top: 180px;
 }
 
 nav:after{

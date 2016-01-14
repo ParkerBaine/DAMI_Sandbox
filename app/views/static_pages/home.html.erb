@@ -1,8 +1,13 @@
 
 <div class="row">
-  <div class="header"><%= image_tag("dami_logo.png", :alt => "dami logo", :class => "img-responsive center-block") %></div>
+  <div class="header">
+    <%= image_tag("dami_logo.png", :alt => "dami logo", :class => "img-responsive center-block") %>
+  </div>
+
   <div class="col-xs-12">
+
     <div class="highlight">
+<<<<<<< HEAD
       <nav>
         <ul>
           <li class="active"><%= link_to "HOME", root_path %></li>
@@ -16,10 +21,30 @@
       </nav>
 
       <p class="quote">
+=======
+    </div>
+
+    <div class="overlay"></div>
+
+    <nav>
+      <ul>
+        <li class="active"><%= link_to "HOME", root_path %></li>
+        <li><%= link_to 'Background', static_pages_background_path %></li>
+        <li><%= link_to 'Principles',  static_pages_about_path %></li>
+        <li><%= link_to 'Action', static_pages_action_path %></li>
+        <li><%= link_to 'Studies', static_pages_studies_path %></li>
+        <li><%= link_to 'Directory', static_pages_directory_path %></li>
+      </ul>
+    </nav>
+
+    <div class="highlight_text">
+      <p>
+>>>>>>> f079df54e89eb630ee1590c4515051da129ce3bc
         This initiative is an effort to increase business opportunities for both diverse asset managers and institutional investors, with a specific focus on public, corporate, faith and labor union pension funds as well as foundation and university endowments.
       </p>
     </div>
-    <div >
+
+    <div>
       <ul id="navigation" class="nav nav-tabs" >
         <li><%= link_to 'HOME', root_path %></li>
         <li><%= link_to 'Background', static_pages_background_path %></li>
@@ -30,6 +55,7 @@
         <li><%= link_to 'Directory', static_pages_directory_path %></li>
       </ul>
     </div>
+
     <div class="content_block col-xs-9 col-xs-offset-2">
       <h3 class="sub_title">Who We Are</h3>
 
@@ -46,14 +72,14 @@
         <%= image_tag("alberto.png", :alt => "Albert") %>
         <%= image_tag("john.png", :alt => "John Rodgers") %>
         <%= image_tag("william.png", :alt => "William") %>
-      </div>
+      </div><!-- bio_pic -->
 
-    </div>
+    </div><!-- content_block -->
 
 
     <div class="content_block col-xs-9 col-xs-offset-2">
-      <div class="sub_title_wrapper">
 
+      <div class="sub_title_wrapper">
         <div class="sub_title_why">
           <h3>Why</h3>
           <p>
@@ -71,8 +97,8 @@
           <p>
             We know that there is a need to increase the number of policies at the state and federal level to ensure diverse asset managers have a greater opportunity to participate in the management of public funds.
           </p>
-        </div>
-      </div>
+        </div><!-- sub_title_why -->
+      </div><!-- sub_title_wrapper -->
 
       <div class="sub_title_how">
         <h3>How</h3>
@@ -83,9 +109,10 @@
         <p>
           The initiative will partner with investment consultants to educate them about the opportunity to diversify existing pools of investment managers that they recommend to their institutional clients and help them to meet their fiduciary responsibilities to their clients. Finally, we will market, network and connect the high- performing world of diverse asset managers with the more traditional investing community.
         </p>
+
         <p>
           The goal of the initiative is to build a vibrant, coordinated effort to change the culture of the financial services industry as it relates to asset managers. Success will be achieved when there is common knowledge in the industry of the existence of numerous, high performing diverse asset managers and when they are valued and seamlessly considered by institutional investors. The measurement of success will be the increased use of diverse asset managers by institutional investors and the amount of assets under their management.
         </p>
+      </div><!-- sub_title_how -->
 
-      </div>
-    </div>
+    </div><!-- content_block -->
