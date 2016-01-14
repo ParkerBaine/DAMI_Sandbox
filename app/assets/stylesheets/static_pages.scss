@@ -36,10 +36,9 @@ body {
   font-size: 1.5em;
   padding: 180px 0px 0px 0px;
   font-color: white !important;
-
-  background: url(../images/dami_hero1.png) no-repeat center center scroll;
-  background-size: 1235px 640px;
-
+  background: url(../images/dami_hero1.png) no-repeat left center scroll;
+  // background-size: 1235px 640px;
+  background-size: 1290px 668px;
   height: 620px;
   width: 109%;
   z-index:1;
@@ -49,12 +48,12 @@ body {
   background-color: rgba(#232f63, 0.7);
   padding: 2em 1em 2em 1em;
   font-style: italic;
-
+}
 
 .overlay{
   background-color: rgba(48, 62, 122, .8);
   height: 620px;
-  width:109%;
+  width:100%;
   position: absolute;
   top:0px;
   z-index:5;
@@ -122,7 +121,7 @@ body {
   width: 300px;
   background-color: rgba(61, 162, 235, 0.2);
   padding: 20px;
-
+}
 
 .highlight_text{
   position:absolute;
