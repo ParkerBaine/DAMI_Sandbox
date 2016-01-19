@@ -1,21 +1,54 @@
-<%= render 'layouts/navbar' %>
-<div class="container">
-  <div class="row" id="studies">
-    <div class="col-xs-12">
-      <h1>Studies</h1>
+<div class="page_wrap">
 
-      <h3>Diversity in Asset Management</h3>
-      <%= link_to "Silicon Valley Report", "http://www.siliconvalleycf.org/sites/default/files/publications/investment-manager-diversity-hardest-taboo-to-break-casestudy.pdf
-      http://www.abfe.org/wp-content/uploads/2014/10/White+Paper+-+Who+Manages+the+Money+14.pdf_path" %>
+  <div class="row" id="nav_partial">
+    <ul class="nav nav-tabs">
+      <li><%= link_to 'Home', root_path %></li>
+      <li><%= link_to 'Background', static_pages_background_path %></li>
+      <li><%= link_to 'About', static_pages_about_path %></li>
+      <li><%= link_to 'Principles',  static_pages_principles_path %></li>
+      <li><%= link_to 'Action', static_pages_action_path %></li>
+      <li class="active_page_top"><%= link_to 'Studies', static_pages_studies_path %></li>
+      <li><%= link_to 'Resources', static_pages_resources_path %></li>
+    </ul>
+  </div>
 
-      <%= link_to "NAIC Recognizing The Results", "http://www.naicpe.com/eventmobi/NAIC-RecognizingTheResults.pdf" %>
+  <div class="container">
+    <div class="row" id="studies">
+      <div class="col-xs-12">
+        <h1>Studies</h1>
 
-      <h3>Women in Alternative Investments</h3>
-      <%= link_to "Managed Funds Report", "http://www.managedfunds.org/wp-content/uploads/2011/08/HF-Pulse-Affirmative-Investing-June-2011-Letter.pdf
-      https://www.kpmg.com/BM/en/IssuesAndInsights/ArticlesPublications/Documents/Investments/2015-documents/Women-Alternative-Investments.pdf" %>
+        <h3>Diversity in Asset Management</h3>
+        <%= link_to "Silicon Valley Report", "http://www.siliconvalleycf.org/sites/default/files/publications/investment-manager-diversity-hardest-taboo-to-break-casestudy.pdf
+        http://www.abfe.org/wp-content/uploads/2014/10/White+Paper+-+Who+Manages+the+Money+14.pdf_path" %>
 
-      <h3>Investment Consultants</h3>
-      <%= link_to "Toigo Foundation Report", "http://www.toigofoundation.org/pdfs/acheiveing_market_share_growth.pdf" %>
+        <%= link_to "NAIC Recognizing The Results", "http://www.naicpe.com/eventmobi/NAIC-RecognizingTheResults.pdf" %>
+
+        <h3>Women in Alternative Investments</h3>
+        <%= link_to "Managed Funds Report", "http://www.managedfunds.org/wp-content/uploads/2011/08/HF-Pulse-Affirmative-Investing-June-2011-Letter.pdf
+        https://www.kpmg.com/BM/en/IssuesAndInsights/ArticlesPublications/Documents/Investments/2015-documents/Women-Alternative-Investments.pdf" %>
+
+        <h3>Investment Consultants</h3>
+        <%= link_to "Toigo Foundation Report", "http://www.toigofoundation.org/pdfs/acheiveing_market_share_growth.pdf" %>
+      </div>
     </div>
   </div>
+</div><!-- page_wrap -->
+
+
+<div class="footer">
+
+  <div>
+    <ul id="" class="nav nav-tabs" >
+      <li><%= link_to 'Home', root_path %></li>
+      <li><%= link_to 'Background', static_pages_background_path %></li>
+      <li><%= link_to 'About', static_pages_about_path %></li>
+      <li><%= link_to 'Principles',  static_pages_principles_path %></li>
+      <li><%= link_to 'Action', static_pages_action_path %></li>
+      <li class="active_page_bottom"><%= link_to 'Studies', static_pages_studies_path %></li>
+      <li><%= link_to 'Resources', static_pages_resources_path %></li>
+    </ul>
+  </div>
+
+  <%= render 'layouts/social' %>
+
 </div>
