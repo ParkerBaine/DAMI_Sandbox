@@ -95,19 +95,32 @@ body {
   color:inherit;
 }
 
+.twenty_px_margin{
+  margin:20px 0px;
+}
+
 /* Font Sizes */
 
 .font_size_twenty_one{
-  font-size:21px;
+  font-size:21px !important;
 }
 
 .font_size_sixteen{
   font-size:16px;
 }
 
+.font_size_eighteen{
+  font-size:18px !important;
+  line-height: 30px;
+}
+
 .font_size_thirty_six{
   font-size:36px;
+  line-height: 36px;
+}
 
+.bold{
+  font-weight: bold;
 }
 
 /* Justification */
@@ -430,14 +443,6 @@ nav li a:hover{
 }
 
 
-
-/* pages */
-
-.gold {
-  color: #f48d4e;
-}
-
-
 /* About */
 
 #about{
@@ -485,12 +490,14 @@ nav li a:hover{
 
 .about_staff{
   background-color: #232f63;
-  padding: 40px 0px;
+  padding: 150px 0px;
+  min-height:620px;
 }
 
 /* Principles */
 #principles{
   background-color: #315e92;
+  padding-bottom:100px;
 }
 
 #principles p{
@@ -503,6 +510,7 @@ nav li a:hover{
 /* Studies */
 #studies{
   background-color: #315e92;
+  padding-bottom:100px;
 }
 
 #studies a{
@@ -520,6 +528,7 @@ nav li a:hover{
 /* Resources */
 #resources{
   background-color: #315e92;
+  padding-bottom:100px;
 }
 
 .resource_block{
@@ -551,6 +560,33 @@ nav li a:hover{
   border-bottom: 2px white solid;
   width:35px;
   margin:10px auto;
+}
+
+
+/* Background */
+
+#background{
+  font-family: 'Open Sans', 'Myriad Pro', 'Source Sans Pro', sans-serif !important;
+}
+
+#background .container{
+  max-width:894px;
+}
+
+.dark_blue{
+  background-color: #232f63;
+}
+
+.light_blue{
+  background-color: #315e92;
+}
+
+.lighter_blue{
+  background-color: #6496cc;
+}
+
+.background_padding{
+  padding:120px 0px
 }
 
 /* Media Queries */
