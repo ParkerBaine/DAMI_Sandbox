@@ -1,6 +1,6 @@
 <div class="page_wrap" id="action">
 
-  <div class="row" id="nav_partial">
+  <div id="nav_partial">
     <ul class="nav nav-tabs">
       <li><%= link_to 'Home', root_path %></li>
       <li><%= link_to 'Background', static_pages_background_path %></li>
@@ -18,28 +18,74 @@
     <div class="row content_margin_top">
       <div class="col-xs-12">
         <div class="font_size_thirty_six margin_center">
-          Illustrative Metrics
+          Illustrative Actions for DAMI Supporters
         </div>
         <div class="about_border"></div>
-      </div><!-- col-xs-12 -->
-    </div><!-- row -->
-  </div><!-- container -->
 
-</div><!-- page_wrap -->
+        <ul>
 
-<div class="footer">
-  <div>
-    <ul id="" class="nav nav-tabs nav-bottom" >
-      <li><%= link_to 'Home', root_path %></li>
-      <li><%= link_to 'Background', static_pages_background_path %></li>
-      <li><%= link_to 'About', static_pages_about_path %></li>
-      <li><%= link_to 'Principles',  static_pages_principles_path %></li>
-      <li class="active_page_bottom"><%= link_to 'Action', static_pages_action_path %></li>
-      <li><%= link_to 'Studies', static_pages_studies_path %></li>
-      <li><%= link_to 'Resources', static_pages_resources_path %></li>
-    </ul>
+          <li>
+            <p class="font_size_eighteen twenty_px_margin">
+              Share with DAMI my institution's current utilization of diverse asset management firms
+            </p>
+          </li>
+
+          <li>
+            <p class="font_size_eighteen twenty_px_margin">
+              Increase assets under management by diverse asset management firms by 10% from where my institution’s investment levels are currently
+            </p>
+          </li>
+
+          <li>
+            <p class="font_size_eighteen twenty_px_margin">
+              Direct my institution's investment consultants on the benefits of utilizing diverse asset management firms            </p>
+            </li>
+
+            <li>
+              <p class="font_size_eighteen twenty_px_margin">
+                Convene a yearly matchmaking event with my investment team, consultants and diverse asset management firms
+              </p>
+            </li>
+
+            <li>
+              <p class="font_size_eighteen twenty_px_margin">
+                Implement the Rooney Rule (interview at least one diverse asset management firm when new managers/firms are selected)
+              </p>
+            </li>
+
+            <li>
+              <p class="font_size_eighteen twenty_px_margin">
+                Make a tax exempt contribution to DAMI (of at least $50,000)
+              </p>
+            </li>
+
+            <li>
+              <p class="font_size_eighteen twenty_px_margin">
+                Pledge to work with DAMI to pursue this agenda
+              </p>
+            </li>
+          </ul>
+
+
+        </div><!-- col-xs-12 -->
+      </div><!-- row -->
+    </div><!-- container -->
+
+  </div><!-- page_wrap -->
+
+  <div class="footer">
+    <div>
+      <ul id="" class="nav nav-tabs nav-bottom" >
+        <li><%= link_to 'Home', root_path %></li>
+        <li><%= link_to 'Background', static_pages_background_path %></li>
+        <li><%= link_to 'About', static_pages_about_path %></li>
+        <li><%= link_to 'Principles',  static_pages_principles_path %></li>
+        <li class="active_page_bottom"><%= link_to 'Action', static_pages_action_path %></li>
+        <li><%= link_to 'Studies', static_pages_studies_path %></li>
+        <li><%= link_to 'Resources', static_pages_resources_path %></li>
+      </ul>
+    </div>
+
+    <%= render 'layouts/social' %>
+
   </div>
-
-  <%= render 'layouts/social' %>
-
-</div>

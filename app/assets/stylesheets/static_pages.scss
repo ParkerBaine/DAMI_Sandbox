@@ -80,8 +80,8 @@ body {
 
 .header img {
   position: relative;
-  top: 16px;
-  width: 137px;
+  top: 10px;
+  width: 149px;
   z-index: 10;
 }
 
@@ -123,6 +123,10 @@ body {
   font-weight: bold;
 }
 
+.italic{
+  font-style: italic;
+}
+
 /* Justification */
 
 .justify{
@@ -144,7 +148,7 @@ body {
   font-color: white !important;
   background: url(../images/dami_hero1.png) no-repeat left center scroll;
   // background-size: 1235px 640px;
-  background-size: 1290px 668px;
+  background-size: 100% 100%;
   height: 620px;
   width: 109%;
   z-index:1;
@@ -373,7 +377,7 @@ nav li a:hover{
 #navigation.affix {
   position: fixed;
   top: 0;
-  width: 102%;
+  // width: 100%;
   z-index:10;
 }
 
@@ -386,7 +390,7 @@ nav li a:hover{
 }
 
 .nav-bottom{
-height:auto !important;
+  height:auto !important;
 }
 
 .nav a,
@@ -465,7 +469,7 @@ height:auto !important;
 
 .about_bio_descrip{
   font-size:18px;
-  width:432px;
+  max-width:432px;
   margin:0 auto;
   // white-space:nowrap;
   overflow: hidden;
@@ -479,17 +483,24 @@ height:auto !important;
   -webkit-box-orient: vertical;
 }
 
-.about_staff_title{
-  font-size:36px;
-  margin:0px auto;
-  text-align:center;
-}
-
 .about_staff{
   background-color: #232f63;
   padding: 150px 0px;
   min-height:620px;
 }
+
+.about_staff_title{
+  font-size:36px;
+  margin:10px auto;
+  text-align:center;
+}
+
+.about_staff_descrip{
+  line-height:18px;
+  margin-bottom:40px;
+}
+
+
 
 /* Principles */
 #principles{
@@ -603,6 +614,15 @@ height:auto !important;
     height:460px;
   }
 
+  .about_staff_descrip p{
+    font-size:14px !important;
+  }
+
+  .about_bio_descrip{
+    max-width:100%;
+  }
+
+
 }
 
 @media (max-width: 767px) {
@@ -620,7 +640,6 @@ height:auto !important;
   .address_block{
     max-width: 100%;
   }
-
 
 }
 
