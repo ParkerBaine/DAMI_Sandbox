@@ -10,10 +10,11 @@
       <li class="active_page_top"><%= link_to 'Studies', static_pages_studies_path %></li>
       <li><%= link_to 'Resources', static_pages_resources_path %></li>
     </ul>
+    <%= image_tag("dami_logo.png", :alt => "dami logo", :class => "img-responsive center-block dami_logo") %>
   </div>
 
   <div class="container">
-    <div class="row margin_top_fifty margin_center">
+    <div class="row content_margin_top margin_center">
       <div class="col-xs-12">
         <div class="font_size_thirty_six margin_center">
           Studies
@@ -26,11 +27,11 @@
 
         <%= link_to "http://www.siliconvalleycf.org/sites/default/files/publications/investment-manager-diversity-hardest-taboo-to-break-casestudy.pdf
         http://www.abfe.org/wp-content/uploads/2014/10/White+Paper+-+Who+Manages+the+Money+14.pdf_path", class:"studies_link" do %>
-          <i class="fa fa-book"></i> Silicon Valley Report
+        <i class="fa fa-book"></i> Silicon Valley Report
         <% end %>
 
         <%= link_to "http://www.naicpe.com/eventmobi/NAIC-RecognizingTheResults.pdf", class:"studies_link"  do %>
-          <i class="fa fa-book"></i> NAIC Recognizing The Results
+        <i class="fa fa-book"></i> NAIC Recognizing The Results
         <% end %>
 
         <div class="font_size_twenty_one">
@@ -38,14 +39,14 @@
         </div>
         <%= link_to "http://www.managedfunds.org/wp-content/uploads/2011/08/HF-Pulse-Affirmative-Investing-June-2011-Letter.pdf
         https://www.kpmg.com/BM/en/IssuesAndInsights/ArticlesPublications/Documents/Investments/2015-documents/Women-Alternative-Investments.pdf", class:"studies_link" do  %>
-          <i class="fa fa-book"></i> Managed Funds Report
+        <i class="fa fa-book"></i> Managed Funds Report
         <% end %>
 
         <div class="font_size_twenty_one">
           Investment Consultants
         </div>
         <%= link_to "http://www.toigofoundation.org/pdfs/acheiveing_market_share_growth.pdf", class:"studies_link" do  %>
-          <i class="fa fa-book"></i> Toigo Foundation Report
+        <i class="fa fa-book"></i> Toigo Foundation Report
         <% end %>
 
       </div>
@@ -57,7 +58,7 @@
 <div class="footer">
 
   <div>
-    <ul id="" class="nav nav-tabs" >
+    <ul id="" class="nav nav-tabs nav-bottom" >
       <li><%= link_to 'Home', root_path %></li>
       <li><%= link_to 'Background', static_pages_background_path %></li>
       <li><%= link_to 'About', static_pages_about_path %></li>

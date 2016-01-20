@@ -40,7 +40,10 @@
           <li><%= link_to 'Action', static_pages_action_path %></li>
           <li><%= link_to 'Studies', static_pages_studies_path %></li>
           <li><%= link_to 'Resources', static_pages_resources_path %></li>
+          <%= image_tag("dami_logo.png", :alt => "dami logo", :class => "img-responsive center-block dami_logo_home") %>
+
         </ul>
+
       </div>
 
       <div class="who">
@@ -202,7 +205,7 @@
 
 <div class="footer">
   <div>
-    <ul id="" class="nav nav-tabs" >
+    <ul id="" class="nav nav-tabs nav-bottom" >
       <li class="active_page_bottom"><%= link_to 'Home', root_path %></li>
       <li><%= link_to 'Background', static_pages_background_path %></li>
       <li><%= link_to 'About', static_pages_about_path %></li>

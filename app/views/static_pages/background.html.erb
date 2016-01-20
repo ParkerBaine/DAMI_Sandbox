@@ -1,6 +1,7 @@
 <div class="page_wrap light_blue" id="background">
 
   <div class="row" id="nav_partial">
+
     <ul class="nav nav-tabs">
       <li><%= link_to 'Home', root_path %></li>
       <li class="active_page_top"><%= link_to 'Background', static_pages_background_path %></li>
@@ -10,35 +11,36 @@
       <li><%= link_to 'Studies', static_pages_studies_path %></li>
       <li><%= link_to 'Resources', static_pages_resources_path %></li>
     </ul>
+    <%= image_tag("dami_logo.png", :alt => "dami logo", :class => "img-responsive center-block dami_logo") %>
+
   </div>
 
+  <div class="background_padding_top">
+    <div class="container">
 
-<div class="background_padding">
-  <div class="container">
+      <div class="row content_margin_top">
+        <div class="col-xs-12">
+          <div class="font_size_thirty_six bold" >
+            BACKGROUND
+          </div>
+          <div class="border"></div>
 
-    <div class="row margin_top_fifty">
-      <div class="col-xs-12">
-        <div class="font_size_thirty_six bold" >
-          BACKGROUND
-        </div>
-        <div class="border"></div>
+          <p class="font_size_twenty_one twenty_px_margin">
+            This initiative is an effort to increase business opportunities for both diverse asset managers and institutional investors, with a specific focus on public, corporate, faith and labor union pension funds as well as foundation and university endowments.
+          </p>
 
-        <p class="font_size_twenty_one twenty_px_margin">
-          This initiative is an effort to increase business opportunities for both diverse asset managers and institutional investors, with a specific focus on public, corporate, faith and labor union pension funds as well as foundation and university endowments.
-        </p>
+          <p class="font_size_eighteen twenty_px_margin">
+            We are a consortium of financial services professionals, institutional investors, corporate and philanthropic board members and trade associations committed to raising awareness among institutional investors about the benefits and opportunities of investing funds with diverse asset managers.
+          </p>
 
-        <p class="font_size_eighteen twenty_px_margin">
-          We are a consortium of financial services professionals, institutional investors, corporate and philanthropic board members and trade associations committed to raising awareness among institutional investors about the benefits and opportunities of investing funds with diverse asset managers.
-        </p>
+          <p class="font_size_eighteen twenty_px_margin">
+            Our Honorary Co-Chairs are: Mary Kay Henry, International President of Service Employees International Union; Alberto Ibargüen, President and CEO of the Knight Foundation; John W. Rogers, Jr., Chairman, CEO & Chief Investment Officer of Ariel Investments; and William A. Von Hoene, Jr., Senior Executive Vice President and Chief Strategy Officer of Exelon Corporation.
+          </p>
 
-        <p class="font_size_eighteen twenty_px_margin">
-          Our Honorary Co-Chairs are: Mary Kay Henry, International President of Service Employees International Union; Alberto Ibargüen, President and CEO of the Knight Foundation; John W. Rogers, Jr., Chairman, CEO & Chief Investment Officer of Ariel Investments; and William A. Von Hoene, Jr., Senior Executive Vice President and Chief Strategy Officer of Exelon Corporation.
-        </p>
-
-      </div><!-- col-xs-12 -->
-    </div><!-- row -->
-  </div><!-- container -->
-</div><!-- background -->
+        </div><!-- col-xs-12 -->
+      </div><!-- row -->
+    </div><!-- container -->
+  </div><!-- background -->
 
   <div class="dark_blue background_padding">
     <div class="container">
@@ -153,7 +155,7 @@
 
 <div class="footer">
   <div>
-    <ul id="" class="nav nav-tabs" >
+    <ul id="" class="nav nav-tabs nav-bottom" >
       <li><%= link_to 'Home', root_path %></li>
       <li class="active_page_bottom"><%= link_to 'Background', static_pages_background_path %></li>
       <li><%= link_to 'About', static_pages_about_path %></li>

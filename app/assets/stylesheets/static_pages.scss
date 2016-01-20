@@ -6,7 +6,8 @@ html, body {
 
 body {
   background-color: #232f63 !important;
-  font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+  // font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Open Sans', 'Myriad Pro', 'Source Sans Pro', sans-serif !important;
   color:white !important;
 }
 
@@ -81,7 +82,6 @@ body {
   position: relative;
   top: 16px;
   width: 137px;
-  left: -40px;
   z-index: 10;
 }
 
@@ -177,15 +177,11 @@ body {
   width: 52%;
 }
 
-.quote {
-  font-family: 'Open Sans', 'Myriad Pro', sans-serif;
-}
 
 .content_block {
   margin: 0 auto;
   width:82%;
   max-width: 1160px;
-  font-family: 'Open Sans', 'Myriad Pro', sans-serif;
   padding: 60px 0px;
 }
 
@@ -266,25 +262,6 @@ body {
   background-color: #232f63;
   margin: 10px auto;
 }
-
-
-
-// .sub_title_wrapper {
-//   margin-left: -1000px;
-//   margin-right: -1000px;
-// }
-//
-// .sub_title_why {
-//   padding-left: 1000px;
-//   padding-right: 1000px;
-//   padding-top: 20px;
-//   padding-bottom: 20px
-//
-// }
-
-// .sub_title_how {
-//   margin: 0 auto;
-// }
 
 .title {
   font-weight: bold;
@@ -389,8 +366,8 @@ nav li a:hover{
 }
 
 
-.margin_top_fifty{
-  margin-top: 50px;
+.content_margin_top{
+  margin-top: 250px;
 }
 
 #navigation.affix {
@@ -405,10 +382,30 @@ nav li a:hover{
   width:102%;
   text-align: center;
   margin: 0 auto;
+  height:130px;
 }
 
-.nav a{
+.nav-bottom{
+height:auto !important;
+}
+
+.nav a,
+.nav_bottom a{
   color:white;
+}
+
+.dami_logo{
+  z-index:50;
+  position: relative;
+  top: -74px;
+  width: 137px;
+}
+
+.dami_logo_home{
+  z-index:50;
+  position: relative;
+  top: 11px;
+  width: 137px;
 }
 
 .nav-tabs{
@@ -565,10 +562,6 @@ nav li a:hover{
 
 /* Background */
 
-#background{
-  font-family: 'Open Sans', 'Myriad Pro', 'Source Sans Pro', sans-serif !important;
-}
-
 #background .container{
   max-width:894px;
 }
@@ -585,9 +578,22 @@ nav li a:hover{
   background-color: #6496cc;
 }
 
+.background_padding_top{
+  padding-bottom:120px;
+}
+
 .background_padding{
   padding:120px 0px
 }
+
+/* Action */
+#action{
+  background-color: #315e92;
+  padding-bottom:100px;
+}
+
+
+
 
 /* Media Queries */
 
