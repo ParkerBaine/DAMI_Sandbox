@@ -95,10 +95,20 @@ body {
   font-size:16px;
 }
 
+.font_size_thirty_six{
+  font-size:36px;
+
+}
+
 /* Justification */
 
 .justify{
   text-align: justify;
+}
+
+.margin_center{
+  text-align: center;
+  margin: 0 auto;
 }
 
 
@@ -484,6 +494,17 @@ nav li a:hover{
   padding: 40px 0px;
 }
 
+/* Principles */
+#principles{
+  background-color: #315e92;
+}
+
+#principles p{
+  background-color: #232f63;
+  max-width:894px;
+  padding:40px 50px;
+  margin:25px auto;
+}
 
 /* Media Queries */
 
