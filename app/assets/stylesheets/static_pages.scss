@@ -432,9 +432,6 @@ nav li a:hover{
   border-top:2px white solid !important;
 }
 
-#studies a{
-  color:#f48d4e;
-}
 
 
 /* pages */
@@ -504,6 +501,23 @@ nav li a:hover{
   max-width:894px;
   padding:40px 50px;
   margin:25px auto;
+}
+
+/* Studies */
+#studies{
+  background-color: #315e92;
+}
+
+#studies a{
+  color:white;
+  text-decoration: none;
+}
+
+.studies_link{
+  padding:20px 40px;
+  background-color: #232f63;
+  margin:20px 0px;
+  display:inline-block;
 }
 
 /* Media Queries */
