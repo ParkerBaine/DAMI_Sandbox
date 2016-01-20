@@ -85,6 +85,23 @@ body {
   z-index: 10;
 }
 
+/* Font Sizes */
+
+.font_size_twenty_one{
+  font-size:21px;
+}
+
+.font_size_sixteen{
+  font-size:16px;
+}
+
+/* Justification */
+
+.justify{
+  text-align: justify;
+}
+
+
 
 /* Home Page */
 
@@ -188,21 +205,19 @@ body {
   margin: 0 auto;
 }
 
-.co_chair_name{
-  font-size:21px;
-}
-
-.co_chair_descrip,
-.why_descrip{
-  font-size:16px;
-}
-
-.blue_circle{
+.blue_circle, .light_blue_circle{
   height:150px;
   width:150px;
   border-radius:50%;
-  background-color: #232f63;
   margin: 10px auto;
+}
+
+.blue_circle{
+  background-color: #232f63;
+}
+
+.light_blue_circle{
+  background-color: #315e92;
 }
 
 .blue_square{
@@ -354,17 +369,8 @@ nav li a:hover{
 }
 
 
-#about,
-#action,
-#background,
-#directory,
-#issues,
-#principles,
-#resources,
-#partnership,
-#studies,
-#support{
-  margin-top: 40px;
+.margin_top_fifty{
+  margin-top: 50px;
 }
 
 #navigation.affix {
@@ -425,6 +431,57 @@ nav li a:hover{
 
 .gold {
   color: #f48d4e;
+}
+
+
+/* About */
+
+#about{
+  background-color: #315e92;
+}
+
+.about_bio{
+  text-align: center;
+  margin:30px 0px;
+}
+
+.about_bio_name{
+  font-size:36px;
+  width:240px;
+  margin:0 auto;
+}
+
+.about_border{
+  border-bottom: 3px white solid;
+  width:50px;
+  margin:20px auto;
+}
+
+.about_bio_descrip{
+  font-size:18px;
+  width:432px;
+  margin:0 auto;
+  // white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  // height:265px;
+  line-height: 30px;
+}
+
+.line_clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.about_staff_title{
+  font-size:36px;
+  margin:0px auto;
+  text-align:center;
+}
+
+.about_staff{
+  background-color: #232f63;
+  padding: 40px 0px;
 }
 
 
