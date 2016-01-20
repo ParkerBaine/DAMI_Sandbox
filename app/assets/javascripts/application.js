@@ -18,7 +18,7 @@
 $(document).ready(function(){
   $('#navigation').affix({
     offset: {
-      top: $(".highlight").height() + 10
+      top: $(".highlight").height()-25
     }
   })
 })
@@ -26,7 +26,7 @@ $(document).ready(function(){
 $(document).on('page:load', function(){
   $('#navigation').affix({
     offset: {
-      top: $(".highlight").height() + 10
+      top: $(".highlight").height()-25
     }
   })
 })
