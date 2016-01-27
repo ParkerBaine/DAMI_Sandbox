@@ -2,10 +2,10 @@ class StaticPagesController < ApplicationController
   def home
   end
 
-  def about
+  def leadership
   end
 
-  def background
+  def about_us
   end
 
   def issues

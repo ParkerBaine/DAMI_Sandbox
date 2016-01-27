@@ -3,12 +3,13 @@
   <div id="nav_partial">
     <ul class="nav nav-tabs">
       <li><%= link_to 'Home', root_path %></li>
-      <li><%= link_to 'Background', static_pages_background_path %></li>
-      <li class="active_page_top"><%= link_to 'About', static_pages_about_path %></li>
+      <li><%= link_to 'About Us', static_pages_about_us_path %></li>
+      <li class="active_page_top"><%= link_to 'Leadership', static_pages_leadership_path %></li>
       <li><%= link_to 'Principles',  static_pages_principles_path %></li>
       <li><%= link_to 'Action', static_pages_action_path %></li>
       <li><%= link_to 'Studies', static_pages_studies_path %></li>
       <li><%= link_to 'Resources', static_pages_resources_path %></li>
+      <li><%= link_to 'Partners', static_pages_partners_path %></li>
     </ul>
     <%= image_tag("dami_logo.png", :alt => "dami logo", :class => "img-responsive center-block dami_logo") %>
   </div>
@@ -16,6 +17,16 @@
   <div class="container">
 
     <div class="row content_margin_top">
+      <div class="col-xs-12">
+        <div class="about_staff_title">
+          Honorary Co-Chairs
+        </div>
+        <div class="about_border"></div>
+      </div><!-- col-xs-12 -->
+    </div><!-- row -->
+
+
+    <div class="row">
 
       <div class="col-md-6">
         <div class="about_bio">
@@ -188,6 +199,23 @@
         </div><!-- col-xs-12 -->
       </div><!-- row -->
 
+      <div class="row">
+
+        <div class="col-xs-12">
+          <div class="light_blue_circle"></div>
+          <div class="about_staff_title">
+            Jenna Weinberg
+          </div>
+          <div class="margin_center about_staff_descrip">
+            <p>Senior Strategist</p>
+            <p>Cambridge Heath Ventures</p>
+            <p><%= mail_to "jweinbergchv@gmail.com ", "jweinbergchv@gmail.com " %></p>
+            <p>347-699-5121</p>
+          </div>
+        </div><!-- col-xs-12 col-sm-4 -->
+
+      </div><!-- row -->
+
     </div><!-- container -->
   </div><!-- about_staff -->
 
@@ -198,12 +226,13 @@
   <div>
     <ul id="" class="nav nav-tabs nav-bottom" >
       <li><%= link_to 'Home', root_path %></li>
-      <li><%= link_to 'Background', static_pages_background_path %></li>
-      <li class="active_page_bottom"><%= link_to 'About', static_pages_about_path %></li>
+      <li><%= link_to 'About Us', static_pages_about_us_path %></li>
+      <li class="active_page_bottom"><%= link_to 'Leadership', static_pages_leadership_path %></li>
       <li><%= link_to 'Principles',  static_pages_principles_path %></li>
       <li><%= link_to 'Action', static_pages_action_path %></li>
       <li><%= link_to 'Studies', static_pages_studies_path %></li>
       <li><%= link_to 'Resources', static_pages_resources_path %></li>
+      <li><%= link_to 'Partners', static_pages_partners_path %></li>
     </ul>
   </div>
 

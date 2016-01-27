@@ -3,9 +3,9 @@ Rails.application.routes.draw do
 
   get 'static_pages/home'
 
-  get 'static_pages/background'
+  get 'static_pages/about_us'
 
-  get 'static_pages/about'
+  get 'static_pages/leadership'
 
   get 'static_pages/principles'
 
@@ -15,7 +15,7 @@ Rails.application.routes.draw do
 
   get 'static_pages/resources'
 
-    get 'static_pages/partners'
+  get 'static_pages/partners'
 
 
 
