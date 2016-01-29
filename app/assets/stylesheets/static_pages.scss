@@ -171,7 +171,7 @@ body {
 
 .highlight_text{
   position:absolute;
-  top: 450px;
+  top: 292px;
   left:24%;
   max-width:800px;
   margin:0 auto;
@@ -656,6 +656,9 @@ nav li a:hover{
   .address_block{
     max-width: 100%;
   }
+  .highlight_text{
+    top:450px
+}
 
 }
 
