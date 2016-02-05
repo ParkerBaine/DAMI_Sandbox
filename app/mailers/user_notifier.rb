@@ -4,7 +4,7 @@ class UserNotifier < ApplicationMailer
   def new_user_email(email_address)
     @new_user_email = email_address
     mail( :to => "sfoxx@rabengroup.com",
-    :subject => 'A new user has signed up for Dami Updates' )
+    :subject => 'A new user has signed up for DAMI Updates' )
   end
 
 end

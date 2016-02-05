@@ -1,21 +1,28 @@
 <div class="alert alert-info alert-dismissible email_bar" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
   <%= form_tag(controller: "static_pages", action: "new_user", method: "post", class:"")  do %>
-    <div class="pull-left">
-      Please enter your email address to receive DAMI updates:
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="pull-left">
+        Please enter your email address to receive DAMI updates:
+      </div>
     </div>
-    <div class="pull-right">
-      <%= text_field_tag :email, nil, placeholder:"Email" %>
-      <%= submit_tag "Submit" %>
-      <div class="left_align red">
-        <% flash.each do |key, value| %>
+    <div class= "col-xs-6">
+      <div class="pull-right">
+        <%= text_field_tag :email, nil, placeholder:"Email" %>
+        <%= submit_tag "Submit", id:"submit_button" %>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true" id="close_button">&times;</span></button>
+
+        <div class="left_align red error_message">
+          <% flash.each do |key, value| %>
           <% if key == "danger" %>
           <%= value %>
           <% end %>
-        <% end %>
+          <% end %>
+        </div>
+
       </div>
     </div>
+  </div>
   <% end %>
 
 
