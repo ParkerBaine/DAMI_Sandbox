@@ -96,10 +96,11 @@ body {
   border-radius:0 !important;
   border-bottom:1px solid #315e92 !important;
   // background-color: #315e92;
+  padding: 15px 35px 5px 15px !important;
 }
 
 #email{
-  width:300px;
+  width:250px;
 }
 
 .logo_bar{
@@ -160,6 +161,10 @@ body {
   font-style: italic;
 }
 
+.red{
+  color:red;
+}
+
 /* Justification */
 
 .justify{
@@ -171,6 +176,9 @@ body {
   margin: 0 auto;
 }
 
+.left _align{
+  text-align:right;
+}
 
 
 /* Home Page */
@@ -591,7 +599,6 @@ nav li a:hover{
   margin: 40px 0px 10px 0px;
   max-width: 432px;
   min-height:300px;
-  height:auto;
   background-color: #232f63;
   padding: 25px 25px 5px 25px;;
   font-size: 21px;

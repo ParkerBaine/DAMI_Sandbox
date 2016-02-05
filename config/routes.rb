@@ -17,8 +17,7 @@ Rails.application.routes.draw do
 
   get 'static_pages/partners'
 
-
-
+  post 'static_pages/new_user' => "static_pages#new_user", as: "new_user"
 
 
   #

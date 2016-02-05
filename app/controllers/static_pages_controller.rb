@@ -22,4 +22,14 @@ class StaticPagesController < ApplicationController
 
   def studies
   end
+
+  def new_user
+    if EmailValidator.valid?(params[:email])
+      email_address = params[:email]
+      UserNotifier.new_user_email(email_address).deliver_now
+    else
+      flash.discard[:danger] = "Invalid email address"
+    end
+    redirect_to :back
+  end
 end
