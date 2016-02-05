@@ -1,0 +1,13 @@
+<div class="alert alert-info alert-dismissible email_bar" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <p>
+    <%= form_tag  do %>
+    <div class="pull-left">
+      Please enter your email address to receive DAMI updates:
+    </div>
+    <div class="pull-right">
+      <%= text_field_tag :email, nil, placeholder:"Email" %>
+    </div>
+    <% end %>
+  </p>
+</div>

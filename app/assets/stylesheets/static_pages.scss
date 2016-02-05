@@ -36,6 +36,8 @@ body {
   display: block;
 }
 
+
+
 .footer, .page-wrap:after {
   height: 174px;
 }
@@ -78,11 +80,42 @@ body {
   z-index:10;
 }
 
-.header img {
+.home_email_bar{
+  position:absolute;
+  top:0px;
+  left:0px;
+  height:60px;
+  width:100%;
+  margin:0 !important;
+}
+
+.email_bar{
+  width:100%;
+  height:60px;
+  margin:0 !important;
+  border-radius:0 !important;
+  border-bottom:1px solid #315e92 !important;
+  // background-color: #315e92;
+}
+
+#email{
+  width:300px;
+}
+
+.logo_bar{
+  position:absolute;
+  top:60px;
+  left:0px;
+  width:100%;
+  // z-index:10;
+}
+
+.logo_bar img {
   position: relative;
-  top: 10px;
+  top: -50px;
   width: 149px;
   z-index: 10;
+  margin:0 auto;
 }
 
 .no_text_decoration{
@@ -281,7 +314,7 @@ body {
 
 nav{
   margin-top:-170px;
-  z-index: 10;
+  z-index: 2f0;
   position: absolute;
   top: 180px;
 }
@@ -372,7 +405,7 @@ nav li a:hover{
 
 
 .content_margin_top{
-  margin-top: 250px;
+  margin-top: 300px;
 }
 
 #navigation.affix {
@@ -513,7 +546,7 @@ nav li a:hover{
   padding-bottom:100px;
 }
 
-#principles p{
+#principles .container p{
   background-color: #232f63;
   max-width:894px;
   padding:40px 50px;
@@ -547,7 +580,7 @@ nav li a:hover{
 .resource_block{
   margin: 40px 0px 10px 0px;
   max-width: 432px;
-  height:268px;
+  height:290px;
   background-color: #f48d4e;
   padding: 25px;
   text-align: center;
@@ -557,9 +590,10 @@ nav li a:hover{
 .address_block {
   margin: 40px 0px 10px 0px;
   max-width: 432px;
-  height:268px;
+  min-height:300px;
+  height:auto;
   background-color: #232f63;
-  padding: 25px;
+  padding: 25px 25px 5px 25px;;
   font-size: 21px;
 }
 
@@ -569,11 +603,28 @@ nav li a:hover{
   margin:10px 0px;
 }
 
+.resource_button_block{
+  position:relative;
+  bottom:-20px;
+  left:0px;
+  width:100%;
+}
+
 .resource_border{
   border-bottom: 2px white solid;
   width:35px;
   margin:10px auto;
 }
+
+.resource_button{
+  background-color: #f48d4e;
+  width:100%;
+  color:white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
 
 
 /* Background */
