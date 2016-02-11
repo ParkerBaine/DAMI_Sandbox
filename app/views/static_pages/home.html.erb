@@ -1,12 +1,10 @@
 <div class="page_wrap">
 
   <div class="header">
-    <%= render "email_banner" %>
-
     <div class="logo_bar">
       <%= image_tag("dami_logo.png", :alt => "dami logo", :class => "img-responsive") %>
-    </div>
-  </div>
+    </div><!-- logo_bar -->
+  </div><!-- header -->
 
 
   <div class="highlight">
@@ -23,7 +21,7 @@
           <li><%= link_to 'Partners', static_pages_partners_path %></li>
         </ul>
       </nav>
-    </div>
+    </div><!-- overlay -->
   </div><!-- highlight -->
 
 
@@ -49,6 +47,8 @@
 
 
   <div class="who">
+    <%= render "email_banner" %>
+
     <div class="content_block">
       <div class="sub_content_block">
         <div class="sub_title"><h3>Who We Are</h3></div>

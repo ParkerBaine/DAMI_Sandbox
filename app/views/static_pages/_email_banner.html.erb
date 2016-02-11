@@ -1,13 +1,10 @@
-<div class="alert alert-info alert-dismissible email_bar" role="alert">
+<div class="alert alert-dismissible email_bar" role="alert">
   <%= form_tag(controller: "static_pages", action: "new_user", method: "post", class:"")  do %>
   <div class="row">
-    <div class="col-xs-6">
-      <div class="pull-left">
-        Please enter your email address to receive DAMI updates:
-      </div>
-    </div>
-    <div class= "col-xs-6">
+    <div class= "col-xs-12">
       <div class="pull-right">
+        Please enter your email address to receive DAMI updates:
+        <br>
         <%= text_field_tag :email, nil, placeholder:"Email" %>
         <%= submit_tag "Submit", id:"submit_button" %>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true" id="close_button">&times;</span></button>

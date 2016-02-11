@@ -21,6 +21,12 @@ $(document).ready(function(){
       top: $(".highlight").height()-25
     }
   })
+
+
+  $("#close_button").on("click", function(){
+    console.log("close button")
+    $(".dami_logo").css("top","-74px")
+  })
 })
 
 $(document).on('page:load', function(){
@@ -28,5 +34,10 @@ $(document).on('page:load', function(){
     offset: {
       top: $(".highlight").height()-25
     }
+  })
+
+  $("#close_button").on("click", function(){
+    console.log("close button")
+    $(".dami_logo").css("top","-74px")
   })
 })
