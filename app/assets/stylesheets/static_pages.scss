@@ -625,7 +625,7 @@ nav li a:hover{
   margin-bottom:20px;
 }
 .address_block {
-  margin: 40px 0px 10px 0px;
+  margin: 40px auto 10px;
   max-width: 432px;
   min-height:300px;
   background-color: #232f63;
@@ -648,10 +648,10 @@ nav li a:hover{
 }
 
 .resource_button_block{
-  position:relative;
-  bottom:-15px;
-  left:0px;
-  width:100%;
+  position: absolute;
+  bottom: 25px;
+  left: 50px;
+  width: 80%;
 }
 
 .resource_button_block a,
@@ -724,6 +724,7 @@ nav li a:hover{
 
 .partner{
   margin:40px 0px;
+  height:105px;
 }
 
 .partner a{
@@ -738,11 +739,12 @@ nav li a:hover{
 }
 
 .logo_box{
-  max-width:240px;
+  margin:0 auto;
+  text-align: center;
 }
 
 .logo_box img{
-  max-width:100%;
+  max-width:240px;
 }
 
 
@@ -767,9 +769,6 @@ nav li a:hover{
     height: 380px;
   }
 
-  .resource_button_block{
-    bottom:-20px;
-  }
 
   .resource_button{
     font-size:16px;
@@ -811,56 +810,60 @@ nav li a:hover{
     visibility: hidden;
   }}
 
-@media (max-width: 600px) {
+  @media (max-width: 600px) {
 
-  .dami_logo,
-  .dami_logo_home{
-    visibility: hidden;
+    .dami_logo,
+    .dami_logo_home{
+      visibility: hidden;
+    }
+
+    .header img {
+      top: 5px;
+      width: 80px;
+    }
+
+    .bio_pic_img{
+      height: 250px;
+      display: block;
+      width: 100% !important;
+    }
+
+    .bio_pic{
+      height:900px;
+    }
+
+    .highlight {
+      height: 700px;
+    }
+
+    .overlay{
+      height:700px;
+    }
+
+
+
   }
 
-  .header img {
-    top: 5px;
-    width: 80px;
+  @media (max-width: 520px) {
+
+    .email_bar{
+      height:80px;
+    }
+
+    #submit_button{
+      width:150px;
+    }
+
+    .resource_block,
+    .address_block{
+      height: 360px;
+    }
   }
 
-  .bio_pic_img{
-    height: 250px;
-    display: block;
-    width: 100% !important;
+  @media (max-width: 434px) {
+
+    .resource_block,
+    .address_block{
+      height: 380px;
+    }
   }
-
-  .bio_pic{
-    height:900px;
-  }
-
-  .highlight {
-    height: 700px;
-  }
-
-  .overlay{
-    height:700px;
-  }
-
-
-
-}
-
-@media (max-width: 520px) {
-
-  .email_bar{
-    height:80px;
-  }
-
-  #submit_button{
-    width:150px;
-  }
-
-}
-
-@media (max-width: 434px) {
-
-  .resource_block,
-  .address_block{
-    height: 380px;
-  }
-}
