@@ -286,10 +286,15 @@ body {
   background-color: #315e92;
 }
 
-.bio_pic, .why_pics {
+.bio_pic {
   // width: 1000px;
   // float: left;
   height:300px;
+  margin:35px 0px;
+}
+
+.why_pics{
+  height:700px;
   margin:35px 0px;
 }
 
@@ -785,7 +790,7 @@ nav li a:hover{
   }
 
   .why_pics{
-    height: 680px;
+    height: 1200px;
   }
 
   .resource_block,
