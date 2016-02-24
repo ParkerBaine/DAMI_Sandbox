@@ -294,13 +294,11 @@ body {
 }
 
 .why_pics{
-  height:700px;
+  height:550px;
   margin:35px 0px;
 }
 
 .bio_pic_img, .why_pic_block{
-  // display:inline-block;
-  // width:25%;
   text-align: center;
   height:250px;
   vertical-align: top;
@@ -309,6 +307,16 @@ body {
 .bio_pic_img img{
   margin: 0 auto;
 }
+
+#next,
+#previous{
+  cursor:pointer;
+  height:480px;
+  line-height: 480px;
+  text-align: center;
+  font-size:64px;
+}
+
 
 .blue_circle, .light_blue_circle{
   height:150px;
@@ -337,6 +345,16 @@ body {
   height:220px;
   background-color: #232f63;
   margin: 10px auto;
+}
+
+.pub_image{
+  width:100%;
+  // height:220px;
+  margin: 10px auto;
+}
+
+.pub_image img{
+  width:100%;
 }
 
 .title {
@@ -761,6 +779,15 @@ nav li a:hover{
     height:460px;
   }
 
+  .why_pics{
+    height: 400px;
+  }
+
+  #next,
+  #previous{
+    font-size:48px;
+  }
+
   .about_staff_descrip p{
     font-size:14px !important;
   }
@@ -790,7 +817,12 @@ nav li a:hover{
   }
 
   .why_pics{
-    height: 1200px;
+    height: 300px;
+  }
+
+  #next,
+  #previous{
+    font-size:32px;
   }
 
   .resource_block,

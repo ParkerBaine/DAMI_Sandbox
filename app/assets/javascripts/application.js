@@ -13,8 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require popcorn
-//= require popcorn.capture
 //= require_tree .
 
 $(document).ready(function(){
@@ -30,6 +28,56 @@ $(document).ready(function(){
     $(".dami_logo").css("top","-74px")
   })
 
+  video_width = parseInt($(".why_pic_block").width());
+  video_height = video_width * 0.75;
+  $("video").attr("width",video_width)
+  $("video").attr("height",video_height)
+  $("#next").css("height",video_height+"px")
+  $("#next").css("line-height",video_height+"px")
+  $("#previous").css("height",video_height+"px")
+  $("#previous").css("line-height",video_height+"px")
+
+
+  videoIDs = ["BillVonHoene", "JohnRogersJr", "KeithMestrich", "RobertGreen", "RobertRaben"]
+  video_index = 0;
+  $("#JohnRogersJr").hide();
+  $("#KeithMestrich").hide();
+  $("#RobertGreen").hide();
+  $("#RobertRaben").hide();
+
+  $(window).resize(function() {
+    video_width = parseInt($(".why_pic_block").width());
+    video_height = video_width * 0.75;
+    $("video").attr("width",video_width)
+    $("video").attr("height",video_height)
+    $("#next").css("height",video_height+"px")
+    $("#next").css("line-height",video_height+"px")
+    $("#previous").css("height",video_height+"px")
+    $("#previous").css("line-height",video_height+"px")
+  });
+
+  $("#next").on("click", function(){
+    $("#"+videoIDs[video_index]).hide();
+    if (video_index == 4){
+      video_index = 0;
+    }
+    else{
+      video_index++;
+    }
+    $("#"+videoIDs[video_index]).show();
+  })
+
+  $("#previous").on("click", function(){
+    $("#"+videoIDs[video_index]).hide();
+    if (video_index == 0){
+      video_index = 4;
+    }
+    else{
+      video_index--;
+    }
+    $("#"+videoIDs[video_index]).show();
+
+  })
   // This block of code must be run _after_ the DOM is ready
   // This will capture the frame at the 10th second and create a poster
   // var $BillVonHoene = Popcorn( "#BillVonHoene" ), poster1;
@@ -67,4 +115,7 @@ $(document).on('page:load', function(){
     console.log("close button")
     $(".dami_logo").css("top","-74px")
   })
+
+
+
 })
