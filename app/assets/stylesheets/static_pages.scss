@@ -278,11 +278,11 @@ body {
   margin:20px 0px;
 }
 
-.who, .how{
+.who, .why, .goal{
   background-color: #232f63;
 }
 
-.why, .goal{
+.what, .how {
   background-color: #315e92;
 }
 
@@ -293,9 +293,13 @@ body {
   margin:35px 0px;
 }
 
-.why_pics{
+.what_we_say_block{
   height:550px;
   margin:35px 0px;
+}
+
+.why_block{
+  height:350px;
 }
 
 .bio_pic_img, .why_pic_block{
@@ -779,7 +783,7 @@ nav li a:hover{
     height:460px;
   }
 
-  .why_pics{
+  .what_we_say_block{
     height: 400px;
   }
 
@@ -816,7 +820,7 @@ nav li a:hover{
     left:10%;
   }
 
-  .why_pics{
+  .what_we_say_block{
     height: 300px;
   }
 
