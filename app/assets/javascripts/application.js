@@ -58,6 +58,7 @@ $(document).ready(function(){
 
   $("#next").on("click", function(){
     $("#"+videoIDs[video_index]).hide();
+    $(".video")[0].pause();
     if (video_index == 4){
       video_index = 0;
     }
@@ -69,6 +70,8 @@ $(document).ready(function(){
 
   $("#previous").on("click", function(){
     $("#"+videoIDs[video_index]).hide();
+    $(".video")[0].pause();
+
     if (video_index == 0){
       video_index = 4;
     }
