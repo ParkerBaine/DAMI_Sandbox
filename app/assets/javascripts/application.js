@@ -22,11 +22,12 @@ $(document).ready(function(){
     }
   })
 
-
   $("#close_button").on("click", function(){
-    console.log("close button")
     $(".dami_logo").css("top","-74px")
   })
+
+
+  /* Video Controls & Size */
 
   video_width = parseInt($(".why_pic_block").width());
   video_height = video_width * 0.75;
@@ -36,7 +37,6 @@ $(document).ready(function(){
   $("#next").css("line-height",video_height+"px")
   $("#previous").css("height",video_height+"px")
   $("#previous").css("line-height",video_height+"px")
-
 
   videoIDs = ["BillVonHoene", "JohnRogersJr", "KeithMestrich", "RobertGreen", "RobertRaben"]
   video_index = 0;
@@ -76,31 +76,7 @@ $(document).ready(function(){
       video_index--;
     }
     $("#"+videoIDs[video_index]).show();
-
   })
-  // This block of code must be run _after_ the DOM is ready
-  // This will capture the frame at the 10th second and create a poster
-  // var $BillVonHoene = Popcorn( "#BillVonHoene" ), poster1;
-  // var $JohnRogersJr = Popcorn( "#JohnRogersJr" ), poster2;
-  // var $KeithMestrich = Popcorn( "#KeithMestrich" ), poster3;
-  // var $RobertGreen = Popcorn( "#RobertGreen" ), poster4;
-  // var $RobertRaben = Popcorn( "#RobertRaben" ), poster5;
-
-
-  // Jump to the frame we want to capture and create a poster!
-  // poster1 = $BillVonHoene.currentTime( 10 ).capture();
-  // poster2 = $JohnRogersJr.currentTime( 10 ).capture();
-  // poster3 = $KeithMestrich.currentTime( 10 ).capture();
-  // poster4 = $RobertGreen.currentTime( 10 ).capture();
-  // poster5 = $RobertRaben.currentTime( 10 ).capture();
-
-  // $BillVonHoene.capture({ at:10 });
-  // $JohnRogersJr.capture({ at:10 });
-
-  // $BillVonHoene.listen( "canplayall", function(){
-  //   this.currentTime(10).capture();
-  // })
-
 
 })
 
@@ -112,7 +88,6 @@ $(document).on('page:load', function(){
   })
 
   $("#close_button").on("click", function(){
-    console.log("close button")
     $(".dami_logo").css("top","-74px")
   })
 
