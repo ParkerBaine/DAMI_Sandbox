@@ -11,9 +11,15 @@
 
         <div class="left_align red error_message">
           <% flash.each do |key, value| %>
-          <% if key == "danger" %>
-          <%= value %>
-          <% end %>
+            <% if value == "Invalid email address" %>
+              <div class="red">
+                <%= value %>
+              </div>
+            <% elsif value == "Your email address has been received" %>
+              <div class="orange">
+                <%= value %>
+              </div>
+            <% end %>
           <% end %>
         </div>
 

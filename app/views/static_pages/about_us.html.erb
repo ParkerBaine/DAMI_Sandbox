@@ -13,7 +13,7 @@
     </ul>
     <%= render "email_banner" %>
     <%= image_tag("dami_logo.png", :alt => "dami logo", :class => "img-responsive center-block dami_logo") %>
-</div>
+  </div>
 
   <div class="background_padding_top">
 
@@ -126,17 +126,22 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="font_size_thirty_six margin_center bold" >
-            <i class="fa fa-file-pdf-o fa-3x"></i>
+            <a href="/pdf/DAMI_OnePager.pdf" download="DAMI Background", class="no_text_decoration">
+              <i class="fa fa-file-pdf-o fa-3x"></i>
+            </a>
           </div>
           <div class="about_border"></div>
-          <div class="font_size_thirty_six margin_center">
-            <a href="/pdf/DAMI_OnePager.pdf" download="DAMI Background", class="no_text_decoration">DOWNLOAD THE PDF</a>
-          </div>
-        </div><!-- col-xs-12 -->
-      </div><!-- row -->
-    </div><!-- container -->
+          <a href="/pdf/DAMI_OnePager.pdf" download="DAMI Background", class="no_text_decoration">
+            <div class="font_size_thirty_six margin_center">
+              Click Here to Download DAMI Overview
+            </div>
+          </a>
+        </a>
+      </div><!-- col-xs-12 -->
+    </div><!-- row -->
+  </div><!-- container -->
 
-  </div><!-- download -->
+</div><!-- download -->
 
 
 </div><!-- page_wrap -->
