@@ -38,12 +38,14 @@ $(document).ready(function(){
   $("#previous").css("height",video_height+"px")
   $("#previous").css("line-height",video_height+"px")
 
-  videoIDs = ["BillVonHoene", "JohnRogersJr", "KeithMestrich", "RobertGreen", "RobertRaben"]
+  videoIDs = ["BillVonHoene", "JohnRogersJr", "KeithMestrich", "RobertGreen", "RobertRaben", "MaryKayHenry"]
   video_index = 0;
+  total_videos = videoIDs.length;
   $("#JohnRogersJr").hide();
   $("#KeithMestrich").hide();
   $("#RobertGreen").hide();
   $("#RobertRaben").hide();
+  $("#MaryKayHenry").hide();
 
   $(window).resize(function() {
     video_width = parseInt($(".why_pic_block").width());
@@ -58,8 +60,8 @@ $(document).ready(function(){
 
   $("#next").on("click", function(){
     $("#"+videoIDs[video_index]).hide();
-    $(".video")[0].pause();
-    if (video_index == 4){
+    $(".video")[video_index].pause();
+    if (video_index == (total_videos-1)){
       video_index = 0;
     }
     else{
@@ -70,10 +72,10 @@ $(document).ready(function(){
 
   $("#previous").on("click", function(){
     $("#"+videoIDs[video_index]).hide();
-    $(".video")[0].pause();
+    $(".video")[video_index].pause();
 
     if (video_index == 0){
-      video_index = 4;
+      video_index = total_videos - 1;
     }
     else{
       video_index--;
