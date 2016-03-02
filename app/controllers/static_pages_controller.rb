@@ -25,8 +25,7 @@ class StaticPagesController < ApplicationController
 
   def new_user
     if EmailValidator.valid?(params[:email])
-      email_address = params[:email]
-      UserNotifier.new_user_email(email_address).deliver_now
+      UserNotifier.new_user_email(params[:email]).deliver_now
       flash.discard[:success] = "Your email address has been received"
     else
       flash.discard[:danger] = "Invalid email address"
