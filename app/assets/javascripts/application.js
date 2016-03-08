@@ -18,15 +18,84 @@
 $(document).ready(function(){
   $('#navigation').affix({
     offset: {
-      top: $(".highlight").height() + 10
+      top: $(".highlight").height()-25
     }
   })
+
+  $("#close_button").on("click", function(){
+    $(".dami_logo").css("top","-74px")
+  })
+
+
+  /* Video Controls & Size */
+
+  video_width = parseInt($(".why_pic_block").width());
+  video_height = video_width * 0.75;
+  $("video").attr("width",video_width)
+  $("video").attr("height",video_height)
+  $("#next").css("height",video_height+"px")
+  $("#next").css("line-height",video_height+"px")
+  $("#previous").css("height",video_height+"px")
+  $("#previous").css("line-height",video_height+"px")
+
+  videoIDs = ["BillVonHoene", "JohnRogersJr", "KeithMestrich", "RobertGreen", "RobertRaben", "MaryKayHenry"]
+  video_index = 0;
+  total_videos = videoIDs.length;
+  $("#JohnRogersJr").hide();
+  $("#KeithMestrich").hide();
+  $("#RobertGreen").hide();
+  $("#RobertRaben").hide();
+  $("#MaryKayHenry").hide();
+
+  $(window).resize(function() {
+    video_width = parseInt($(".why_pic_block").width());
+    video_height = video_width * 0.75;
+    $("video").attr("width",video_width)
+    $("video").attr("height",video_height)
+    $("#next").css("height",video_height+"px")
+    $("#next").css("line-height",video_height+"px")
+    $("#previous").css("height",video_height+"px")
+    $("#previous").css("line-height",video_height+"px")
+  });
+
+  $("#next").on("click", function(){
+    $("#"+videoIDs[video_index]).hide();
+    $(".video")[video_index].pause();
+    if (video_index == (total_videos-1)){
+      video_index = 0;
+    }
+    else{
+      video_index++;
+    }
+    $("#"+videoIDs[video_index]).show();
+  })
+
+  $("#previous").on("click", function(){
+    $("#"+videoIDs[video_index]).hide();
+    $(".video")[video_index].pause();
+
+    if (video_index == 0){
+      video_index = total_videos - 1;
+    }
+    else{
+      video_index--;
+    }
+    $("#"+videoIDs[video_index]).show();
+  })
+
 })
 
 $(document).on('page:load', function(){
   $('#navigation').affix({
     offset: {
-      top: $(".highlight").height() + 10
+      top: $(".highlight").height()-25
     }
   })
+
+  $("#close_button").on("click", function(){
+    $(".dami_logo").css("top","-74px")
+  })
+
+
+
 })

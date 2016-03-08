@@ -1,6 +1,13 @@
+/* Site Wide */
+
+html, body {
+  height: 100%;
+}
+
 body {
   background-color: #232f63 !important;
-  font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+  // font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Open Sans', 'Myriad Pro', 'Source Sans Pro', sans-serif !important;
   color:white !important;
 }
 
@@ -9,28 +16,206 @@ body {
 }
 
 .container p {
-  font-size: 16px !important;
+  font-size: 16px;
 }
+
 .col-xs-12 {
   color: white;
   // padding-left: 0px !important;
   // padding-right: 0px !important;
 }
 
-.header {
-  height: 157px;
+.page_wrap{
+  min-height: 72%;
+  /* equal to footer height */
+  // margin-bottom: -174px;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+
+
+.footer, .page-wrap:after {
+  height: 174px;
+}
+
+.footer {
   background-color: #f48d4e;
-  margin-right: -100px;
+}
+
+.social_bar, .copyright{
+  text-align: center;
+  margin:0 auto;
+  color:white;
+}
+
+.social_bar{
+  margin-top:50px;
+}
+
+.copyright{
+  margin-top:20px;
+}
+
+.social_bar a{
+  text-decoration: none;
+  color:inherit;
+}
+
+.social_bar i{
+  margin:0px 10px;
+}
+
+.copyright{
+
+}
+
+.header {
+  height: 90px;
+  background-color: #f48d4e;
+  // margin-right: -100px;
   z-index:10;
 }
 
-.header img {
-  position: relative;
-  top: 33px;
-  width: 137px;
-  left: -40px;
-  z-index: 10;
+.home_email_bar{
+  position:absolute;
+  top:0px;
+  left:0px;
+  height:60px;
+  width:100%;
+  margin:0 !important;
 }
+
+.email_bar{
+  width:100%;
+  height:90px;
+  margin:0 !important;
+  border-radius:0 !important;
+  border-bottom:1px solid #315e92 !important;
+  background-color: #315e92;
+  padding: 10px 35px 10px 15px !important;
+}
+
+.email_bar button{
+  color:white !important;
+  opacity:.9;
+}
+
+#email{
+  width:250px;
+  color:black;
+}
+
+#submit_button{
+  background-color:#232f63;
+  color:white;
+  border: none;
+}
+
+#close_button{
+  position: absolute;
+  top: -18px;
+  right:0px;
+}
+
+.error_message{
+  height:10px;
+}
+
+.logo_bar{
+  position:absolute;
+  top:60px;
+  left:0px;
+  width:100%;
+  // z-index:10;
+}
+
+.logo_bar img {
+  position: relative;
+  top: -50px;
+  width: 149px;
+  z-index: 10;
+  margin:0 auto;
+}
+
+.no_text_decoration{
+  text-decoration: none;
+  color:inherit;
+}
+
+.no_text_decoration:hover{
+  text-decoration: none;
+  color:inherit;
+}
+
+.twenty_px_margin{
+  margin:20px 0px;
+}
+
+/* Font Sizes */
+
+.font_size_twenty_one{
+  font-size:21px !important;
+}
+
+.font_size_sixteen{
+  font-size:16px;
+}
+
+.font_size_eighteen{
+  font-size:18px !important;
+  line-height: 30px;
+}
+
+.font_size_thirty_six{
+  font-size:36px;
+  line-height: 36px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.italic{
+  font-style: italic;
+}
+
+.red{
+  color:red;
+}
+
+.white{
+  color:white;
+}
+
+.orange{
+  color:#f48d4e;
+}
+
+/* Justification */
+
+.justify{
+  text-align: justify;
+}
+
+.margin_center{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.center-block{
+  margin: 0 auto;
+}
+
+.left _align{
+  text-align:right;
+}
+
+
+/* Home Page */
 
 .highlight {
   font-size: 1.5em;
@@ -38,16 +223,10 @@ body {
   font-color: white !important;
   background: url(../images/dami_hero1.png) no-repeat left center scroll;
   // background-size: 1235px 640px;
-  background-size: 1290px 668px;
+  background-size: 100% 100%;
   height: 620px;
-  width: 109%;
+  width: 100%;
   z-index:1;
-}
-
-.quote {
-  background-color: rgba(#232f63, 0.7);
-  padding: 2em 1em 2em 1em;
-  font-style: italic;
 }
 
 .overlay{
@@ -55,7 +234,7 @@ body {
   height: 620px;
   width:100%;
   position: absolute;
-  top:0px;
+  top:90px;
   z-index:5;
 }
 
@@ -65,49 +244,130 @@ body {
   margin: 0 auto;
 }
 
+.highlight_text{
+  position:absolute;
+  top: 330px;
+  left:24%;
+  max-width:800px;
+  margin:0 auto;
+  text-align: center;
+  z-index: 10;
+  font-size:1.5em;
+  width: 52%;
+}
+
+
 .content_block {
   margin: 0 auto;
+  width:82%;
+  max-width: 1160px;
+  padding: 60px 0px;
+}
+
+.sub_content_block{
+  width:77%;
+  max-width:894px;
+  margin: 35px auto;
+}
+
+.sub_content_block p{
+  font-size:18px;
+  line-height: 30px;
 }
 
 .sub_title {
   line-height: 30px;
-
-}
-.bio_pic {
-  width: 1000px;
-  float: left;
+  font-size:36px;
 }
 
-.bio_pic img {
-  padding-left: 60px;
-  padding-top: 10px;
-  padding-bottom: 20px;
+.border{
+  border-bottom: 3px white solid;
+  width:50px;
+  margin:20px 0px;
 }
 
-.sub_title_wrapper {
-  margin-left: -1000px;
-  margin-right: -1000px;
-}
-.sub_title_why {
-  background-color: #315e92;
-  padding-left: 1000px;
-  padding-right: 1000px;
-  padding-top: 20px;
-  padding-bottom: 20px
-
-}
-
-.sub_title_how {
+.who, .why, .goal{
   background-color: #232f63;
+}
+
+.what, .how {
+  background-color: #315e92;
+}
+
+.bio_pic {
+  // width: 1000px;
+  // float: left;
+  height:300px;
+  margin:35px 0px;
+}
+
+.what_we_say_block{
+  height:550px;
+  margin:35px 0px;
+}
+
+.why_block{
+  height:350px;
+}
+
+.bio_pic_img, .why_pic_block{
+  text-align: center;
+  height:250px;
+  vertical-align: top;
+}
+
+.bio_pic_img img{
   margin: 0 auto;
 }
 
-
-.bullet {
-  background-color: rgba(61, 162, 235, 0.2);
-  padding: 4px;
+#next,
+#previous{
+  cursor:pointer;
+  height:480px;
+  line-height: 480px;
+  text-align: center;
+  font-size:64px;
 }
 
+
+.blue_circle, .light_blue_circle{
+  height:150px;
+  width:150px;
+  border-radius:50%;
+  margin: 10px auto;
+}
+
+.blue_circle{
+  background-color: #232f63;
+}
+
+.light_blue_circle{
+  background-color: #315e92;
+}
+
+.blue_square{
+  width:260px;
+  height:220px;
+  background-color: #315e92;
+  margin: 10px auto;
+}
+
+.light_blue_square{
+  width:260px;
+  height:220px;
+  background-color: #232f63;
+  margin: 10px auto;
+}
+
+.pub_image{
+  width:100%;
+  // height:220px;
+  margin: 10px auto;
+}
+
+.pub_image img{
+  width:100%;
+}
 
 .title {
   font-weight: bold;
@@ -116,29 +376,14 @@ body {
   color: rgb(54, 93, 209);
 }
 
-.address_block {
-  margin-left: 30px;
-  width: 300px;
-  background-color: rgba(61, 162, 235, 0.2);
-  padding: 20px;
-}
 
-.highlight_text{
-  position:absolute;
-  top:265px;
-  left:25%;
-  max-width:800px;
-  margin:0 auto;
-  text-align: center;
-  z-index: 10;
-  font-size:1.5em;
-}
+
 
 /* Vertical Navbar */
 
 nav{
   margin-top:-170px;
-  z-index: 10;
+  z-index: 2f0;
   position: absolute;
   top: 180px;
 }
@@ -164,6 +409,7 @@ nav li a {
   padding-right: 20px;
   line-height: 40px;
   font-size:18px;
+  min-width:180px;
 }
 
 nav li a:hover{
@@ -171,7 +417,7 @@ nav li a:hover{
   text-decoration: none;
   color:white;
   text-indent:75px;
-  padding-right: 35px;
+  min-width:195px;
 }
 
 .active a{
@@ -209,7 +455,6 @@ nav li a:hover{
 
 /* Horizontal Navbar */
 
-
 #navigation{
   position: absolute;
   top:-500px;
@@ -218,7 +463,6 @@ nav li a:hover{
   padding:0;
   margin:0;
 }
-
 
 #nav_partial{
   position:fixed;
@@ -229,36 +473,46 @@ nav li a:hover{
 }
 
 
-#about,
-#action,
-#background,
-#directory,
-#issues,
-#principles,
-#resources,
-#partnership,
-#studies,
-#support{
-  margin-top: 40px;
+.content_margin_top{
+  margin-top: 300px;
 }
-
 
 #navigation.affix {
   position: fixed;
   top: 0;
-  width: 102%;
+  // width: 100%;
   z-index:10;
 }
 
 .nav{
   background-color: #f48d4e;
-  width:102%;
+  width:100%;
   text-align: center;
   margin: 0 auto;
+  height:130px;
 }
 
-.nav a{
+.nav-bottom{
+  height:auto !important;
+}
+
+.nav a,
+.nav_bottom a{
   color:white;
+}
+
+.dami_logo{
+  z-index:50;
+  position: relative;
+  top: -164px;
+  width: 137px;
+}
+
+.dami_logo_home{
+  z-index:50;
+  position: relative;
+  top: 11px;
+  width: 137px;
 }
 
 .nav-tabs{
@@ -267,30 +521,417 @@ nav li a:hover{
   padding:0;
 }
 
-.nav ul{
-
-}
-
 .nav-tabs>li {
   float: none !important;
   display:inline-block  !important;
+  margin:0px !important;
 }
 
+.nav-tabs > li > a{
+  border: 0px solid transparent !important;
+  margin:0px !important;
+}
 
 .nav-tabs > li > a:hover{
   background-color: #6496cc !important;
-  border: medium none;
   border-radius: 0;
   color:#fff;
 }
 
-#studies a{
-  color:#f48d4e;
+.active_page_top{
+  border-bottom:5px white solid !important;
+}
+
+.active_page_bottom{
+  border-top:2px white solid !important;
 }
 
 
-/* pages */
+/* About */
 
-.gold {
-  color: #f48d4e;
+#about{
+  background-color: #315e92;
+}
+
+.about_bio{
+  text-align: center;
+  margin:30px 0px;
+}
+
+.about_bio_name{
+  font-size:36px;
+  width:240px;
+  margin:0 auto;
+}
+
+.about_border{
+  border-bottom: 3px white solid;
+  width:50px;
+  margin:20px auto;
+}
+
+.about_bio_descrip{
+  font-size:18px;
+  max-width:432px;
+  margin:0 auto;
+  // white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  // height:265px;
+  line-height: 30px;
+}
+
+.line_clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.about_staff{
+  background-color: #232f63;
+  padding: 150px 0px;
+  min-height:620px;
+}
+
+.about_staff_title{
+  font-size:36px;
+  margin:10px auto;
+  text-align:center;
+}
+
+.about_staff_title img {
+  display:block;
+}
+
+.about_staff_descrip{
+  line-height:18px;
+  margin-bottom:40px;
+}
+
+
+
+/* Principles */
+#principles{
+  background-color: #315e92;
+  padding-bottom:100px;
+}
+
+#principles .container p{
+  background-color: #232f63;
+  max-width:894px;
+  padding:40px 50px;
+  margin:25px auto;
+}
+
+/* Studies */
+#studies{
+  background-color: #315e92;
+  padding-bottom:100px;
+}
+
+#studies a{
+  color:white;
+  text-decoration: none;
+}
+
+.studies_link{
+  padding:20px 40px;
+  background-color: #232f63;
+  margin:20px 0px;
+  display:inline-block;
+}
+
+/* Resources */
+#resources{
+  background-color: #315e92;
+  padding-bottom:100px;
+}
+
+.resource_block{
+  margin: 40px 0px 10px 0px;
+  max-width: 432px;
+  min-height:300px;
+  background-color: #f48d4e;
+  padding: 25px;
+  text-align: center;
+  font-size: 21px;
+}
+
+.resource_block div{
+  margin-bottom:20px;
+}
+.address_block {
+  margin: 40px auto 10px;
+  max-width: 432px;
+  height:300px;
+  background-color: #232f63;
+  padding: 0px 25px;;
+  font-size: 21px;
+}
+
+.address_block span{
+  line-height: 30px;
+}
+
+.address_block p{
+  line-height: 16px;
+}
+
+.address_border{
+  border-bottom: 2px white solid;
+  width:35px;
+  margin:10px 0px;
+}
+
+.resource_button_block{
+  position: relative;
+  bottom: -260px;
+  // left: 50px;
+  width: 100%;
+}
+
+.resource_address_block{
+  position: relative;
+  top:0px;
+  // left: 50px;
+  width: 100%;
+}
+
+.resource_button_block a,
+.resource_button_block a:hover,
+.resource_button_block a:visited{
+  text-decoration: none;
+}
+
+.resource_border{
+  border-bottom: 2px white solid;
+  width:35px;
+  margin:10px auto;
+}
+
+.resource_button{
+  background-color: #f48d4e;
+  width:100%;
+  color:white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+
+
+/* Background */
+
+#background .container{
+  max-width:894px;
+}
+
+.dark_blue{
+  background-color: #232f63;
+}
+
+.light_blue{
+  background-color: #315e92;
+}
+
+.lighter_blue{
+  background-color: #6496cc;
+}
+
+.background_padding_top{
+  padding-bottom:120px;
+}
+
+.background_padding{
+  padding:120px 0px
+}
+
+/* Action */
+#action{
+  background-color: #315e92;
+  padding-bottom:100px;
+}
+
+#action .container p{
+  background-color: #232f63;
+  max-width:894px;
+  padding:40px 50px;
+  margin:25px auto;
+}
+
+/* Partners */
+#partners{
+  background-color: #315e92;
+  padding-bottom:100px;
+}
+
+.partner{
+  margin:40px 0px;
+  height:105px;
+}
+
+.partner a{
+  color:white;
+  text-decoration: none;
+}
+
+.partner a:hover{
+  color:inherit;
+  text-decoration: none;
+
+}
+
+.logo_box{
+  margin:0 auto;
+  text-align: center;
+}
+
+.logo_box img{
+  max-width:240px;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 991px) {
+
+  .bio_pic{
+    height:460px;
+  }
+
+  .what_we_say_block{
+    height: 400px;
+  }
+
+  #next,
+  #previous{
+    font-size:48px;
+  }
+
+  .about_staff_descrip p{
+    font-size:14px !important;
+  }
+
+  .about_bio_descrip{
+    max-width:100%;
+  }
+
+  .address_block{
+    height:380px;
+  }
+
+  .resource_button_block{
+    bottom:-300px;
+  }
+
+
+  // .resource_button{
+  //   font-size:16px;
+  //   padding:5px;
+  // }
+
+}
+
+@media (max-width: 767px) {
+
+  .highlight_text{
+    width:80%;
+    left:10%;
+  }
+
+  .what_we_say_block{
+    height: 300px;
+  }
+
+  #next,
+  #previous{
+    font-size:32px;
+  }
+
+  .resource_block,
+  .address_block{
+    max-width: 100%;
+    height:320px;
+  }
+
+  .resource_button_block{
+    bottom:-280px;
+  }
+
+  .highlight_text{
+    top:450px
+  }
+
+  #email{
+    width:150px;
+  }
+
+}
+
+@media (max-width: 715px) {
+  .dami_logo,
+  .dami_logo_home{
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .dami_logo,
+  .dami_logo_home{
+    visibility: hidden;
+  }
+
+  .header img {
+    top: 5px;
+    width: 80px;
+  }
+
+  .bio_pic_img{
+    height: 250px;
+    display: block;
+    width: 100% !important;
+  }
+
+  .bio_pic{
+    height:900px;
+  }
+
+  .highlight {
+    height: 700px;
+  }
+
+  .overlay{
+    height:700px;
+  }
+
+
+
+}
+
+@media (max-width: 520px) {
+
+  .email_bar{
+    height:80px;
+  }
+
+  #submit_button{
+    width:150px;
+  }
+
+  // .resource_block,
+  // .address_block{
+  //   height: 360px;
+  // }
+}
+
+@media (max-width: 460px) {
+
+  // .resource_block,
+  .address_block{
+    height: 380px;
+  }
+
+  .resource_button_block {
+    bottom: -300px;
+  }
 }

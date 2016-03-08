@@ -2,10 +2,10 @@ class StaticPagesController < ApplicationController
   def home
   end
 
-  def about
+  def leadership
   end
 
-  def background
+  def about_us
   end
 
   def issues
@@ -21,5 +21,15 @@ class StaticPagesController < ApplicationController
   end
 
   def studies
+  end
+
+  def new_user
+    if EmailValidator.valid?(params[:email])
+      UserNotifier.new_user_email(params[:email]).deliver_now
+      flash.discard[:success] = "Your email address has been received"
+    else
+      flash.discard[:danger] = "Invalid email address"
+    end
+    redirect_to :back
   end
 end

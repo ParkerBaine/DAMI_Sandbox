@@ -1,21 +1,71 @@
-<%= render 'layouts/navbar' %>
-<div class="container">
-  <div class="row" id="studies">
-    <div class="col-xs-12">
-      <h1>Studies</h1>
+<div class="page_wrap"  id="studies">
 
-      <h3>Diversity in Asset Management</h3>
-      <%= link_to "Silicon Valley Report", "http://www.siliconvalleycf.org/sites/default/files/publications/investment-manager-diversity-hardest-taboo-to-break-casestudy.pdf
-      http://www.abfe.org/wp-content/uploads/2014/10/White+Paper+-+Who+Manages+the+Money+14.pdf_path" %>
+  <div id="nav_partial">
+    <ul class="nav nav-tabs">
+      <li><%= link_to 'Home', root_path %></li>
+      <li><%= link_to 'About Us', static_pages_about_us_path %></li>
+      <li><%= link_to 'Leadership', static_pages_leadership_path %></li>
+      <li><%= link_to 'Principles',  static_pages_principles_path %></li>
+      <li><%= link_to 'Action', static_pages_action_path %></li>
+      <li class="active_page_top"><%= link_to 'Studies', static_pages_studies_path %></li>
+      <li><%= link_to 'Resources', static_pages_resources_path %></li>
+      <li><%= link_to 'Partners', static_pages_partners_path %></li>
+    </ul>
+    <%= render "email_banner" %>
+    <%= image_tag("dami_logo.png", :alt => "dami logo", :class => "img-responsive center-block dami_logo") %>
+  </div>
 
-      <%= link_to "NAIC Recognizing The Results", "http://www.naicpe.com/eventmobi/NAIC-RecognizingTheResults.pdf" %>
+  <div class="container">
+    <div class="row content_margin_top margin_center">
+      <div class="col-xs-12">
+        <div class="font_size_thirty_six margin_center">
+          Studies
+        </div>
+        <div class="about_border"></div>
 
-      <h3>Women in Alternative Investments</h3>
-      <%= link_to "Managed Funds Report", "http://www.managedfunds.org/wp-content/uploads/2011/08/HF-Pulse-Affirmative-Investing-June-2011-Letter.pdf
-      https://www.kpmg.com/BM/en/IssuesAndInsights/ArticlesPublications/Documents/Investments/2015-documents/Women-Alternative-Investments.pdf" %>
+        <div class="font_size_twenty_one">
+          Diversity in Asset Management
+        </div>
 
-      <h3>Investment Consultants</h3>
-      <%= link_to "Toigo Foundation Report", "http://www.toigofoundation.org/pdfs/acheiveing_market_share_growth.pdf" %>
+        <a href="/pdf/Silicon_Valley_Community_Foundation_Case_Study_Feb_2014.pdf" download="Silicon_Valley_Community_Foundation_Case_Study_Feb_2014.pdf", class="studies_link"><i class="fa fa-book"></i> Silicon Valley Report</a>
+        <a href="/pdf/WK_Kellogg_Foundation_Case_Study_Sept_2014.pdf" download="WK_Kellogg_Foundation_Case_Study_Sept_2014.pdf" class="studies_link"><i class="fa fa-book"></i> W.K. Kellogg Foundation Report</a>
+        <a href="/pdf/NAIC_KPMG_Report_Sept_2012.pdf" download="NAIC_KPMG_Report_Sept_2012.pdf" class="studies_link"><i class="fa fa-book"></i> NAIC Recognizing The Results</a>
+
+        <div class="font_size_twenty_one">
+          Women in Alternative Investments
+        </div>
+        <a href="/pdf/Barclays_Capital_Solutions_Group_Report_June_2011.pdf" download="Barclays_Capital_Solutions_Group_Report_June_2011.pdf", class="studies_link"><i class="fa fa-book"></i> Barclays Capital Affirmative Investing</a>
+        <a href="/pdf/KPMG_Study_Sept_2015.pdf" download="KPMG_Study_Sept_2015.pdf" class="studies_link"><i class="fa fa-book"></i> Managed Funds Report </a>
+
+
+
+
+        <div class="font_size_twenty_one">
+          Investment Consultants
+        </div>
+        <a href="/pdf/Robert_Toigo_Foundation_Survey_June_2004.pdf" download="Robert_Toigo_Foundation_Survey_June_2004.pdf" class="studies_link"><i class="fa fa-book"></i> Toigo Foundation Report </a>
+
+      </div>
     </div>
   </div>
+</div><!-- page_wrap -->
+
+
+<div class="footer">
+
+  <div>
+    <ul id="" class="nav nav-tabs nav-bottom" >
+      <li><%= link_to 'Home', root_path %></li>
+      <li><%= link_to 'About Us', static_pages_about_us_path %></li>
+      <li><%= link_to 'Leadership', static_pages_leadership_path %></li>
+      <li><%= link_to 'Principles',  static_pages_principles_path %></li>
+      <li><%= link_to 'Action', static_pages_action_path %></li>
+      <li class="active_page_bottom"><%= link_to 'Studies', static_pages_studies_path %></li>
+      <li><%= link_to 'Resources', static_pages_resources_path %></li>
+      <li><%= link_to 'Partners', static_pages_partners_path %></li>
+    </ul>
+  </div>
+
+  <%= render 'layouts/social' %>
+
 </div>

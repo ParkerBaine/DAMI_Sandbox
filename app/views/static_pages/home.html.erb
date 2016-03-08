@@ -1,17 +1,19 @@
+<div class="page_wrap">
 
-<div class="row">
   <div class="header">
-    <%= image_tag("dami_logo.png", :alt => "dami logo", :class => "img-responsive center-block") %>
-  </div>
+    <div class="logo_bar">
+      <%= image_tag("dami_logo.png", :alt => "dami logo", :class => "img-responsive") %>
+    </div><!-- logo_bar -->
+  </div><!-- header -->
 
-  <div class="col-xs-12">
 
-    <div class="highlight">
+  <div class="highlight">
+    <div class="overlay">
       <nav>
         <ul>
-          <li class="active"><%= link_to "Home", root_path %></li>
-          <li><%= link_to 'Background', static_pages_background_path %></li>
-          <li><%= link_to 'About', static_pages_about_path %></li>
+          <li class="active"><%= link_to "Home", root_path  %></li>
+          <li><%= link_to 'About Us', static_pages_about_us_path %></li>
+          <li><%= link_to 'Leadership', static_pages_leadership_path %></li>
           <li><%= link_to 'Principles', static_pages_principles_path %></li>
           <li><%= link_to 'Action', static_pages_action_path %></li>
           <li><%= link_to 'Studies', static_pages_studies_path %></li>
@@ -19,88 +21,287 @@
           <li><%= link_to 'Partners', static_pages_partners_path %></li>
         </ul>
       </nav>
-
-    </div>
-
-    <div class="overlay"></div>
+    </div><!-- overlay -->
+  </div><!-- highlight -->
 
 
-    <div class="highlight_text">
-      <p class="quote">
-        This initiative is an effort to increase business opportunities for both diverse asset managers and institutional investors, with a specific focus on public, corporate, faith and labor union pension funds as well as foundation and university endowments.
-      </p>
-    </div>
+  <div class="highlight_text">
+    <p class="quote">
+      The Diverse Asset Managers Initiative (DAMI) is an effort to increase the absolute number of, and assets under management by, diverse-owned asset management firms for institutional investors, with specific focus on public, corporate, faith and labor union pension funds as well as foundation and university endowments.
+    </p>
+  </div>
 
-    <div>
-      <ul id="navigation" class="nav nav-tabs" >
-        <li><%= link_to 'Home', root_path %></li>
-        <li><%= link_to 'Background', static_pages_background_path %></li>
-        <li><%= link_to 'About', static_pages_about_path %></li>
-        <li><%= link_to 'Principles',  static_pages_principles_path %></li>
-        <li><%= link_to 'Action', static_pages_action_path %></li>
-        <li><%= link_to 'Studies', static_pages_studies_path %></li>
-        <li><%= link_to 'Resources', static_pages_resources_path %></li>
-        <li><%= link_to 'Partners', static_pages_partners_path %></li>
-      </ul>
-    </div>
+  <div>
+    <ul id="navigation" class="nav nav-tabs" >
+      <li class="active_page_top"><%= link_to 'Home', root_path  %></li>
+      <li><%= link_to 'About Us', static_pages_about_us_path %></li>
+      <li><%= link_to 'Leadership', static_pages_leadership_path %></li>
+      <li><%= link_to 'Principles',  static_pages_principles_path %></li>
+      <li><%= link_to 'Action', static_pages_action_path %></li>
+      <li><%= link_to 'Studies', static_pages_studies_path %></li>
+      <li><%= link_to 'Resources', static_pages_resources_path %></li>
+      <li><%= link_to 'Partners', static_pages_partners_path %></li>
+      <%= image_tag("dami_logo.png", :alt => "dami logo", :class => "img-responsive center-block dami_logo_home") %>
+    </ul>
+  </div>
 
-    <div class="content_block col-xs-9 col-xs-offset-2">
-      <h3 class="sub_title">Who We Are</h3>
 
-      <p>
-        We are a consortium of financial services professionals, institutional investors, corporate and philanthropic board members and trade associations committed to raising awareness among institutional investors about the benefits and opportunities of investing funds with diverse asset managers.
-      </p>
+  <div class="who">
+    <%= render "email_banner" %>
 
-      <p>
-        Our Honorary Co-Chairs are: Mary Kay Henry, International President of Service Employees International Union; Alberto Ibargüen, President and CEO of the Knight Foundation; John W. Rogers, Jr., Chairman, CEO & Chief Investment Officer of Ariel Investments; and William A. Von Hoene, Jr., Senior Executive Vice President and Chief Strategy Officer of Exelon Corporation.
-      </p>
+    <div class="content_block">
+      <div class="sub_content_block">
+        <div class="sub_title"><h3>Who We Are</h3></div>
+        <div class="border"></div>
+
+        <p>
+          We are a consortium of financial services professionals, institutional investors, corporate and philanthropic board members and trade associations committed to raising awareness among institutional investors about the benefits and opportunities of investing funds with diverse asset managers.
+        </p>
+
+        <p>
+          Our Honorary Co-Chairs are:
+        </p>
+      </div><!-- sub_content_block -->
 
       <div class="bio_pic">
-        <%= image_tag("mary.png", :alt => "Mary") %>
-        <%= image_tag("alberto.png", :alt => "Albert") %>
-        <%= image_tag("john.png", :alt => "John Rodgers") %>
-        <%= image_tag("william.png", :alt => "William") %>
+        <div class="row">
+
+          <div class="col-xs-6 col-md-3 bio_pic_img">
+            <%= image_tag("mary.png", :alt => "Mary") %>
+            <div class="font_size_twenty_one">
+              Mary Kay Henry
+            </div>
+            <div class = "font_size_sixteen">
+              International President of Service Employees International Union
+            </div>
+          </div><div class="col-xs-6 col-md-3 bio_pic_img">
+            <%= image_tag("alberto.png", :alt => "Albert") %>
+            <div class="font_size_twenty_one">
+              Alberto Ibargüen
+            </div>
+            <div class = "font_size_sixteen">
+              President and CEO of the Knight Foundation
+            </div>
+          </div><div class="col-xs-6 col-md-3 bio_pic_img">
+            <%= image_tag("john.png", :alt => "John Rodgers") %>
+            <div class="font_size_twenty_one">
+              John W. Rogers, Jr.
+            </div>
+            <div class = "font_size_sixteen">
+              Chairman, CEO & Chief Investment Officer of Ariel Investments
+            </div>
+          </div><div class="col-xs-6 col-md-3 bio_pic_img">
+            <%= image_tag("william.png", :alt => "William") %>
+            <div class="font_size_twenty_one">
+              William A. Von Hoene, Jr.
+            </div>
+            <div class = "font_size_sixteen">
+              Senior Executive Vice President and Chief Strategy Officer of Exelon Corporation
+            </div>
+          </div>
+        </div>
       </div><!-- bio_pic -->
 
     </div><!-- content_block -->
+  </div>
+
+  <div class="what">
+    <div class="content_block">
+      <div class="sub_content_block">
+        <div class="sub_title"><h3>What We Have To Say</h3></div>
+        <div class="border"></div>
+
+        <!-- <p>
+        Diverse asset managers are severely underrepresented among the managers hired by institutional investors. Studies demonstrate that funds managed by diverse asset managers often yield greater performance results for their clients than the broader market. While there is a critical mass of high performing diverse asset managers, there is an inadequate demand for their services.
+      </p> -->
+
+    </div><!-- sub_content_block -->
+
+    <div class="what_we_say_block">
+
+      <div class="row">
+        <div class="col-xs-2">
+          <div id="previous">
+            <i class="fa fa-chevron-circle-left"></i>
+          </div>
+        </div>
+        <div class="col-xs-8">
+          <div class="focused_video">
+
+            <div class="row">
+
+              <div class="col-xs-12 why_pic_block" id="BillVonHoene">
+                <video width="640" height="480" controls="controls" class="video" poster="/images/William_A_Von_Hoene_Jr_screenshot.png">
+                  <source src="/videos/BillVonHoene2.mp4"/>
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+              <div class="col-xs-12 why_pic_block" id="JohnRogersJr">
+                <video width="640" height="480" controls="controls" class="video" poster="/images/John_W_Rogers_screenshot.png">
+                  <source src="/videos/JohnRogersJr2.mp4"/>
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+              <div class="col-xs-12 why_pic_block" id="KeithMestrich">
+                <video width="640" height="480" controls="controls" class="video" poster="/images/Keith_Mestrich_screenshot.png">
+                  <source src="/videos/KeithMestrich2.mp4"/>
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+              <div class="col-xs-12 why_pic_block" id="RobertGreen">
+                <video width="640" height="480" controls="controls" class="video" poster="/images/Robert_L_Greene_screenshot.png">
+                  <source src="/videos/RobertGreen2.mp4"/>
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+              <div class="col-xs-12 why_pic_block" id="RobertRaben">
+                <video width="640" height="480" controls="controls" class="video" poster="/images/Robert_Raben_screenshot.png">
+                  <source src="/videos/RobertRaben2.mp4"/>
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+              <div class="col-xs-12 why_pic_block" id="MaryKayHenry">
+                <video width="640" height="480" controls="controls" class="video" poster="/images/MaryKayHenry_screenshot.png">
+                  <source src="/videos/MaryKayHenry.mp4"/>
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+            </div><!-- row -->
+
+          </div><!-- focused_video -->
+
+        </div>
+        <div class="col-xs-2">
+          <div id="next">
+            <i class="fa fa-chevron-circle-right"></i>
+          </div>
+        </div>
+      </div>
 
 
-    <div class="content_block col-xs-9 col-xs-offset-2">
+    </div><!-- why_pics -->
 
-      <div class="sub_title_wrapper">
-        <div class="sub_title_why">
-          <h3>Why</h3>
-          <p>
-            Diverse asset managers are severely underrepresented among the managers hired by institutional investors. Studies demonstrate that funds managed by diverse asset managers often yield greater performance results for their clients than the broader market. While there is a critical mass of high performing diverse asset managers, there is an inadequate demand for their services.
-          </p>
+  </div><!-- content_block -->
+</div><!-- what -->
 
-          <p>
+<div class="why">
+  <div class="content_block">
+    <div class="sub_content_block">
+      <div class="sub_title"><h3>Why</h3></div>
+      <div class="border"></div>
+
+      <p>
+        Diverse asset managers are severely underrepresented among the managers hired by institutional investors. Studies demonstrate that funds managed by diverse asset managers often yield greater performance results for their clients than the broader market. While there is a critical mass of high performing diverse asset managers, there is an inadequate demand for their services.
+      </p>
+
+    </div><!-- sub_content_block -->
+
+    <div class="why_block">
+      <div class="row">
+
+        <div class="col-xs-12 col-sm-4 why_pic_block">
+          <div class="pub_image"><%= image_tag("Mao_151006_2219.png", :alt => "Mao_151006_2008.png") %></div>
+          <div class = "font_size_sixteen">
             We know that board Members and C-Suite executives play a critical role in providing direction on who should manage their institution’s assets and capital.
-          </p>
+          </div>
+        </div>
 
-          <p>
+        <div class="col-xs-12 col-sm-4 why_pic_block">
+          <div class="pub_image"><%= image_tag("Mao_151006_2019.png", :alt => "Mao_151006_2008.png") %></div>
+          <div class = "font_size_sixteen">
             We know that, externally, investment consultants play a key role in linking institutional investors to asset managers.
-          </p>
+          </div>
+        </div>
 
-          <p>
+        <div class="col-xs-12 col-sm-4 why_pic_block">
+          <div class="pub_image"><%= image_tag("Mao_151006_2215.png", :alt => "Mao_151006_2008.png") %></div>
+          <div class = "font_size_sixteen">
             We know that there is a need to increase the number of policies at the state and federal level to ensure diverse asset managers have a greater opportunity to participate in the management of public funds.
+          </div>
+        </div>
+
+      </div><!-- row -->
+    </div><!-- why_pics -->
+
+  </div><!-- content_block -->
+</div><!-- why -->
+
+<div class="how">
+  <div class="content_block">
+    <div class="sub_content_block">
+      <div class="sub_title"><h3>How</h3></div>
+      <div class="border"></div>
+
+      <p>
+        The initiative will focus on educating and raising awareness with key decision makers at public, corporate, faith and labor union pension funds as well as foundation and university endowments about the supply of high performing, diverse asset managers. We will share studies about the inadequate demand for diverse asset managers by institutional investors despite the number of existing high performers. We will urge the decision makers to proactively address the barriers that prevent them from diversifying the set of managers overseeing their funds.
+      </p>
+
+      <div class="row">
+
+        <div class="col-xs-12 col-sm-4">
+          <div class="pub_image"><%= image_tag("Mao_151006_2008.png", :alt => "Mao_151006_2008.png") %></div>
+        </div>
+
+        <div class="col-xs-12 col-sm-8">
+          <p>
+            The initiative will partner with investment consultants to educate them about the opportunity to diversify existing pools of investment managers that they recommend to their institutional clients and help them to meet their fiduciary responsibilities to their clients. Finally, we will market, network and connect the high- performing world of diverse asset managers with the more traditional investing community.
           </p>
-        </div><!-- sub_title_why -->
-      </div><!-- sub_title_wrapper -->
+        </div>
 
-      <div class="sub_title_how">
-        <h3>How</h3>
-        <p>
-          The initiative will focus on educating and raising awareness with key decision makers at public, corporate, faith and labor union pension funds as well as foundation and university endowments about the supply of high performing, diverse asset managers. We will share studies about the inadequate demand for diverse asset managers by institutional investors despite the number of existing high performers. We will urge the decision makers to proactively address the barriers that prevent them from diversifying the set of managers overseeing their funds.
-        </p>
+      </div>
 
-        <p>
-          The initiative will partner with investment consultants to educate them about the opportunity to diversify existing pools of investment managers that they recommend to their institutional clients and help them to meet their fiduciary responsibilities to their clients. Finally, we will market, network and connect the high- performing world of diverse asset managers with the more traditional investing community.
-        </p>
+    </div><!-- sub_content_block -->
+  </div><!-- content_block -->
+</div><!-- how -->
 
-        <p>
-          The goal of the initiative is to build a vibrant, coordinated effort to change the culture of the financial services industry as it relates to asset managers. Success will be achieved when there is common knowledge in the industry of the existence of numerous, high performing diverse asset managers and when they are valued and seamlessly considered by institutional investors. The measurement of success will be the increased use of diverse asset managers by institutional investors and the amount of assets under their management.
-        </p>
-      </div><!-- sub_title_how -->
+<div class="goal">
+  <div class="content_block">
+    <div class="sub_content_block">
+      <div class="sub_title"><h3>Goal</h3></div>
+      <div class="border"></div>
 
-    </div><!-- content_block -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-8">
+          <p>
+            The goal of the initiative is to build a vibrant, coordinated effort to change the culture of the financial services industry as it relates to asset managers. Success will be achieved when there is common knowledge in the industry of the existence of numerous, high performing diverse asset managers and when they are valued and seamlessly considered by institutional investors. The measurement of success will be the increased use of diverse asset managers by institutional investors and the amount of assets under their management.
+          </p>
+        </div>
+
+        <div class="col-xs-12 col-sm-4">
+          <div class="pub_image"><%= image_tag("Mao_151006_2182.png", :alt => "Mao_151006_2008.png") %></div>
+        </div>
+      </div>
+
+    </div><!-- sub_content_block -->
+  </div><!-- content_block -->
+</div><!-- how -->
+
+
+</div><!-- row -->
+
+</div><!-- page_wrap -->
+
+
+<div class="footer">
+  <div>
+    <ul id="" class="nav nav-tabs nav-bottom" >
+      <li class="active_page_bottom"><%= link_to 'Home', root_path %></li>
+      <li><%= link_to 'About Us', static_pages_about_us_path %></li>
+      <li><%= link_to 'Leadership', static_pages_leadership_path %></li>
+      <li><%= link_to 'Principles',  static_pages_principles_path %></li>
+      <li><%= link_to 'Action', static_pages_action_path %></li>
+      <li><%= link_to 'Studies', static_pages_studies_path %></li>
+      <li><%= link_to 'Resources', static_pages_resources_path %></li>
+      <li><%= link_to 'Partners', static_pages_partners_path %></li>
+    </ul>
+  </div>
+
+  <%= render 'layouts/social' %>
+
+</div>
