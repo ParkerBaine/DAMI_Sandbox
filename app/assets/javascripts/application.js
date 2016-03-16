@@ -38,6 +38,7 @@ $(document).ready(function(){
   $("#previous").css("height",video_height+"px")
   $("#previous").css("line-height",video_height+"px")
 
+
   youtubeIDS= ["-r5sYM2QiLc", "x5M847mtztQ", "TSKMBKC6v4g", "D7H5drWbJEU", "ANASaTvVA-k", "kakK4GzMR90"]
   total_videos = youtubeIDS.length;
   video_index = 0;
