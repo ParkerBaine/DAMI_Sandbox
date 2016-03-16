@@ -30,7 +30,7 @@ $(document).ready(function(){
   /* Video Controls & Size */
 
   video_width = parseInt($(".why_pic_block").width());
-  video_height = video_width * 0.75;
+  video_height = video_width * 0.6;
   $("video").attr("width",video_width)
   $("video").attr("height",video_height)
   $("#next").css("height",video_height+"px")
@@ -38,20 +38,14 @@ $(document).ready(function(){
   $("#previous").css("height",video_height+"px")
   $("#previous").css("line-height",video_height+"px")
 
-  videoIDs = ["BillVonHoene", "JohnRogersJr", "MaryKayHenry", "KeithMestrich", "RobertGreen", "RobertRaben"]
+  youtubeIDS= ["-r5sYM2QiLc", "x5M847mtztQ", "TSKMBKC6v4g", "D7H5drWbJEU", "ANASaTvVA-k", "kakK4GzMR90"]
+  total_videos = youtubeIDS.length;
   video_index = 0;
-  total_videos = videoIDs.length;
-  $("#JohnRogersJr").hide();
-  $("#KeithMestrich").hide();
-  $("#RobertGreen").hide();
-  $("#RobertRaben").hide();
-  $("#MaryKayHenry").hide();
-
-  $(window).resize(function() {
-    video_width = parseInt($(".why_pic_block").width());
-    video_height = video_width * 0.75;
-    $("video").attr("width",video_width)
-    $("video").attr("height",video_height)
+   $(window).resize(function() {
+    video_width = parseInt($(".video_block").width());
+    video_height = video_width * 0.5625;
+    $("iframe").attr("width",video_width)
+    $("iframe").attr("height",video_height)
     $("#next").css("height",video_height+"px")
     $("#next").css("line-height",video_height+"px")
     $("#previous").css("height",video_height+"px")
@@ -59,28 +53,23 @@ $(document).ready(function(){
   });
 
   $("#next").on("click", function(){
-    $("#"+videoIDs[video_index]).hide();
-    $(".video")[video_index].pause();
     if (video_index == (total_videos-1)){
       video_index = 0;
     }
     else{
       video_index++;
     }
-    $("#"+videoIDs[video_index]).show();
+    $(".video_block iframe").attr("src","http://www.youtube.com/v/"+youtubeIDS[video_index]+"?autohide=1");
   })
 
   $("#previous").on("click", function(){
-    $("#"+videoIDs[video_index]).hide();
-    $(".video")[video_index].pause();
-
     if (video_index == 0){
       video_index = total_videos - 1;
     }
     else{
       video_index--;
     }
-    $("#"+videoIDs[video_index]).show();
+    $(".video_block iframe").attr("src","http://www.youtube.com/v/"+youtubeIDS[video_index]+"?autohide=1");
   })
 
 })
