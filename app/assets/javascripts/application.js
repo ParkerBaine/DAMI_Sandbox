@@ -39,14 +39,29 @@ $(document).ready(function(){
   $("#previous").css("line-height",video_height+"px")
 
 
-  youtubeIDS= ["-r5sYM2QiLc", "x5M847mtztQ", "TSKMBKC6v4g", "D7H5drWbJEU", "ANASaTvVA-k", "kakK4GzMR90"]
-  total_videos = youtubeIDS.length;
+  videoIDs = ["BillVonHoene", "JohnRogersJr", "MaryKayHenry", "KeithMestrich", "RobertGreen", "RobertRaben"]
   video_index = 0;
-   $(window).resize(function() {
+  total_videos = videoIDs.length;
+  $("#JohnRogersJr").hide();
+  $("#KeithMestrich").hide();
+  $("#RobertGreen").hide();
+  $("#RobertRaben").hide();
+  $("#MaryKayHenry").hide();
+
+
+  video_width = parseInt($(".video_block").width());
+  video_height = video_width * 0.5625;
+  $("#next").css("height",video_height+"px")
+  $("#next").css("line-height",video_height+"px")
+  $("#previous").css("height",video_height+"px")
+  $("#previous").css("line-height",video_height+"px")
+
+
+  $(window).resize(function() {
     video_width = parseInt($(".video_block").width());
     video_height = video_width * 0.5625;
-    $("iframe").attr("width",video_width)
-    $("iframe").attr("height",video_height)
+    // $("iframe").attr("width",video_width)
+    // $("iframe").attr("height",video_height)
     $("#next").css("height",video_height+"px")
     $("#next").css("line-height",video_height+"px")
     $("#previous").css("height",video_height+"px")
@@ -54,23 +69,25 @@ $(document).ready(function(){
   });
 
   $("#next").on("click", function(){
+    $("#"+videoIDs[video_index]).hide();
     if (video_index == (total_videos-1)){
       video_index = 0;
     }
     else{
       video_index++;
     }
-    $(".video_block iframe").attr("src","http://www.youtube.com/v/"+youtubeIDS[video_index]+"?autohide=1");
+    $("#"+videoIDs[video_index]).show();
   })
 
   $("#previous").on("click", function(){
+    $("#"+videoIDs[video_index]).hide();
     if (video_index == 0){
       video_index = total_videos - 1;
     }
     else{
       video_index--;
     }
-    $(".video_block iframe").attr("src","http://www.youtube.com/v/"+youtubeIDS[video_index]+"?autohide=1");
+    $("#"+videoIDs[video_index]).show();
   })
 
 })
