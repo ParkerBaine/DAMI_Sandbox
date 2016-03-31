@@ -97,7 +97,7 @@ $(document).ready(function(){
 
     var inputq1 = encodeURIComponent($("#email_address").val());
     var q1ID = "entry.868851441";
-    var baseURL = "http://docs.google.com/a/dupontstudios.com/forms/d/18ZEavDDQdQSZuo8ORI7tWXDErB-tOsOxYRoLUc1wJ_U/formResponse?";
+    var baseURL = "//docs.google.com/a/dupontstudios.com/forms/d/18ZEavDDQdQSZuo8ORI7tWXDErB-tOsOxYRoLUc1wJ_U/formResponse?";
     var submitRef = "submit=Submit";
     var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + submitRef);
 
