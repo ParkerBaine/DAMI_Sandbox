@@ -93,8 +93,9 @@ $(document).ready(function(){
   /*********** Sending email address to Google Form **********/
 
   $("#email_address_form").one("submit", function(event){
+    console.log("before prevent")
     event.preventDefault();
-
+    console.log("after prevent")
     var inputq1 = encodeURIComponent($("#email_address").val());
     var q1ID = "entry.868851441";
     var baseURL = "//docs.google.com/a/dupontstudios.com/forms/d/18ZEavDDQdQSZuo8ORI7tWXDErB-tOsOxYRoLUc1wJ_U/formResponse?";
@@ -105,8 +106,8 @@ $(document).ready(function(){
     $(this).submit();
     $("input").each(function(){
       $(this).val("");
+      // $(this).attr("disabled","true");
     });
-
     $(".email_status").text("Your email address has been received")
   })
 
