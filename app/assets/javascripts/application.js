@@ -16,6 +16,7 @@
 //= require_tree .
 
 $(document).ready(function(){
+
   $('#navigation').affix({
     offset: {
       top: $(".highlight").height()-25
@@ -87,6 +88,29 @@ $(document).ready(function(){
     $("#"+videoIDs[video_index]).show();
   })
 
+
+
+  /*********** Sending email address to Google Form **********/
+
+  $("#email_address_form").one("submit", function(event){
+    event.preventDefault();
+
+    var inputq1 = encodeURIComponent($("#email_address").val());
+    var q1ID = "entry.868851441";
+    var baseURL = "https://docs.google.com/a/dupontstudios.com/forms/d/18ZEavDDQdQSZuo8ORI7tWXDErB-tOsOxYRoLUc1wJ_U/formResponse?";
+    var submitRef = "submit=Submit";
+    var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + submitRef);
+
+    $(this)[0].action=submitURL;
+    $(this).submit();
+    $("input").each(function(){
+      $(this).val("");
+    });
+
+    $(".email_status").text("Your email address has been received")
+  })
+
+
 })
 
 
@@ -102,37 +126,6 @@ $(document).on('page:load', function(){
     $(".dami_logo").css("top","-74px")
   })
 
-/*********** Sending email address to Google Form **********/
-
-$(".inquiry_form").one("submit", function(event){
-  event.preventDefault();
-
-  var inputq1 = encodeURIComponent($("#inquiry_first_name").val());
-
-  var q1ID = "entry.75592072";
-
-  var baseURL = "https://docs.google.com/a/dupontstudios.com/forms/d/17RLSXep_GPWN12E4dMvyPGya5UoIlvkfYROizQCMK6U/formResponse?";
-  var submitRef = "submit=Submit";
-  var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + submitRef);
-  console.log(submitURL);
-  $(this)[0].action=submitURL;
-  $(this).submit();
-  $(".form-control").each(function(){
-    $(this).val("");
-  });
-  // $(".inquiry_title").text("Information Received");
-  // $(".inquiry_subtitle").text("Thank you!");
-
-  $(".inquiry_title").fadeOut("slow", function(){
-    $(this).text("Information Received")
-    $(this).fadeIn("slow")
-  });
-  $(".inquiry_subtitle").fadeOut("slow", function(){
-    $(this).text("Thank you!")
-    $(this).fadeIn("slow")
-  });
-  // $(".inquiry_subtitle").fadeout(500);
-})
 
 
 
