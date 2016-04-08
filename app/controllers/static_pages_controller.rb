@@ -23,6 +23,9 @@ class StaticPagesController < ApplicationController
   def studies
   end
 
+  def news
+  end
+
   def new_user
     if EmailValidator.valid?(params[:email])
       UserNotifier.new_user_email(params[:email]).deliver_now

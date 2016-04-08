@@ -1,0 +1,57 @@
+<div class="page_wrap"  id="news">
+
+  <div id="nav_partial">
+    <ul class="nav nav-tabs">
+      <li><%= link_to 'Home', root_path %></li>
+      <li><%= link_to 'About Us', static_pages_about_us_path %></li>
+      <li><%= link_to 'Leadership', static_pages_leadership_path %></li>
+      <li><%= link_to 'Principles',  static_pages_principles_path %></li>
+      <li><%= link_to 'Action', static_pages_action_path %></li>
+      <li><%= link_to 'Studies', static_pages_studies_path %></li>
+      <li><%= link_to 'Resources', static_pages_resources_path %></li>
+      <li><%= link_to 'Partners', static_pages_partners_path %></li>
+    </ul>
+    <%= render "email_banner" %>
+    <%= image_tag("dami_logo.png", :alt => "dami logo", :class => "img-responsive center-block dami_logo") %>
+  </div>
+
+  <div class="container">
+    <div class="row content_margin_top margin_center">
+      <div class="col-xs-12">
+        <div class="font_size_thirty_six margin_center">
+          In the News
+        </div>
+        <div class="about_border"></div>
+        <!-- <embed src="/pdf/NAIC-Diverse Asset Managers Initiative Article.pdf" width="600" height="375" type='application/pdf'> -->
+
+        <object WMODE="transparent" data="/pdf/NAIC-Diverse Asset Managers Initiative Article.pdf" type="application/pdf" width="90%" height="400">
+          alt : <a href="/pdf/NAIC-Diverse Asset Managers Initiative Article.pdf">NAIC-Diverse Asset Managers Initiative Article.pdf</a>
+        </object>
+
+        <object data="/pdf/Emerging Manager Monthly (April 2016) - DAMI Article.pdf" type="application/pdf" width="90%" height="400">
+          alt : <a href="/pdf/Emerging Manager Monthly (April 2016) - DAMI Article.pdf">Emerging Manager Monthly (April 2016) - DAMI Article.pdf</a>
+        </object>
+      </div>
+    </div>
+  </div>
+</div><!-- page_wrap -->
+
+
+<div class="footer">
+
+  <div>
+    <ul id="" class="nav nav-tabs nav-bottom" >
+      <li><%= link_to 'Home', root_path %></li>
+      <li><%= link_to 'About Us', static_pages_about_us_path %></li>
+      <li><%= link_to 'Leadership', static_pages_leadership_path %></li>
+      <li><%= link_to 'Principles',  static_pages_principles_path %></li>
+      <li><%= link_to 'Action', static_pages_action_path %></li>
+      <li><%= link_to 'Studies', static_pages_studies_path %></li>
+      <li><%= link_to 'Resources', static_pages_resources_path %></li>
+      <li><%= link_to 'Partners', static_pages_partners_path %></li>
+    </ul>
+  </div>
+
+  <%= render 'layouts/social' %>
+
+</div>
