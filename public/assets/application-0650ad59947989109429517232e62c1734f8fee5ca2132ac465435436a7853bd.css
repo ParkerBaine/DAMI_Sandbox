@@ -1,0 +1,1075 @@
+/* Site Wide */
+/* line 4, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 8, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+body {
+  background-color: #232f63 !important;
+  font-family: 'Open Sans', 'Myriad Pro', 'Source Sans Pro', sans-serif !important;
+  color: white !important;
+}
+
+/* line 15, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.container {
+  width: 80% !important;
+}
+
+/* line 19, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.container p {
+  font-size: 16px;
+}
+
+/* line 23, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.col-xs-12 {
+  color: white;
+}
+
+/* line 27, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.page_wrap {
+  min-height: 72%;
+}
+
+/* line 31, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+/* line 36, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.footer, .page-wrap:after {
+  height: 174px;
+}
+
+/* line 40, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.footer {
+  background-color: #f48d4e;
+}
+
+/* line 44, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.social_bar, .copyright {
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+
+/* line 50, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.social_bar {
+  margin-top: 50px;
+}
+
+/* line 54, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.copyright {
+  margin-top: 20px;
+}
+
+/* line 58, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.social_bar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 63, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.social_bar i {
+  margin: 0px 10px;
+}
+
+/* line 67, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.header {
+  height: 90px;
+  background-color: #f48d4e;
+  z-index: 10;
+}
+
+/* line 74, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.home_email_bar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 60px;
+  width: 100%;
+  margin: 0 !important;
+}
+
+/* line 83, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.email_bar {
+  width: 100%;
+  height: 90px;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid #315e92 !important;
+  background-color: #315e92;
+  padding: 10px 35px 10px 15px !important;
+}
+
+/* line 93, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.email_bar button {
+  color: white !important;
+  opacity: .9;
+}
+
+/* line 98, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+#email {
+  width: 250px;
+  color: black;
+}
+
+/* line 103, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+#email_address {
+  color: black;
+}
+
+/* line 109, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.email_status {
+  height: 10px;
+}
+
+/* line 114, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+#submit_button {
+  background-color: #232f63;
+  color: white;
+  border: none;
+}
+
+/* line 120, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+#close_button {
+  position: absolute;
+  top: -18px;
+  right: 0px;
+}
+
+/* line 126, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.error_message {
+  height: 10px;
+}
+
+/* line 130, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.logo_bar {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  width: 100%;
+}
+
+/* line 137, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.logo_bar img {
+  position: relative;
+  top: -50px;
+  width: 149px;
+  z-index: 10;
+  margin: 0 auto;
+}
+
+/* line 145, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.no_text_decoration {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 150, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.no_text_decoration:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 155, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.twenty_px_margin {
+  margin: 20px 0px;
+}
+
+/* Font Sizes */
+/* line 161, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.font_size_twenty_four {
+  font-size: 24px !important;
+}
+
+/* line 165, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.font_size_twenty_one {
+  font-size: 21px !important;
+}
+
+/* line 169, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.font_size_sixteen {
+  font-size: 16px;
+}
+
+/* line 173, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.font_size_eighteen {
+  font-size: 18px !important;
+  line-height: 30px;
+}
+
+/* line 178, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.font_size_thirty_six {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+/* line 183, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 187, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.italic {
+  font-style: italic;
+}
+
+/* line 191, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.red {
+  color: red;
+}
+
+/* line 195, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.white {
+  color: white;
+}
+
+/* line 199, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.orange {
+  color: #f48d4e;
+}
+
+/* Justification */
+/* line 205, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.justify {
+  text-align: justify;
+}
+
+/* line 209, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.margin_center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 214, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.center-block {
+  margin: 0 auto;
+}
+
+/* line 218, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.left _align {
+  text-align: right;
+}
+
+/* Home Page */
+/* line 224, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.highlight {
+  font-size: 1.5em;
+  padding: 180px 0px 0px 0px;
+  font-color: white !important;
+  background: url(../images/dami_hero1.jpg) no-repeat left center scroll;
+  background-size: 100% 100%;
+  height: 620px;
+  width: 100%;
+  z-index: 1;
+}
+
+/* line 235, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.overlay {
+  background-color: rgba(48, 62, 122, 0.8);
+  height: 620px;
+  width: 100%;
+  position: absolute;
+  top: 90px;
+  z-index: 5;
+}
+
+/* line 244, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.highlight p {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 250, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.highlight_text {
+  position: absolute;
+  top: 330px;
+  left: 24%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 10;
+  font-size: 1.5em;
+  width: 52%;
+}
+
+/* line 262, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.content_block {
+  margin: 0 auto;
+  width: 82%;
+  max-width: 1160px;
+  padding: 60px 0px;
+}
+
+/* line 269, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.sub_content_block {
+  width: 77%;
+  max-width: 894px;
+  margin: 35px auto;
+}
+
+/* line 275, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.sub_content_block p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* line 280, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.sub_title {
+  line-height: 30px;
+  font-size: 36px;
+}
+
+/* line 285, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.border {
+  border-bottom: 3px white solid;
+  width: 50px;
+  margin: 20px 0px;
+}
+
+/* line 291, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.who, .why, .goal {
+  background-color: #232f63;
+}
+
+/* line 295, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.what, .how {
+  background-color: #315e92;
+}
+
+/* line 299, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.bio_pic {
+  height: 300px;
+  margin: 35px 0px;
+}
+
+/* line 304, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.what_we_say_block {
+  height: 550px;
+  margin: 35px 0px;
+}
+
+/* line 309, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.why_block {
+  height: 350px;
+}
+
+/* line 313, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.bio_pic_img, .why_pic_block {
+  text-align: center;
+  height: 250px;
+  vertical-align: top;
+}
+
+/* line 319, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.bio_pic_img img {
+  margin: 0 auto;
+}
+
+/* line 323, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+#next,
+#previous {
+  cursor: pointer;
+  height: 480px;
+  line-height: 480px;
+  text-align: center;
+  font-size: 64px;
+}
+
+/* line 332, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.blue_circle, .light_blue_circle {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+/* line 339, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.blue_circle {
+  background-color: #232f63;
+}
+
+/* line 343, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.light_blue_circle {
+  background-color: #315e92;
+}
+
+/* line 347, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.blue_square {
+  width: 260px;
+  height: 220px;
+  background-color: #315e92;
+  margin: 10px auto;
+}
+
+/* line 354, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.light_blue_square {
+  width: 260px;
+  height: 220px;
+  background-color: #232f63;
+  margin: 10px auto;
+}
+
+/* line 361, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.pub_image {
+  width: 100%;
+  margin: 10px auto;
+}
+
+/* line 366, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.pub_image img {
+  width: 100%;
+}
+
+/* line 370, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.title {
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 20px 0px 0px 0px;
+  color: #365dd1;
+}
+
+/* Vertical Navbar */
+/* line 379, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+nav {
+  margin-top: -170px;
+  z-index: 2f0;
+  position: absolute;
+  top: 180px;
+}
+
+/* line 386, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+nav:after {
+  clear: both;
+}
+
+/* line 389, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 260px;
+}
+
+/* line 396, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+nav li a {
+  color: white;
+  display: table;
+  background-color: #f48d4e;
+  margin-bottom: 3px;
+  height: 40px;
+  text-indent: 55px;
+  padding-right: 20px;
+  line-height: 40px;
+  font-size: 18px;
+  min-width: 180px;
+}
+
+/* line 409, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+nav li a:hover {
+  background-color: #6496cc;
+  text-decoration: none;
+  color: white;
+  text-indent: 75px;
+  min-width: 195px;
+}
+
+/* line 417, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.active a {
+  background-color: white;
+  color: #f48d4e;
+  display: inline-block;
+  position: relative;
+}
+
+/* line 424, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.active a:hover {
+  background-color: white;
+  color: #f48d4e;
+  display: inline-block;
+  position: relative;
+  text-indent: 55px;
+  padding-right: 20px;
+}
+
+/* line 433, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.active a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-top: -20px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid white;
+}
+
+/* Horizontal Navbar */
+/* line 450, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+#navigation {
+  position: absolute;
+  top: -500px;
+  background-color: #f48d4e;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 459, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+#nav_partial {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 40px;
+}
+
+/* line 467, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.content_margin_top {
+  margin-top: 300px;
+}
+
+/* line 471, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+#navigation.affix {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+/* line 477, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.nav {
+  background-color: #f48d4e;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  height: 130px;
+}
+
+/* line 485, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.nav-bottom {
+  height: auto !important;
+}
+
+/* line 489, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.nav a,
+.nav_bottom a {
+  color: white;
+}
+
+/* line 494, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.dami_logo {
+  z-index: 50;
+  position: relative;
+  top: -164px;
+  width: 137px;
+}
+
+/* line 501, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.dami_logo_home {
+  z-index: 50;
+  position: relative;
+  top: 11px;
+  width: 137px;
+}
+
+/* line 508, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.nav-tabs {
+  border: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 514, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.nav-tabs > li {
+  float: none !important;
+  display: inline-block  !important;
+  margin: 0px !important;
+}
+
+/* line 520, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.nav-tabs > li > a {
+  border: 0px solid transparent !important;
+  margin: 0px !important;
+}
+
+/* line 525, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.nav-tabs > li > a:hover {
+  background-color: #6496cc !important;
+  border-radius: 0;
+  color: #fff;
+}
+
+/* line 531, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.active_page_top {
+  border-bottom: 5px white solid !important;
+}
+
+/* line 535, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.active_page_bottom {
+  border-top: 2px white solid !important;
+}
+
+/* line 539, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.poster {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* line 544, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+iframe {
+  width: 100%;
+  border: none;
+}
+
+/* About */
+/* line 552, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+#about {
+  background-color: #315e92;
+}
+
+/* line 556, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.about_bio {
+  text-align: center;
+  margin: 30px 0px;
+}
+
+/* line 561, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.about_bio_name {
+  font-size: 36px;
+  width: 240px;
+  margin: 0 auto;
+}
+
+/* line 567, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.about_border {
+  border-bottom: 3px white solid;
+  width: 50px;
+  margin: 20px auto;
+}
+
+/* line 573, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.about_bio_descrip {
+  font-size: 18px;
+  max-width: 432px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 30px;
+}
+
+/* line 582, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.line_clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+/* line 587, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.about_staff {
+  background-color: #232f63;
+  padding: 150px 0px;
+  min-height: 620px;
+}
+
+/* line 593, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.about_staff_title {
+  font-size: 36px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+/* line 599, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.about_staff_title img {
+  display: block;
+}
+
+/* line 603, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.about_staff_descrip {
+  line-height: 18px;
+  margin-bottom: 40px;
+}
+
+/* Principles */
+/* line 609, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+#principles {
+  background-color: #315e92;
+  padding-bottom: 100px;
+}
+
+/* line 614, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+#principles .container p {
+  background-color: #232f63;
+  max-width: 894px;
+  padding: 40px 50px;
+  margin: 25px auto;
+}
+
+/* Studies */
+/* line 622, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+#studies {
+  background-color: #315e92;
+  padding-bottom: 100px;
+}
+
+/* line 627, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+#studies a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 632, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.studies_link {
+  padding: 20px 40px;
+  background-color: #232f63;
+  margin: 20px 0px;
+  display: inline-block;
+}
+
+/* Resources */
+/* line 640, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+#resources {
+  background-color: #315e92;
+  padding-bottom: 100px;
+}
+
+/* line 645, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.resource_block {
+  margin: 40px 0px 10px 0px;
+  max-width: 432px;
+  min-height: 300px;
+  background-color: #f48d4e;
+  padding: 25px;
+  text-align: center;
+  font-size: 21px;
+}
+
+/* line 655, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.resource_block div {
+  margin-bottom: 20px;
+}
+
+/* line 658, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.address_block {
+  margin: 40px auto 10px;
+  max-width: 432px;
+  height: 300px;
+  background-color: #232f63;
+  padding: 0px 25px;
+  font-size: 21px;
+}
+
+/* line 667, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.address_block span {
+  line-height: 30px;
+}
+
+/* line 671, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.address_block p {
+  line-height: 16px;
+}
+
+/* line 675, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.address_border {
+  border-bottom: 2px white solid;
+  width: 35px;
+  margin: 10px 0px;
+}
+
+/* line 681, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.resource_button_block {
+  position: relative;
+  bottom: -260px;
+  width: 100%;
+}
+
+/* line 687, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.resource_address_block {
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+
+/* line 693, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.resource_button_block a,
+.resource_button_block a:hover,
+.resource_button_block a:visited {
+  text-decoration: none;
+}
+
+/* line 699, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.resource_border {
+  border-bottom: 2px white solid;
+  width: 35px;
+  margin: 10px auto;
+}
+
+/* line 705, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.resource_button {
+  background-color: #f48d4e;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Background */
+/* line 715, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+#background .container {
+  max-width: 894px;
+}
+
+/* line 719, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.dark_blue {
+  background-color: #232f63;
+}
+
+/* line 723, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.light_blue {
+  background-color: #315e92;
+}
+
+/* line 727, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.lighter_blue {
+  background-color: #6496cc;
+}
+
+/* line 731, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.background_padding_top {
+  padding-bottom: 120px;
+}
+
+/* line 735, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.background_padding {
+  padding: 120px 0px;
+}
+
+/* Action */
+/* line 740, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+#action {
+  background-color: #315e92;
+  padding-bottom: 100px;
+}
+
+/* line 745, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+#action .container p {
+  background-color: #232f63;
+  max-width: 894px;
+  padding: 40px 50px;
+  margin: 25px auto;
+}
+
+/* Partners */
+/* line 753, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+#partners {
+  background-color: #315e92;
+  padding-bottom: 100px;
+}
+
+/* line 758, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.partner {
+  margin: 100px 0px;
+  height: auto;
+}
+
+/* line 763, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.partner a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 768, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.partner a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 774, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.logo_box {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 779, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.logo_box img {
+  max-width: 240px;
+}
+
+/* In the News */
+/* line 786, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+#news object {
+  margin: 20px 0px;
+}
+
+/* line 790, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+.news_link {
+  margin: 40px;
+  display: block;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+  /* line 800, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+  .dami_logo,
+  .dami_logo_home {
+    visibility: hidden;
+  }
+
+  /* line 805, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+  .bio_pic {
+    height: 460px;
+  }
+
+  /* line 809, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+  .what_we_say_block {
+    height: 400px;
+  }
+
+  /* line 813, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+  #next,
+  #previous {
+    font-size: 48px;
+  }
+
+  /* line 818, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+  .about_staff_descrip p {
+    font-size: 14px !important;
+  }
+
+  /* line 822, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+  .about_bio_descrip {
+    max-width: 100%;
+  }
+
+  /* line 826, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+  .address_block {
+    height: 380px;
+  }
+
+  /* line 830, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+  .resource_button_block {
+    bottom: -300px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 838, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+  .highlight_text {
+    width: 80%;
+    left: 10%;
+    top: 500px;
+  }
+
+  /* line 844, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+  .what_we_say_block {
+    height: 300px;
+  }
+
+  /* line 848, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+  #next,
+  #previous {
+    font-size: 32px;
+  }
+
+  /* line 853, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+  .resource_block,
+  .address_block {
+    max-width: 100%;
+    height: 320px;
+  }
+
+  /* line 859, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+  .resource_button_block {
+    bottom: -280px;
+  }
+
+  /* line 864, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+  #email {
+    width: 150px;
+  }
+}
+@media (max-width: 600px) {
+  /* line 877, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+  .dami_logo,
+  .dami_logo_home {
+    visibility: hidden;
+  }
+
+  /* line 882, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+  .header img {
+    top: 5px;
+    width: 80px;
+  }
+
+  /* line 887, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+  .bio_pic_img {
+    height: 250px;
+    display: block;
+    width: 100% !important;
+  }
+
+  /* line 893, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+  .bio_pic {
+    height: 900px;
+  }
+
+  /* line 897, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+  .highlight {
+    height: 700px;
+  }
+
+  /* line 901, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+  .overlay {
+    height: 700px;
+  }
+}
+@media (max-width: 520px) {
+  /* line 909, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+  .email_bar {
+    height: 80px;
+  }
+
+  /* line 913, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+  #email_address {
+    width: 50%;
+    float: left;
+  }
+
+  /* line 918, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+  #submit_button {
+    width: 40%;
+    float: left;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 460px) {
+  /* line 928, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+  .address_block {
+    height: 380px;
+  }
+
+  /* line 932, /Users/nicthesmall/dev/DupontStudios/dami/app/assets/stylesheets/static_pages.scss */
+  .resource_button_block {
+    bottom: -300px;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
