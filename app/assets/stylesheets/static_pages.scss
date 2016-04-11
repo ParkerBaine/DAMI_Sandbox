@@ -103,6 +103,8 @@ body {
   color:black;
 }
 
+
+
 .email_status{
   height:10px;
 }
@@ -154,6 +156,10 @@ body {
 }
 
 /* Font Sizes */
+
+.font_size_twenty_four{
+  font-size:24px !important;
+}
 
 .font_size_twenty_one{
   font-size:21px !important;
@@ -780,10 +786,21 @@ iframe{
   margin:20px 0px;
 }
 
+.news_link{
+  margin:40px;
+  display:block;
+}
+
+
 /* Media Queries */
 
 @media (max-width: 991px) {
 
+  .dami_logo,
+  .dami_logo_home{
+    visibility: hidden;
+  }
+  
   .bio_pic{
     height:460px;
   }
@@ -820,6 +837,7 @@ iframe{
   .highlight_text{
     width:80%;
     left:10%;
+    top:500px;
   }
 
   .what_we_say_block{
@@ -841,9 +859,6 @@ iframe{
     bottom:-280px;
   }
 
-  .highlight_text{
-    top:450px
-  }
 
   #email{
     width:150px;
@@ -853,10 +868,7 @@ iframe{
 }
 
 @media (max-width: 715px) {
-  .dami_logo,
-  .dami_logo_home{
-    visibility: hidden;
-  }
+
 }
 
 @media (max-width: 600px) {
@@ -897,8 +909,15 @@ iframe{
     height:80px;
   }
 
+  #email_address{
+    width:50%;
+    float:left;
+  }
+
   #submit_button{
-    width:150px;
+    width:40%;
+    float:left;
+    margin-left:10px;
   }
 
 }

@@ -16,24 +16,34 @@
   </div>
 
   <div class="container">
-    <div class="row content_margin_top margin_center">
+    <div class="row content_margin_top ">
       <div class="col-xs-12">
         <div class="font_size_thirty_six margin_center">
           In the News
         </div>
         <div class="about_border"></div>
-        <!-- <embed src="/pdf/NAIC-Diverse Asset Managers Initiative Article.pdf" width="600" height="375" type='application/pdf'> -->
 
-        <object WMODE="transparent" data="/pdf/NAIC-Diverse Asset Managers Initiative Article.pdf" type="application/pdf" width="90%" height="400">
-          alt : <a href="/pdf/NAIC-Diverse Asset Managers Initiative Article.pdf">NAIC-Diverse Asset Managers Initiative Article.pdf</a>
-        </object>
+        <%= link_to pdf_path(title:"NAIC-Diverse Asset Managers Initiative Article") , class:"no_text_decoration news_link" do %>
+          <div class="font_size_twenty_four">
+            Diverse Asset Managers Initiative Unites Groups to Address
+          </div>
+          <div class="font_size_eighteen">
+            By Alan Hughes of the National Association of Investment Companies
+          </div>
+        <% end %>
 
-        <object data="/pdf/Emerging Manager Monthly (April 2016) - DAMI Article.pdf" type="application/pdf" width="90%" height="400">
-          alt : <a href="/pdf/Emerging Manager Monthly (April 2016) - DAMI Article.pdf">Emerging Manager Monthly (April 2016) - DAMI Article.pdf</a>
-        </object>
-      </div>
-    </div>
+        <%= link_to pdf_path(title:"Emerging Manager Monthly (April 2016) - DAMI Article"), class:"no_text_decoration news_link" do %>
+        <div class="font_size_twenty_four">
+          New Initiative Seeks To Increase Use of Diverse-Owned Managers
+        </div>
+        <div class="font_size_eighteen ">
+          Emerging Manager Monthly
+        </div>
+        <% end %>
+
   </div>
+</div>
+</div>
 </div><!-- page_wrap -->
 
 
