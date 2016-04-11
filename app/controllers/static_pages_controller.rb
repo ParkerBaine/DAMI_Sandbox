@@ -8,9 +8,6 @@ class StaticPagesController < ApplicationController
   def about_us
   end
 
-  def issues
-  end
-
   def partnership
   end
 
