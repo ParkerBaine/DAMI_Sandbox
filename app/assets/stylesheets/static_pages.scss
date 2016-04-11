@@ -782,13 +782,28 @@ iframe{
 
 /* In the News */
 
-#news object{
-  margin:20px 0px;
-}
-
 .news_link{
+  width:100%;
   margin:40px;
   display:block;
+  clear:both;
+  height:80px;
+}
+
+.news_link_block{
+  margin:40px 0px;
+  display:block;
+}
+
+.pdf_icon{
+  float:left;
+  margin-right:15px;
+  margin-top:10px;
+}
+
+.news_headline{
+  float:left;
+  width:80%;
 }
 
 
@@ -800,7 +815,7 @@ iframe{
   .dami_logo_home{
     visibility: hidden;
   }
-  
+
   .bio_pic{
     height:460px;
   }
@@ -828,6 +843,10 @@ iframe{
 
   .resource_button_block{
     bottom:-300px;
+  }
+
+  .news_link{
+    height:120px;
   }
 
 }
@@ -859,9 +878,13 @@ iframe{
     bottom:-280px;
   }
 
-
   #email{
     width:150px;
+  }
+
+  .news_link{
+    margin:0px;
+    height:200px;
   }
 
 
@@ -901,6 +924,8 @@ iframe{
     height:700px;
   }
 
+
+
 }
 
 @media (max-width: 520px) {
@@ -920,6 +945,11 @@ iframe{
     margin-left:10px;
   }
 
+  .news_link{
+    margin:0px;
+    height:200px;
+  }
+
 }
 
 @media (max-width: 460px) {
@@ -931,4 +961,5 @@ iframe{
   .resource_button_block {
     bottom: -300px;
   }
+
 }
