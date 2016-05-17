@@ -21,22 +21,16 @@ body {
 
 .col-xs-12 {
   color: white;
-  // padding-left: 0px !important;
-  // padding-right: 0px !important;
 }
 
 .page_wrap{
   min-height: 72%;
-  /* equal to footer height */
-  // margin-bottom: -174px;
 }
 
 .page-wrap:after {
   content: "";
   display: block;
 }
-
-
 
 .footer, .page-wrap:after {
   height: 174px;
@@ -67,10 +61,6 @@ body {
 
 .social_bar i{
   margin:0px 10px;
-}
-
-.copyright{
-
 }
 
 .header {
@@ -109,6 +99,17 @@ body {
   color:black;
 }
 
+#email_address{
+  color:black;
+}
+
+
+
+.email_status{
+  height:10px;
+}
+
+
 #submit_button{
   background-color:#232f63;
   color:white;
@@ -130,7 +131,6 @@ body {
   top:60px;
   left:0px;
   width:100%;
-  // z-index:10;
 }
 
 .logo_bar img {
@@ -156,6 +156,10 @@ body {
 }
 
 /* Font Sizes */
+
+.font_size_twenty_four{
+  font-size:24px !important;
+}
 
 .font_size_twenty_one{
   font-size:21px !important;
@@ -214,15 +218,13 @@ body {
   text-align:right;
 }
 
-
 /* Home Page */
 
 .highlight {
   font-size: 1.5em;
   padding: 180px 0px 0px 0px;
   font-color: white !important;
-  background: url(../images/dami_hero1.png) no-repeat left center scroll;
-  // background-size: 1235px 640px;
+  background: url(../images/dami_hero1.jpg) no-repeat left center scroll;
   background-size: 100% 100%;
   height: 620px;
   width: 100%;
@@ -255,7 +257,6 @@ body {
   font-size:1.5em;
   width: 52%;
 }
-
 
 .content_block {
   margin: 0 auto;
@@ -295,8 +296,6 @@ body {
 }
 
 .bio_pic {
-  // width: 1000px;
-  // float: left;
   height:300px;
   margin:35px 0px;
 }
@@ -329,7 +328,6 @@ body {
   font-size:64px;
 }
 
-
 .blue_circle, .light_blue_circle{
   height:150px;
   width:150px;
@@ -361,7 +359,6 @@ body {
 
 .pub_image{
   width:100%;
-  // height:220px;
   margin: 10px auto;
 }
 
@@ -375,9 +372,6 @@ body {
   padding: 20px 0px 0px 0px;
   color: rgb(54, 93, 209);
 }
-
-
-
 
 /* Vertical Navbar */
 
@@ -397,7 +391,6 @@ nav ul {
   padding: 0;
   width:260px;
 }
-
 
 nav li a {
   color:white;
@@ -434,7 +427,6 @@ nav li a:hover{
   position:relative;
   text-indent:55px;
   padding-right: 20px;
-
 }
 
 .active a:after {
@@ -451,7 +443,6 @@ nav li a:hover{
   border-bottom: 20px solid transparent;
   border-left: 20px solid white;
 }
-
 
 /* Horizontal Navbar */
 
@@ -472,7 +463,6 @@ nav li a:hover{
   height: 40px;
 }
 
-
 .content_margin_top{
   margin-top: 300px;
 }
@@ -480,7 +470,6 @@ nav li a:hover{
 #navigation.affix {
   position: fixed;
   top: 0;
-  // width: 100%;
   z-index:10;
 }
 
@@ -546,6 +535,16 @@ nav li a:hover{
   border-top:2px white solid !important;
 }
 
+.poster{
+  width:100%;
+  cursor:pointer;
+}
+
+iframe{
+  width:100%;
+  border:none;
+}
+
 
 /* About */
 
@@ -574,10 +573,8 @@ nav li a:hover{
   font-size:18px;
   max-width:432px;
   margin:0 auto;
-  // white-space:nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  // height:265px;
   line-height: 30px;
 }
 
@@ -606,8 +603,6 @@ nav li a:hover{
   line-height:18px;
   margin-bottom:40px;
 }
-
-
 
 /* Principles */
 #principles{
@@ -685,14 +680,12 @@ nav li a:hover{
 .resource_button_block{
   position: relative;
   bottom: -260px;
-  // left: 50px;
   width: 100%;
 }
 
 .resource_address_block{
   position: relative;
   top:0px;
-  // left: 50px;
   width: 100%;
 }
 
@@ -715,9 +708,6 @@ nav li a:hover{
   cursor: pointer;
   text-decoration: none;
 }
-
-
-
 
 /* Background */
 
@@ -765,8 +755,8 @@ nav li a:hover{
 }
 
 .partner{
-  margin:40px 0px;
-  height:105px;
+  margin: 100px 0px;
+  height: auto;
 }
 
 .partner a{
@@ -790,9 +780,41 @@ nav li a:hover{
 }
 
 
+/* In the News */
+
+.news_link{
+  width:100%;
+  margin:40px;
+  display:block;
+  clear:both;
+  height:80px;
+}
+
+.news_link_block{
+  margin:40px 0px;
+  display:block;
+}
+
+.pdf_icon{
+  float:left;
+  margin-right:15px;
+  margin-top:10px;
+}
+
+.news_headline{
+  float:left;
+  width:80%;
+}
+
+
 /* Media Queries */
 
 @media (max-width: 991px) {
+
+  .dami_logo,
+  .dami_logo_home{
+    visibility: hidden;
+  }
 
   .bio_pic{
     height:460px;
@@ -823,11 +845,9 @@ nav li a:hover{
     bottom:-300px;
   }
 
-
-  // .resource_button{
-  //   font-size:16px;
-  //   padding:5px;
-  // }
+  .news_link{
+    height:120px;
+  }
 
 }
 
@@ -836,6 +856,7 @@ nav li a:hover{
   .highlight_text{
     width:80%;
     left:10%;
+    top:500px;
   }
 
   .what_we_say_block{
@@ -857,21 +878,20 @@ nav li a:hover{
     bottom:-280px;
   }
 
-  .highlight_text{
-    top:450px
-  }
-
   #email{
     width:150px;
   }
 
+  .news_link{
+    margin:0px;
+    height:200px;
+  }
+
+
 }
 
 @media (max-width: 715px) {
-  .dami_logo,
-  .dami_logo_home{
-    visibility: hidden;
-  }
+
 }
 
 @media (max-width: 600px) {
@@ -914,19 +934,26 @@ nav li a:hover{
     height:80px;
   }
 
-  #submit_button{
-    width:150px;
+  #email_address{
+    width:50%;
+    float:left;
   }
 
-  // .resource_block,
-  // .address_block{
-  //   height: 360px;
-  // }
+  #submit_button{
+    width:40%;
+    float:left;
+    margin-left:10px;
+  }
+
+  .news_link{
+    margin:0px;
+    height:200px;
+  }
+
 }
 
 @media (max-width: 460px) {
 
-  // .resource_block,
   .address_block{
     height: 380px;
   }
@@ -934,4 +961,5 @@ nav li a:hover{
   .resource_button_block {
     bottom: -300px;
   }
+
 }

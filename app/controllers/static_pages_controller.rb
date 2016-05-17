@@ -8,9 +8,6 @@ class StaticPagesController < ApplicationController
   def about_us
   end
 
-  def issues
-  end
-
   def partnership
   end
 
@@ -23,6 +20,9 @@ class StaticPagesController < ApplicationController
   def studies
   end
 
+  def news
+  end
+
   def new_user
     if EmailValidator.valid?(params[:email])
       UserNotifier.new_user_email(params[:email]).deliver_now
@@ -32,4 +32,11 @@ class StaticPagesController < ApplicationController
     end
     redirect_to :back
   end
+
+  def pdf
+    filename = params[:title]+".pdf"
+    pdf_filename = File.join(Rails.root, "public/pdf/"+filename)
+    send_file(pdf_filename, :filename => filename , :disposition => 'inline', :type => "application/pdf")
+  end
+
 end

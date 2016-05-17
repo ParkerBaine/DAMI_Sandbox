@@ -1,0 +1,100 @@
+<div class="page_wrap"  id="news">
+
+  <div id="nav_partial">
+    <ul class="nav nav-tabs">
+      <li><%= link_to 'Home', root_path %></li>
+      <li><%= link_to 'About Us', static_pages_about_us_path %></li>
+      <li><%= link_to 'Leadership', static_pages_leadership_path %></li>
+      <li><%= link_to 'Principles',  static_pages_principles_path %></li>
+      <li><%= link_to 'Action', static_pages_action_path %></li>
+      <li><%= link_to 'Studies', static_pages_studies_path %></li>
+      <li><%= link_to 'Resources', static_pages_resources_path %></li>
+      <li><%= link_to 'Partners', static_pages_partners_path %></li>
+      <li  class="active_page_top"><%= link_to 'News', static_pages_news_path %></li>
+
+    </ul>
+    <%= render "email_banner" %>
+    <%= image_tag("dami_logo.png", :alt => "dami logo", :class => "img-responsive center-block dami_logo") %>
+  </div>
+
+  <div class="container">
+    <div class="row content_margin_top ">
+      <div class="col-xs-12">
+        <div class="font_size_thirty_six margin_center">
+          In the News
+        </div>
+        <div class="about_border"></div>
+
+        <%= link_to "http://www.pionline.com/article/20160418/PRINT/304189993/group-advocates-for-diverse-money-managers" , class:"no_text_decoration news_link" do %>
+        <div class="news_link_block">
+          <div class="pdf_icon">
+            <i class="fa fa-globe fa-3x"></i>
+          </div>
+          <div class="news_headline">
+            <div class="font_size_twenty_four">
+              Group Advocates for Diverse Money Managers
+            </div>
+            <div class="font_size_eighteen">
+              By Rob Kozlowski
+            </div>
+          </div>
+        </div>
+        <% end %>
+
+        <%= link_to pdf_path(title:"NAIC-Diverse Asset Managers Initiative Article") , class:"no_text_decoration news_link" do %>
+        <div class="news_link_block">
+          <div class="pdf_icon">
+            <i class="fa fa-file-pdf-o fa-3x"></i>
+          </div>
+          <div class="news_headline">
+            <div class="font_size_twenty_four">
+              Diverse Asset Managers Initiative Unites Groups to Address
+            </div>
+            <div class="font_size_eighteen">
+              By Alan Hughes of the National Association of Investment Companies
+            </div>
+          </div>
+        </div>
+        <% end %>
+
+        <%= link_to pdf_path(title:"Emerging Manager Monthly (April 2016) - DAMI Article") , class:"no_text_decoration news_link" do %>
+        <div class="news_link_block">
+          <div class="pdf_icon">
+            <i class="fa fa-file-pdf-o fa-3x"></i>
+          </div>
+          <div class="news_headline">
+            <div class="font_size_twenty_four">
+              New Initiative Seeks To Increase Use of Diverse-Owned Managers
+            </div>
+            <div class="font_size_eighteen">
+              Emerging Manager Monthly
+            </div>
+          </div>
+        </div>
+        <% end %>
+
+      </div>
+    </div>
+  </div>
+</div><!-- page_wrap -->
+
+
+<div class="footer">
+
+  <div>
+    <ul id="" class="nav nav-tabs nav-bottom" >
+      <li><%= link_to 'Home', root_path %></li>
+      <li><%= link_to 'About Us', static_pages_about_us_path %></li>
+      <li><%= link_to 'Leadership', static_pages_leadership_path %></li>
+      <li><%= link_to 'Principles',  static_pages_principles_path %></li>
+      <li><%= link_to 'Action', static_pages_action_path %></li>
+      <li><%= link_to 'Studies', static_pages_studies_path %></li>
+      <li><%= link_to 'Resources', static_pages_resources_path %></li>
+      <li><%= link_to 'Partners', static_pages_partners_path %></li>
+      <li  class="active_page_top"><%= link_to 'News', static_pages_news_path %></li>
+    </ul>
+  </div>
+
+  <%= render 'layouts/social' %>
+
+</div>

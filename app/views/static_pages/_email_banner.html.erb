@@ -1,33 +1,20 @@
+<iframe src="#" id="no-target" name="no-target" style="display:none"></iframe>
 <div class="alert alert-dismissible email_bar" role="alert">
-  <%= form_tag(controller: "static_pages", action: "new_user", method: "post", class:"")  do %>
-  <div class="row">
-    <div class= "col-xs-12">
-      <div class="pull-right">
-        Please enter your email address to receive DAMI updates:
-        <br>
-        <%= text_field_tag :email, nil, placeholder:"Email" %>
-        <%= submit_tag "Submit", id:"submit_button" %>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true" id="close_button">&times;</span></button>
+  <form action="" method="POST" target="no-target" id="email_address_form">
+    <div class="row">
+      <div class= "col-xs-12">
+        <div class="pull-right">
+          Please enter your email address to receive DAMI updates:
+          <br>
+          <input name="q1" type="email" placeholder="Email" id="email_address" required="true">
+          <button type="submit" id="submit_button">Submit</button>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true" id="close_button">&times;</span></button>
 
-        <div class="left_align red error_message">
-          <% flash.each do |key, value| %>
-            <% if value == "Invalid email address" %>
-              <div class="red">
-                <%= value %>
-              </div>
-            <% elsif value == "Your email address has been received" %>
-              <div class="orange">
-                <%= value %>
-              </div>
-            <% end %>
-          <% end %>
-        </div>
+          <div class="left_align orange email_status">
+          </div>
 
+        </div><!-- pull-right -->
       </div>
-    </div>
-  </div>
-  <% end %>
-
-
-
-</div>
+    </div><!-- row -->
+  </form>
+</div><!-- email_bar -->
