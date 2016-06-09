@@ -86,8 +86,9 @@ body {
   border-radius:0 !important;
   border-bottom:1px solid #315e92 !important;
   background-color: #315e92;
-  padding: 10px 35px 10px 15px !important;
+  padding: 10px 15px !important;
 }
+
 
 .email_bar button{
   color:white !important;
@@ -99,16 +100,15 @@ body {
   color:black;
 }
 
-#email_address{
+#email_address,
+#name,
+#organization{
   color:black;
 }
-
-
 
 .email_status{
   height:10px;
 }
-
 
 #submit_button{
   background-color:#232f63;
@@ -118,8 +118,8 @@ body {
 
 #close_button{
   position: absolute;
-  top: -18px;
-  right:0px;
+  top: -50px;
+  right: 10px;
 }
 
 .error_message{
