@@ -39,12 +39,12 @@ $(document).ready(function(){
   $("#previous").css("height",video_height+"px")
   $("#previous").css("line-height",video_height+"px")
 
-  videoIDs = ["BillVonHoene", "JohnRogersJr", "MaryKayHenry", "KeithMestrich", "RobertGreen", "RobertRaben"]
+  videoIDs = ["BillVonHoene", "JohnRogersJr", "MaryKayHenry", "KeithMestrich", "RobertGreene", "RobertRaben"]
   video_index = 0;
   total_videos = videoIDs.length;
   $("#JohnRogersJr").hide();
   $("#KeithMestrich").hide();
-  $("#RobertGreen").hide();
+  $("#RobertGreene").hide();
   $("#RobertRaben").hide();
   $("#MaryKayHenry").hide();
 
