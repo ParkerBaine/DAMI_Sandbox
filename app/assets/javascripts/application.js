@@ -39,12 +39,12 @@ $(document).ready(function(){
   $("#previous").css("height",video_height+"px")
   $("#previous").css("line-height",video_height+"px")
 
-  videoIDs = ["BillVonHoene", "JohnRogersJr", "MaryKayHenry", "KeithMestrich", "RobertGreen", "RobertRaben"]
+  videoIDs = ["BillVonHoene", "JohnRogersJr", "MaryKayHenry", "KeithMestrich", "RobertGreene", "RobertRaben"]
   video_index = 0;
   total_videos = videoIDs.length;
   $("#JohnRogersJr").hide();
   $("#KeithMestrich").hide();
-  $("#RobertGreen").hide();
+  $("#RobertGreene").hide();
   $("#RobertRaben").hide();
   $("#MaryKayHenry").hide();
 
@@ -96,9 +96,17 @@ $(document).ready(function(){
     event.preventDefault();
     var inputq1 = encodeURIComponent($("#email_address").val());
     var q1ID = "entry.868851441";
+
+    var inputq2 = encodeURIComponent($("#name").val());
+    var q2ID = "entry.1399079316";
+
+    var inputq3 = encodeURIComponent($("#organization").val());
+    var q3ID = "entry.2058677074";
+
+
     var baseURL = "//docs.google.com/a/dupontstudios.com/forms/d/18ZEavDDQdQSZuo8ORI7tWXDErB-tOsOxYRoLUc1wJ_U/formResponse?";
     var submitRef = "submit=Submit";
-    var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + submitRef);
+    var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + "&" + q3ID + "=" + inputq3 + "&" + submitRef);
 
     $(this)[0].action=submitURL;
     $(this).submit();
@@ -106,7 +114,7 @@ $(document).ready(function(){
       $(this).val("");
       // $(this).attr("disabled","true");
     });
-    $(".email_status").text("Your email address has been received")
+    $(".email_status").text("Your information has been received")
   })
 
 
