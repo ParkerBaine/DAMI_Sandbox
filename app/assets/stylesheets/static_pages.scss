@@ -790,7 +790,7 @@ iframe{
 .news_link{
   width:100%;
   margin:40px;
-  display:block;
+  // display:block;
   clear:both;
   height:80px;
 }
@@ -801,14 +801,17 @@ iframe{
 }
 
 .pdf_icon{
-  float:left;
+  // float:left;
   margin-right:15px;
   margin-top:10px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .news_headline{
-  float:left;
+  // float:left;
   width:80%;
+  display: inline-block;
 }
 
 
