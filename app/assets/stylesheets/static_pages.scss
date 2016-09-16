@@ -712,6 +712,8 @@ iframe{
   color:white;
   cursor: pointer;
   text-decoration: none;
+  height:30px;
+  line-height: 30px;
 }
 
 /********************************* Background *********************************/
@@ -992,7 +994,7 @@ iframe{
 
 }
 
-@media (max-width: 460px) {
+@media (max-width: 530px) {
 
   .address_block{
     height: 380px;
@@ -1000,6 +1002,14 @@ iframe{
 
   .resource_button_block {
     bottom: -300px;
+  }
+
+  // .resource_button{
+  //   height:60px;
+  // }
+
+  .hidden-on-small{
+    display:none;
   }
 
 }
