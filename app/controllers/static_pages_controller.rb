@@ -23,6 +23,9 @@ class StaticPagesController < ApplicationController
   def news
   end
 
+  def fiduciaryguide
+  end
+
   def new_user
     if EmailValidator.valid?(params[:email])
       UserNotifier.new_user_email(params[:email]).deliver_now

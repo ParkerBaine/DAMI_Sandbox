@@ -21,7 +21,7 @@ Rails.application.routes.draw do
 
   get 'static_pages/news'
 
-  get 'static_pages/guide'
+  get 'fiduciaryguide' => "static_pages#fiduciaryguide"
 
   get 'static_pages/pdf' => "static_pages#pdf", as: "pdf"
 
