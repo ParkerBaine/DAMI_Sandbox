@@ -39,4 +39,7 @@ class StaticPagesController < ApplicationController
     send_file(pdf_filename, :filename => filename , :disposition => 'inline', :type => "application/pdf")
   end
 
+  def fiduciary_guide
+  end
+
 end
