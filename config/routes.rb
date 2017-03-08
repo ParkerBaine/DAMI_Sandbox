@@ -27,6 +27,7 @@ Rails.application.routes.draw do
 
   post 'static_pages/new_user' => "static_pages#new_user", as: "new_user"
 
+  get "fiduciaryguide" => "static_pages#fiduciary_guide", as: "fiduciaryguide"
 
   #
   # Home
