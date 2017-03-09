@@ -4,6 +4,7 @@ html, body {
   height: 100%;
 }
 
+
 body {
   background-color: #232f63 !important;
   // font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -19,6 +20,10 @@ body {
   font-size: 16px;
 }
 
+.indent {
+  margin-left: 20px;
+  line-height: 40px;
+}
 .col-xs-12 {
   color: white;
 }
@@ -1099,5 +1104,17 @@ p.bold-paragraph{
   .hidden-on-small{
     display:none;
   }
+
+}
+
+
+//*******************PRESS RELEASE***********************//
+
+.contact  {
+  float: right;
+  width: 300px;
+}
+
+.press {
 
 }

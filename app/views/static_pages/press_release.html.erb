@@ -1,0 +1,92 @@
+<div class="page_wrap light_blue" id="background">
+
+  <div id="nav_partial">
+    <ul class="nav nav-tabs">
+      <li><%= link_to 'Home', root_path %></li>
+      <li class="active_page_top"><%= link_to 'About Us', static_pages_about_us_path %></li>
+      <li><%= link_to 'Leadership', static_pages_leadership_path %></li>
+      <li><%= link_to 'Principles',  static_pages_principles_path %></li>
+      <li><%= link_to 'Action', static_pages_action_path %></li>
+      <li><%= link_to 'Studies', static_pages_studies_path %></li>
+      <li><%= link_to 'Resources', static_pages_resources_path %></li>
+      <li><%= link_to 'Partners', static_pages_partners_path %></li>
+      <li><%= link_to 'News', static_pages_news_path %></li>
+    </ul>
+    <%= render "email_banner" %>
+    <%= image_tag("dami_logo.png", :alt => "dami logo", :class => "img-responsive center-block dami_logo") %>
+  </div>
+
+  <div class="background_padding_top">
+
+    <div class="container">
+
+      <div class="row content_margin_top">
+        <div class="col-xs-12">
+          <div class="font_size_thirty_six bold" >
+            PRESS
+          </div>
+          <p class="contact">
+            FOR IMMEDIATE RELEASE:
+            October 12, 2016
+            Contact:
+            Nery Espinosa
+            nespinosa@rabengroup.com
+            214-263-1294
+          </p>
+
+          <div class="border"></div>
+
+          <div class="press_text">
+
+            <p class="font_size_twenty_one twenty_px_margin">
+              STATEMENT: DAMI on New Report Highlighting Lack of Diversity in Financial Services Industry
+              Washington, DC - Today, a new joint report released by The ReFund America Project, Roosevelt Institute and Service Employees International Union titled Casting a Wider Net: Increasing Opportunities for Minority and Women Owned Asset Managers in Institutional Investments, highlights opportunities for investment consultants to promote diverse asset managers and create long-term financial value for institutional investors. The report also finds investment consultant firms are failing to promote minority men and women--especially African Americans and Latinos--to management roles. Robert Raben, President and Founder of the Raben Group and Director of the Diverse Asset Managers Initiative (DAMI), issued the following statement:
+            </p>
+
+            <div class="press_quote">
+                <p class="font_size_twenty_one twenty_px_margin">
+                  The Diverse Asset Managers Initiative applauds The ReFund America Project, Roosevelt Institute and Service Employees International Union for drawing attention to a systemic problem within the financial services industry. DAMI exists to promote the use of minority asset managers. While even a mostly white work force at investment consultant firms could promote minority asset managers if it wanted to, that the work force so lacks diversity at the top is not a good sign toward that goal.
+
+                  Investment consultants are gatekeepers and often the roadblock diverse asset managers encounter to be considered or hired by institutional investors. Investment consultant firms have the unique ability to play a critical role in promoting diversity and they now have a baseline from which to work from. We worked closely with SEIU on this instrument from the start; it's a crucial tool in revealing the stunning lack of diversity in the entire industry.
+
+                  We urge investment consultant firms that participated in the survey and those that chose not to participate in the survey to take the necessary steps to prioritize diversity within their firms and implement changes to promote the value of diverse asset managers.
+
+                </p>
+            </div>
+            <p class="font_size_twenty_one twenty_px_margin">
+              DAMI is an effort to increase the absolute number of, and assets under management by, diverse-owned asset management firms for institutional investors, with specific focus on public, corporate, faith and labor union pension funds as well as foundation and university endowments. SEIU is a partner of DAMI and Mary Kay Henry serves as one of four honorary co-chairs.
+
+              The DAMI Statement of Principles serve as a clear guide to partners by laying the groundwork to address the challenges and actions needed to build a vibrant, coordinated effort to change the culture of the financial services industry as it relates to asset managers. By implementing a peer to peer approach within the industry, DAMI seeks to increase the use of diverse asset managers by institutional investors and the amount of assets under their management.
+
+              For more information or interviews please contact Nery Espinosa at 214-263-1294 or by email at nespinosa@rabengroup.com.
+            </p>
+        </div>
+
+        </div><!-- col-xs-12 -->
+      </div><!-- row -->
+    </div><!-- container -->
+  </div><!-- background -->
+
+
+
+</div><!-- page_wrap -->
+
+
+<div class="footer">
+  <div>
+    <ul id="" class="nav nav-tabs nav-bottom" >
+      <li><%= link_to 'Home', root_path %></li>
+      <li class="active_page_bottom"><%= link_to 'About Us', static_pages_about_us_path %></li>
+      <li><%= link_to 'Leadership', static_pages_leadership_path %></li>
+      <li><%= link_to 'Principles',  static_pages_principles_path %></li>
+      <li><%= link_to 'Action', static_pages_action_path %></li>
+      <li><%= link_to 'Studies', static_pages_studies_path %></li>
+      <li><%= link_to 'Resources', static_pages_resources_path %></li>
+      <li><%= link_to 'Partners', static_pages_partners_path %></li>
+      <li><%= link_to 'News', static_pages_news_path %></li>
+    </ul>
+  </div>
+
+  <%= render 'layouts/social' %>
+
+</div>
