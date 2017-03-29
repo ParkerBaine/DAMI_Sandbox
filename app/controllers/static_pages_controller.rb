@@ -1,29 +1,50 @@
 class StaticPagesController < ApplicationController
   def home
+    @home = true
+  end
+
+  def action
+    @action = true
+  end
+
+  def principles
+    @principles = true
   end
 
   def leadership
+    @leadership = true
   end
 
   def about_us
+    @about_us = true
   end
 
   def partnership
+    @partnership = true
   end
 
   def support
+    @support = true
   end
 
   def resources
+    @resources = true
+  end
+
+  def partners
+    @partners = true
   end
 
   def studies
+    @studies = true
   end
 
   def news
+    @news = true
   end
 
-  def fiduciaryguide
+  def fiduciary_guide
+    @fiduciary_guide = true
   end
 
   def new_user
@@ -40,9 +61,6 @@ class StaticPagesController < ApplicationController
     filename = params[:title]+".pdf"
     pdf_filename = File.join(Rails.root, "public/pdf/"+filename)
     send_file(pdf_filename, :filename => filename , :disposition => 'inline', :type => "application/pdf")
-  end
-
-  def fiduciary_guide
   end
 
 end

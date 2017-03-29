@@ -412,7 +412,7 @@ nav li a {
   padding-right: 20px;
   line-height: 40px;
   font-size:18px;
-  min-width:180px;
+  min-width:205px;
 }
 
 nav li a:hover{
@@ -420,7 +420,11 @@ nav li a:hover{
   text-decoration: none;
   color:white;
   text-indent:75px;
-  min-width:195px;
+  min-width:220px;
+}
+
+nav li:nth-of-type(1) a:hover{
+  min-width:205px;
 }
 
 .active a{
@@ -453,6 +457,8 @@ nav li a:hover{
   border-bottom: 20px solid transparent;
   border-left: 20px solid white;
 }
+
+
 
 /***************************** Horizontal Navbar ******************************/
 
@@ -612,6 +618,82 @@ iframe{
 .about_staff_descrip{
   line-height:18px;
   margin-bottom:40px;
+}
+
+/************************************ Fiduciary Guide ***********************************/
+
+#fiduciary_guide{
+  background-color: #315e92;
+}
+
+.coming-soon-banner{
+  height: 60px;
+text-align: center;
+background-color: #232f63;
+width: 100%;
+line-height: 60px;
+font-size: 36px;
+}
+
+.article-column{
+  text-align: center;
+  margin:30px 0px;
+}
+
+.article-paragraph-header{
+  font-size:28px;
+  max-width: 432px;
+  margin:20px auto 10px;
+  font-weight: 700;
+}
+
+.article-text{
+  font-size:18px;
+  max-width:432px;
+  margin:0 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.article-text p{
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+p.bold-paragraph{
+  font-size: 26px;
+  line-height: 36px;
+  border-top: 4px solid white;
+  padding: 5px 10px;
+}
+
+.article-title{
+  font-size:36px;
+  margin:10px auto;
+  text-align:center;
+}
+
+.article-endnotes-header{
+  font-size:28px;
+  margin:20px auto 10px;
+  font-weight: 700;
+  border-top: 1px solid white;
+}
+
+.endnotes p{
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+
+.endnotes p a{
+  color:white;
+  cursor: pointer;
+}
+
+
+.download-fiduciary-guide{
+  cursor:pointer;
+  color:white;
 }
 
 /********************************* Principles *********************************/
@@ -871,7 +953,7 @@ iframe{
   .highlight_text{
     width:80%;
     left:10%;
-    top:500px;
+    top:575px;
   }
 
   .what_we_say_block{
@@ -903,7 +985,7 @@ iframe{
   }
 
   .why_block {
-      height: 900px;
+    height: 900px;
   }
 
   .pub_image img{
@@ -922,6 +1004,19 @@ iframe{
   .how_image img{
     width:100%;
   }
+
+  .highlight {
+    height: 800px;
+  }
+
+  .overlay{
+    height:800px;
+  }
+
+  .highlight_text {
+    font-size: 1.3em;
+}
+
 
 }
 
@@ -951,13 +1046,6 @@ iframe{
     height:1150px;
   }
 
-  .highlight {
-    height: 800px;
-  }
-
-  .overlay{
-    height:800px;
-  }
 
 
 
@@ -990,7 +1078,7 @@ iframe{
 
   #close_button {
     top: -110px;
-}
+  }
 
   .news_link{
     margin:0px;
