@@ -629,13 +629,13 @@ iframe{
   #top-link-block.affix-top {
     position: absolute; /* allows it to "slide" up into view */
     bottom: -82px;
-    right: 10px;
+    right: 15px;
   }
 
   #top-link-block.affix {
       position: fixed; /* keeps it on the bottom once in view */
       bottom: 18px;
-      right: 10px;
+      right: 15px;
   }
 
   .dami_fg_container
