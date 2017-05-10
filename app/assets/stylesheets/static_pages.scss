@@ -624,6 +624,97 @@ iframe{
 
 #fiduciary_guide{
   background-color: #315e92;
+
+  min-width: 360px;
+
+  .dami_fg_container
+  {
+    padding: 25px 10px;
+    min-width: 360px;
+
+    .dami_fg_row.row.content_margin_top
+    {
+      margin-top: 250px;
+    }
+
+    .dami_fg_col.light_blue
+    {
+      padding: 5px 25px;
+      margin: 10px 0px;
+
+      .dami_fg_section
+      {
+        padding: 12px 0px;
+      }
+
+      img
+      {
+        width: 100%;
+      }
+    }
+
+    .dami_fg_col.dark_blue
+    {
+      padding: 25px;
+      margin: 10px 0px;
+    }
+
+    h3
+    {
+      font-size: 21px;
+      margin: 10px 0px;
+      font-weight: bold;
+    }
+
+    .border
+    {
+
+    }
+
+    p.dami_fg_p
+    {
+      font-size: 16px;
+      margin: 10px 0px;
+    }
+
+    .media-list
+    {
+
+      padding: 10px 0px 5px 25px;
+
+      a
+      {
+        color: #fff;
+      }
+
+      a:hover
+      {
+        color: #ccc;
+        text-decoration: none;
+      }      
+
+      .media-left
+      {
+        padding-top: 5px; 
+        padding-right: 15px; 
+      }
+
+      .media-body
+      {
+        .media-heading
+        {
+          font-size: 18px;
+          line-height: 22px;
+        }
+        p
+        {
+          font-size: 16px;
+        }
+      }
+    }
+
+  }
+
 }
 
 .coming-soon-banner{
@@ -908,6 +999,11 @@ p.bold-paragraph{
 
 @media (max-width: 991px) {
 
+  ul.nav.nav-tebs
+  {
+    //height: 180px;
+  }
+
   .dami_logo,
   .dami_logo_home{
     visibility: hidden;
@@ -949,6 +1045,13 @@ p.bold-paragraph{
 }
 
 @media (max-width: 767px) {
+
+  
+  ul.nav.nav-tabs
+  {
+    //height: 175px;
+  }
+  
 
   .highlight_text{
     width:80%;
