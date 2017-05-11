@@ -1,17 +1,23 @@
+  <!-- ======================================================= -->
+
       <div class="dami_fg_col dark_blue
                   col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <h3>
-            Introduction
+            Full Fiduciary Guide
           </h3>
           <div class="border"></div>
 
           <ul class="media-list">
-            <% for i in 0..0
+            <% for i in 0..1
                 case i
                   when 0
-                    @dami_fg_link_path  = "Section 1 Fulfilling Your Fiduciary Obligations_DAMI Fid Guide.pdf"
+                    @dami_fg_link_path  = "DAMI-Fiduciary-Guide-FINAL-ELECTRONIC-VERSION.pdf"
                     @dami_fg_link_icon  = "fa-file-pdf-o"
-                    @dami_fg_link_name  = "Fulfilling Your Fiduciary Obligations: How a Commitment to Diversity Can Generate Better Returns"  
+                    @dami_fg_link_name  = "Fiduciary Guide to Investing to Diverse Asset Managers and Firms (Electronic)"
+                  when 1
+                    @dami_fg_link_path  = "DAMI-Fiduciary-Guide-PRINT-FILES.pdf"
+                    @dami_fg_link_icon  = "fa-file-pdf-o"
+                    @dami_fg_link_name  = "Fiduciary Guide to Investing to Diverse Asset Managers and Firms (Print)"
                   else
                     @dami_fg_link_path  = "filename.pdf"
                     @dami_fg_link_icon  = "fa-file-pdf-o"
@@ -37,3 +43,5 @@
           </ul>
 
       </div> 
+
+  <!-- ======================================================= -->
