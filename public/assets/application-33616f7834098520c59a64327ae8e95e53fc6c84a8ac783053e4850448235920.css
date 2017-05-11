@@ -1,0 +1,1340 @@
+/********************************* Site Wide **********************************/
+/* line 4, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 9, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+body {
+  background-color: #232f63 !important;
+  font-family: 'Open Sans', 'Myriad Pro', 'Source Sans Pro', sans-serif !important;
+  color: white !important;
+}
+
+/* line 16, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.container {
+  width: 80% !important;
+}
+
+/* line 20, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.container p {
+  font-size: 16px;
+}
+
+/* line 24, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.indent {
+  margin-left: 20px;
+  line-height: 40px;
+}
+
+/* line 28, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.col-xs-12 {
+  color: white;
+}
+
+/* line 32, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.page_wrap {
+  min-height: 72%;
+}
+
+/* line 36, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+/* line 41, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.footer, .page-wrap:after {
+  height: 174px;
+}
+
+/* line 45, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.footer {
+  background-color: #f48d4e;
+}
+
+/* line 49, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.social_bar, .copyright {
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+
+/* line 55, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.social_bar {
+  margin-top: 50px;
+}
+
+/* line 59, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.copyright {
+  margin-top: 20px;
+}
+
+/* line 63, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.social_bar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 68, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.social_bar i {
+  margin: 0px 10px;
+}
+
+/* line 72, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.header {
+  height: 90px;
+  background-color: #f48d4e;
+  z-index: 10;
+}
+
+/* line 79, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.home_email_bar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 60px;
+  width: 100%;
+  margin: 0 !important;
+}
+
+/* line 88, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.email_bar {
+  width: 100%;
+  height: 90px;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid #315e92 !important;
+  background-color: #315e92;
+  padding: 10px 15px !important;
+}
+
+/* line 98, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.email_bar button {
+  color: white !important;
+  opacity: .9;
+}
+
+/* line 104, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.email_form_inputs {
+  text-align: right;
+}
+
+/* line 109, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#email {
+  width: 250px;
+  color: black;
+}
+
+/* line 114, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#email_address,
+#name,
+#organization {
+  color: black;
+}
+
+/* line 120, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.email_status {
+  height: 10px;
+}
+
+/* line 124, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#submit_button {
+  background-color: #232f63;
+  color: white;
+  border: none;
+}
+
+/* line 130, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#close_button {
+  position: absolute;
+  top: -50px;
+  right: 10px;
+}
+
+/* line 136, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.error_message {
+  height: 10px;
+}
+
+/* line 140, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.logo_bar {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  width: 100%;
+}
+
+/* line 147, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.logo_bar img {
+  position: relative;
+  top: -50px;
+  width: 149px;
+  z-index: 10;
+  margin: 0 auto;
+}
+
+/* line 155, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.no_text_decoration {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 160, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.no_text_decoration:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 165, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.twenty_px_margin {
+  margin: 20px 0px;
+}
+
+/********************************* Font Sizes *********************************/
+/* line 171, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.font_size_twenty_four {
+  font-size: 24px !important;
+}
+
+/* line 175, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.font_size_twenty_one {
+  font-size: 21px !important;
+}
+
+/* line 179, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.font_size_sixteen {
+  font-size: 16px;
+}
+
+/* line 183, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.font_size_eighteen {
+  font-size: 18px !important;
+  line-height: 30px;
+}
+
+/* line 188, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.font_size_thirty_six {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+/* line 193, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 197, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.italic {
+  font-style: italic;
+}
+
+/* line 201, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.red {
+  color: red;
+}
+
+/* line 205, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.white {
+  color: white;
+}
+
+/* line 209, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.orange {
+  color: #f48d4e;
+}
+
+/******************************* Justification ********************************/
+/* line 215, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.justify {
+  text-align: justify;
+}
+
+/* line 219, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.margin_center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 224, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.center-block {
+  margin: 0 auto;
+}
+
+/* line 228, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.left_align {
+  text-align: right;
+}
+
+/********************************* Home Page **********************************/
+/* line 234, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.highlight {
+  font-size: 1.5em;
+  padding: 180px 0px 0px 0px;
+  font-color: white !important;
+  background: url(../images/dami_hero1.jpg) no-repeat left center scroll;
+  background-size: 100% 100%;
+  height: 620px;
+  width: 100%;
+  z-index: 1;
+}
+
+/* line 245, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.overlay {
+  background-color: rgba(48, 62, 122, 0.8);
+  height: 620px;
+  width: 100%;
+  position: absolute;
+  top: 90px;
+  z-index: 5;
+}
+
+/* line 254, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.highlight p {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 260, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.highlight_text {
+  position: absolute;
+  top: 330px;
+  left: 24%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 10;
+  font-size: 1.5em;
+  width: 52%;
+}
+
+/* line 272, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.content_block {
+  margin: 0 auto;
+  width: 82%;
+  max-width: 1160px;
+  padding: 60px 0px;
+}
+
+/* line 279, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.sub_content_block {
+  width: 77%;
+  max-width: 894px;
+  margin: 35px auto;
+}
+
+/* line 285, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.sub_content_block p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* line 290, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.sub_title {
+  line-height: 30px;
+  font-size: 36px;
+}
+
+/* line 295, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.border {
+  border-bottom: 3px white solid;
+  width: 50px;
+  margin: 20px 0px;
+}
+
+/* line 301, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.who, .why, .goal {
+  background-color: #232f63;
+}
+
+/* line 305, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.what, .how {
+  background-color: #315e92;
+}
+
+/* line 309, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.bio_pic {
+  height: 300px;
+  margin: 35px 0px;
+}
+
+/* line 314, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.what_we_say_block {
+  height: 550px;
+  margin: 35px 0px;
+}
+
+/* line 319, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.why_block {
+  height: 350px;
+}
+
+/* line 323, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.bio_pic_img, .why_pic_block {
+  text-align: center;
+  height: 250px;
+  vertical-align: top;
+}
+
+/* line 329, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.bio_pic_img img {
+  margin: 0 auto;
+}
+
+/* line 333, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#next,
+#previous {
+  cursor: pointer;
+  height: 480px;
+  line-height: 480px;
+  text-align: center;
+  font-size: 64px;
+}
+
+/* line 342, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.blue_circle, .light_blue_circle {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+/* line 349, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.blue_circle {
+  background-color: #232f63;
+}
+
+/* line 353, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.light_blue_circle {
+  background-color: #315e92;
+}
+
+/* line 357, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.blue_square {
+  width: 260px;
+  height: 220px;
+  background-color: #315e92;
+  margin: 10px auto;
+}
+
+/* line 364, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.light_blue_square {
+  width: 260px;
+  height: 220px;
+  background-color: #232f63;
+  margin: 10px auto;
+}
+
+/* line 371, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.pub_image {
+  width: 100%;
+  margin: 10px auto;
+}
+
+/* line 376, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.pub_image img {
+  width: 100%;
+}
+
+/* line 380, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.title {
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 20px 0px 0px 0px;
+  color: #365dd1;
+}
+
+/******************************* Vertical Navbar ******************************/
+/* line 389, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+nav {
+  margin-top: -170px;
+  z-index: 2f0;
+  position: absolute;
+  top: 180px;
+}
+
+/* line 396, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+nav:after {
+  clear: both;
+}
+
+/* line 399, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 260px;
+}
+
+/* line 406, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+nav li a {
+  color: white;
+  display: table;
+  background-color: #f48d4e;
+  margin-bottom: 3px;
+  height: 40px;
+  text-indent: 55px;
+  padding-right: 20px;
+  line-height: 40px;
+  font-size: 18px;
+  min-width: 205px;
+}
+
+/* line 419, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+nav li a:hover {
+  background-color: #6496cc;
+  text-decoration: none;
+  color: white;
+  text-indent: 75px;
+  min-width: 220px;
+}
+
+/* line 427, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+nav li:nth-of-type(1) a:hover {
+  min-width: 205px;
+}
+
+/* line 431, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.active a {
+  background-color: white;
+  color: #f48d4e;
+  display: inline-block;
+  position: relative;
+}
+
+/* line 438, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.active a:hover {
+  background-color: white;
+  color: #f48d4e;
+  display: inline-block;
+  position: relative;
+  text-indent: 55px;
+  padding-right: 20px;
+}
+
+/* line 447, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.active a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-top: -20px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid white;
+}
+
+/***************************** Horizontal Navbar ******************************/
+/* line 466, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#navigation {
+  position: absolute;
+  top: -500px;
+  background-color: #f48d4e;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 475, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#nav_partial {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 40px;
+}
+
+/* line 483, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.content_margin_top {
+  margin-top: 300px;
+}
+
+/* line 487, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#navigation.affix {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+/* line 493, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.nav {
+  background-color: #f48d4e;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  height: 130px;
+}
+
+/* line 501, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.nav-bottom {
+  height: auto !important;
+}
+
+/* line 505, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.nav a,
+.nav_bottom a {
+  color: white;
+}
+
+/* line 510, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.dami_logo {
+  z-index: 50;
+  position: relative;
+  top: -164px;
+  width: 137px;
+}
+
+/* line 517, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.dami_logo_home {
+  z-index: 50;
+  position: relative;
+  top: 11px;
+  width: 137px;
+}
+
+/* line 524, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.nav-tabs {
+  border: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 530, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.nav-tabs > li {
+  float: none !important;
+  display: inline-block  !important;
+  margin: 0px !important;
+}
+
+/* line 536, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.nav-tabs > li > a {
+  border: 0px solid transparent !important;
+  margin: 0px !important;
+}
+
+/* line 541, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.nav-tabs > li > a:hover {
+  background-color: #6496cc !important;
+  border-radius: 0;
+  color: #fff;
+}
+
+/* line 547, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.active_page_top {
+  border-bottom: 5px white solid !important;
+}
+
+/* line 551, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.active_page_bottom {
+  border-top: 2px white solid !important;
+}
+
+/* line 555, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.poster {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* line 560, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+iframe {
+  width: 100%;
+  border: none;
+}
+
+/************************************ About ***********************************/
+/* line 568, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#about {
+  background-color: #315e92;
+}
+
+/* line 572, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.about_bio {
+  text-align: center;
+  margin: 30px 0px;
+}
+
+/* line 577, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.about_bio_name {
+  font-size: 36px;
+  width: 240px;
+  margin: 0 auto;
+}
+
+/* line 583, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.about_border {
+  border-bottom: 3px white solid;
+  width: 50px;
+  margin: 20px auto;
+}
+
+/* line 589, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.about_bio_descrip {
+  font-size: 18px;
+  max-width: 432px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 30px;
+}
+
+/* line 598, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.line_clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+/* line 603, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.about_staff {
+  background-color: #232f63;
+  padding: 150px 0px;
+  min-height: 620px;
+}
+
+/* line 609, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.about_staff_title {
+  font-size: 36px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+/* line 615, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.about_staff_title img {
+  display: block;
+}
+
+/* line 619, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.about_staff_descrip {
+  line-height: 18px;
+  margin-bottom: 40px;
+}
+
+/************************************ Fiduciary Guide ***********************************/
+/************************************ Includes Redeploy Upgrades ************************/
+/* line 627, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#fiduciary_guide {
+  background-color: #315e92;
+  min-width: 350px;
+}
+/* line 631, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#fiduciary_guide #top-link-block.affix-top {
+  position: absolute;
+  /* allows it to "slide" up into view */
+  bottom: -82px;
+  right: 15px;
+}
+/* line 637, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#fiduciary_guide #top-link-block.affix {
+  position: fixed;
+  /* keeps it on the bottom once in view */
+  bottom: 18px;
+  right: 15px;
+}
+/* line 643, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#fiduciary_guide .dami_fg_container {
+  padding: 25px 10px;
+  min-width: 350px;
+}
+/* line 648, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#fiduciary_guide .dami_fg_container .dami_fg_row.row.content_margin_top {
+  margin-top: 250px;
+}
+/* line 653, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#fiduciary_guide .dami_fg_container .dami_fg_col.light_blue {
+  padding: 5px 25px;
+  margin: 10px 0px;
+}
+/* line 658, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#fiduciary_guide .dami_fg_container .dami_fg_col.light_blue .dami_fg_section {
+  padding: 12px 0px;
+}
+/* line 663, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#fiduciary_guide .dami_fg_container .dami_fg_col.light_blue img {
+  width: 100%;
+}
+/* line 669, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#fiduciary_guide .dami_fg_container .dami_fg_col.dark_blue {
+  padding: 25px;
+  margin: 10px 0px;
+}
+/* line 675, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#fiduciary_guide .dami_fg_container h3 {
+  font-size: 21px;
+  margin: 10px 0px;
+  font-weight: bold;
+}
+/* line 687, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#fiduciary_guide .dami_fg_container p.dami_fg_p {
+  font-size: 16px;
+  margin: 10px 0px;
+}
+/* line 693, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#fiduciary_guide .dami_fg_container .media-list {
+  padding: 10px 0px 5px 25px;
+}
+/* line 698, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#fiduciary_guide .dami_fg_container .media-list a {
+  color: #fff;
+}
+/* line 703, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#fiduciary_guide .dami_fg_container .media-list a:hover {
+  color: #ccc;
+  text-decoration: none;
+}
+/* line 709, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#fiduciary_guide .dami_fg_container .media-list .media-left {
+  padding-top: 5px;
+  padding-right: 15px;
+}
+/* line 717, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#fiduciary_guide .dami_fg_container .media-list .media-body .media-heading {
+  font-size: 18px;
+  line-height: 22px;
+}
+/* line 722, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#fiduciary_guide .dami_fg_container .media-list .media-body p {
+  font-size: 14px;
+}
+
+/* line 733, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.coming-soon-banner {
+  height: 60px;
+  text-align: center;
+  background-color: #232f63;
+  width: 100%;
+  line-height: 60px;
+  font-size: 36px;
+}
+
+/* line 742, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.article-column {
+  text-align: center;
+  margin: 30px 0px;
+}
+
+/* line 747, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.article-paragraph-header {
+  font-size: 28px;
+  max-width: 432px;
+  margin: 20px auto 10px;
+  font-weight: 700;
+}
+
+/* line 754, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.article-text {
+  font-size: 18px;
+  max-width: 432px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* line 762, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.article-text p {
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+/* line 767, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+p.bold-paragraph {
+  font-size: 26px;
+  line-height: 36px;
+  border-top: 4px solid white;
+  padding: 5px 10px;
+}
+
+/* line 774, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.article-title {
+  font-size: 36px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+/* line 780, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.article-endnotes-header {
+  font-size: 28px;
+  margin: 20px auto 10px;
+  font-weight: 700;
+  border-top: 1px solid white;
+}
+
+/* line 787, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.endnotes p {
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+
+/* line 792, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.endnotes p a {
+  color: white;
+  cursor: pointer;
+}
+
+/* line 798, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.download-fiduciary-guide {
+  cursor: pointer;
+  color: white;
+}
+
+/********************************* Principles *********************************/
+/* line 804, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#principles {
+  background-color: #315e92;
+  padding-bottom: 100px;
+}
+
+/* line 809, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#principles .container p {
+  background-color: #232f63;
+  max-width: 894px;
+  padding: 40px 50px;
+  margin: 25px auto;
+}
+
+/*********************************** Studies **********************************/
+/* line 817, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#studies {
+  background-color: #315e92;
+  padding-bottom: 100px;
+}
+
+/* line 822, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#studies a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 827, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.studies_link {
+  padding: 20px 40px;
+  background-color: #232f63;
+  margin: 20px 0px;
+  display: inline-block;
+}
+
+/********************************** Resources *********************************/
+/* line 835, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#resources {
+  background-color: #315e92;
+  padding-bottom: 100px;
+}
+
+/* line 840, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.resource_block {
+  margin: 40px 0px 10px 0px;
+  max-width: 432px;
+  min-height: 300px;
+  background-color: #f48d4e;
+  padding: 25px;
+  text-align: center;
+  font-size: 21px;
+}
+
+/* line 850, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.resource_block div {
+  margin-bottom: 20px;
+}
+
+/* line 853, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.address_block {
+  margin: 40px auto 10px;
+  max-width: 432px;
+  height: 300px;
+  background-color: #232f63;
+  padding: 0px 25px;
+  font-size: 21px;
+}
+
+/* line 862, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.address_block span {
+  line-height: 30px;
+}
+
+/* line 866, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.address_block p {
+  line-height: 16px;
+}
+
+/* line 870, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.address_border {
+  border-bottom: 2px white solid;
+  width: 35px;
+  margin: 10px 0px;
+}
+
+/* line 876, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.resource_button_block {
+  position: relative;
+  bottom: -260px;
+  width: 100%;
+}
+
+/* line 882, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.resource_address_block {
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+
+/* line 888, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.resource_button_block a,
+.resource_button_block a:hover,
+.resource_button_block a:visited {
+  text-decoration: none;
+}
+
+/* line 894, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.resource_border {
+  border-bottom: 2px white solid;
+  width: 35px;
+  margin: 10px auto;
+}
+
+/* line 900, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.resource_button {
+  background-color: #f48d4e;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  height: 30px;
+  line-height: 30px;
+}
+
+/********************************* Background *********************************/
+/* line 912, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#background .container {
+  max-width: 894px;
+}
+
+/* line 916, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.dark_blue {
+  background-color: #232f63;
+}
+
+/* line 920, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.light_blue {
+  background-color: #315e92;
+}
+
+/* line 924, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.lighter_blue {
+  background-color: #6496cc;
+}
+
+/* line 928, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.background_padding_top {
+  padding-bottom: 120px;
+}
+
+/* line 932, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.background_padding {
+  padding: 120px 0px;
+}
+
+/*********************************** Action ***********************************/
+/* line 937, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#action {
+  background-color: #315e92;
+  padding-bottom: 100px;
+}
+
+/* line 942, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#action .container p {
+  background-color: #232f63;
+  max-width: 894px;
+  padding: 40px 50px;
+  margin: 25px auto;
+}
+
+/********************************** Partners **********************************/
+/* line 950, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+#partners {
+  background-color: #315e92;
+  padding-bottom: 100px;
+}
+
+/* line 955, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.partner {
+  margin: 100px 0px;
+  height: auto;
+}
+
+/* line 960, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.partner a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 965, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.partner a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 971, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.logo_box {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 976, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.logo_box img {
+  max-width: 240px;
+}
+
+/********************************* In the News ********************************/
+/* line 983, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.news_link {
+  width: 100%;
+  margin: 40px;
+  clear: both;
+  height: 80px;
+}
+
+/* line 991, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.news_link_block {
+  margin: 40px 0px;
+  display: block;
+}
+
+/* line 996, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.pdf_icon {
+  margin-right: 15px;
+  margin-top: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 1004, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.news_headline {
+  width: 80%;
+  display: inline-block;
+}
+
+/******************************** Media Queries *******************************/
+@media (max-width: 991px) {
+  /* line 1020, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .dami_logo,
+  .dami_logo_home {
+    visibility: hidden;
+  }
+
+  /* line 1025, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .bio_pic {
+    height: 680px;
+  }
+
+  /* line 1029, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .what_we_say_block {
+    height: 400px;
+  }
+
+  /* line 1033, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  #next,
+  #previous {
+    font-size: 48px;
+  }
+
+  /* line 1038, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .about_staff_descrip p {
+    font-size: 14px !important;
+  }
+
+  /* line 1042, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .about_bio_descrip {
+    max-width: 100%;
+  }
+
+  /* line 1046, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .address_block {
+    height: 380px;
+  }
+
+  /* line 1050, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .resource_button_block {
+    bottom: -300px;
+  }
+
+  /* line 1054, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .news_link {
+    height: 120px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 1069, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .highlight_text {
+    width: 80%;
+    left: 10%;
+    top: 575px;
+  }
+
+  /* line 1075, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .what_we_say_block {
+    height: 200px;
+  }
+
+  /* line 1079, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  #next,
+  #previous {
+    font-size: 32px;
+  }
+
+  /* line 1084, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .resource_block,
+  .address_block {
+    max-width: 100%;
+    height: 320px;
+  }
+
+  /* line 1090, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .resource_button_block {
+    bottom: -280px;
+  }
+
+  /* line 1094, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  #email {
+    width: 150px;
+  }
+
+  /* line 1098, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .news_link {
+    margin: 0px;
+    height: 200px;
+  }
+
+  /* line 1103, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .why_block {
+    height: 900px;
+  }
+
+  /* line 1107, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .pub_image img {
+    width: 50%;
+  }
+
+  /* line 1115, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .why_pic_block {
+    height: 285px;
+  }
+
+  /* line 1119, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .goal_image img,
+  .how_image img {
+    width: 100%;
+  }
+
+  /* line 1124, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .highlight {
+    height: 800px;
+  }
+
+  /* line 1128, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .overlay {
+    height: 800px;
+  }
+
+  /* line 1132, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .highlight_text {
+    font-size: 1.3em;
+  }
+}
+@media (max-width: 600px) {
+  /* line 1145, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .dami_logo,
+  .dami_logo_home {
+    visibility: hidden;
+  }
+
+  /* line 1150, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .header img {
+    top: -13px;
+    width: 80px;
+  }
+
+  /* line 1155, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .bio_pic_img {
+    height: 250px;
+    display: block;
+    width: 100% !important;
+  }
+
+  /* line 1161, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .bio_pic {
+    height: 1150px;
+  }
+}
+@media (max-width: 520px) {
+  /* line 1172, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .email_bar {
+    height: 120px;
+  }
+
+  /* line 1176, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  #email_address,
+  #name,
+  #organization {
+    width: 32%;
+  }
+
+  /* line 1187, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  #submit_button {
+    float: none;
+    margin: 10px auto;
+    width: 50%;
+    text-align: center;
+    display: block;
+  }
+
+  /* line 1195, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  #close_button {
+    top: -110px;
+  }
+
+  /* line 1199, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .news_link {
+    margin: 0px;
+    height: 200px;
+  }
+}
+@media (max-width: 530px) {
+  /* line 1208, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .address_block {
+    height: 380px;
+  }
+
+  /* line 1212, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .resource_button_block {
+    bottom: -300px;
+  }
+
+  /* line 1220, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+  .hidden-on-small {
+    display: none;
+  }
+}
+/* line 1229, /Users/ControllerCat/Sites/dami/app/assets/stylesheets/static_pages.scss */
+.contact {
+  float: right;
+  width: 300px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
