@@ -130,45 +130,7 @@
 
   <!-- ======================================================= -->
 
-      <div class="dami_fg_col dark_blue
-                  col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <h3>
-            Introduction
-          </h3>
-          <div class="border"></div>
-
-          <ul class="media-list">
-            <% for i in 0..0
-                case i
-                  when 0
-                    @dami_fg_link_path  = "Section 1 Fulfilling Your Fiduciary Obligations_DAMI Fid Guide.pdf"
-                    @dami_fg_link_icon  = "fa-file-pdf-o"
-                    @dami_fg_link_name  = "Fulfilling Your Fiduciary Obligations: How a Commitment to Diversity Can Generate Better Returns"  
-                  else
-                    @dami_fg_link_path  = "filename.pdf"
-                    @dami_fg_link_icon  = "fa-file-pdf-o"
-                    @dami_fg_link_name  = "Name of the Document"  
-                end  
-            %>
-            <li class="media">
-              <a href="/pdf/<%= @dami_fg_link_path %>">
-                <div class="media-left">
-                  <i class="fa <%= @dami_fg_link_icon %> fa-3x"></i>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading">
-                    <%= @dami_fg_link_name %>
-                  </h4>
-                  <p>
-                    <%= @dami_fg_link_path %>
-                  </p>
-                </div>
-              </a>
-            </li>
-            <% end %>
-          </ul>
-
-      </div> 
+    <%= render "fiduciary_guide_links" %>
 
   <!-- ======================================================= -->
 
