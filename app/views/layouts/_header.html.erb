@@ -9,7 +9,7 @@
     <li class="<%= @resources ? 'active_page_top' : ''%>"><%= link_to 'Resources', static_pages_resources_path %></li>
     <li class="<%= @partners ? 'active_page_top' : ''%>"><%= link_to 'Partners', static_pages_partners_path %></li>
     <li class="<%= @news ? 'active_page_top' : ''%>"><%= link_to 'News', static_pages_news_path %></li>
-    <!-- <li class="<%= @fiduciary_guide ? 'active_page_top' : ''%>"><%= link_to 'Fiduciary Guide', fiduciaryguide_path %></li> -->
+    <li class="<%= @fiduciary_guide ? 'active_page_top' : ''%>"><%= link_to 'Fiduciary Guide', fiduciaryguide_path %></li>
   </ul>
   <%= render "email_banner" %>
   <%= image_tag("dami_logo.png", :alt => "dami logo", :class => "img-responsive center-block dami_logo") %>
