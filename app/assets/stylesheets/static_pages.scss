@@ -713,10 +713,14 @@ iframe{
 
       .media-body
       {
+
+        vertical-align: middle !important;
+        
         .media-heading
         {
           font-size: 18px;
           line-height: 22px;
+
         }
         p
         {
