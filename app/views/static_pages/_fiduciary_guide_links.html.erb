@@ -1,47 +1,66 @@
   <!-- ======================================================= -->
 
+<%
+  def dami_fg_func_links(txt_sectionTitle, arr_linkList)
+      %>
+
+      <!-- ======================================================= -->
+
       <div class="dami_fg_col dark_blue
                   col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <h3>
-            Full Fiduciary Guide
+            <%= txt_sectionTitle %>
           </h3>
           <div class="border"></div>
 
           <ul class="media-list">
-            <% for i in 0..1
-                case i
-                  when 0
-                    @dami_fg_link_path  = "DAMI-Fiduciary-Guide-FINAL-ELECTRONIC-VERSION.pdf"
-                    @dami_fg_link_icon  = "fa-file-pdf-o"
-                    @dami_fg_link_name  = "Fiduciary Guide to Investing to Diverse Asset Managers and Firms (Electronic)"
-                  when 1
-                    @dami_fg_link_path  = "DAMI-Fiduciary-Guide-PRINT-FILES.pdf"
-                    @dami_fg_link_icon  = "fa-file-pdf-o"
-                    @dami_fg_link_name  = "Fiduciary Guide to Investing to Diverse Asset Managers and Firms (Print)"
-                  else
-                    @dami_fg_link_path  = "filename.pdf"
-                    @dami_fg_link_icon  = "fa-file-pdf-o"
-                    @dami_fg_link_name  = "Name of the Document"  
-                end  
-            %>
+
+            <% arr_linkList.each do |p| %>
+
             <li class="media">
-              <a href="/pdf/<%= @dami_fg_link_path %>">
+              <a href='<%= p['dami_fg_link_path'] %>' target="_blank">
                 <div class="media-left">
-                  <i class="fa <%= @dami_fg_link_icon %> fa-3x"></i>
+                  <i class="fa <%= p['dami_fg_link_icon'] %> fa-3x"></i>
                 </div>
                 <div class="media-body">
                   <h4 class="media-heading">
-                    <%= @dami_fg_link_name %>
+                    <%= p['dami_fg_link_name'] %>
                   </h4>
-                  <p>
-                    <%= @dami_fg_link_path %>
+                  <p style="display: none;">
+                    <%= p['dami_fg_link_path'] %>
                   </p>
                 </div>
               </a>
             </li>
+
             <% end %>
+
           </ul>
 
       </div> 
+
+      <!-- ======================================================= -->
+
+      <%
+  end
+%>
+
+  <!-- ======================================================= -->
+
+<%
+  def dami_fg_func_sections(arr_sectionLinkListData)
+
+    arr_sectionLinkListData.each do |p| 
+      dami_fg_func_links(p['dami_fg_txt_sectionTitle'], p['dami_fg_arr_linkList'])
+    end
+
+  end
+%>
+
+  <!-- ======================================================= -->
+
+<%
+  dami_fg_func_sections(@dami_fg_txt_sectionLinkListData)
+%>  
 
   <!-- ======================================================= -->

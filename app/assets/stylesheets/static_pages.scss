@@ -626,18 +626,20 @@ iframe{
 #fiduciary_guide{
   background-color: #315e92;
   min-width: 350px;
+}
 
-  #top-link-block.affix-top {
-    position: absolute; /* allows it to "slide" up into view */
-    bottom: -82px;
+#top-link-block.affix-top {
+  position: absolute; /* allows it to "slide" up into view */
+  bottom: -82px;
+  right: 15px;
+}
+
+#top-link-block.affix {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 18px;
     right: 15px;
-  }
+}
 
-  #top-link-block.affix {
-      position: fixed; /* keeps it on the bottom once in view */
-      bottom: 18px;
-      right: 15px;
-  }
 
   .dami_fg_container
   {
@@ -671,9 +673,17 @@ iframe{
       margin: 10px 0px;
     }
 
+    h2
+    {
+      font-size: 36px;
+      margin: 10px 0px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
     h3
     {
-      font-size: 21px;
+      font-size: 22px;
       margin: 10px 0px;
       font-weight: bold;
     }
@@ -715,12 +725,12 @@ iframe{
       {
 
         vertical-align: middle !important;
-        
+
         .media-heading
         {
           font-size: 18px;
           line-height: 22px;
-
+          margin: 0px;
         }
         p
         {
@@ -731,7 +741,7 @@ iframe{
 
   }
 
-}
+
 
 .coming-soon-banner{
   height: 60px;

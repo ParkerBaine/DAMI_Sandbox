@@ -1,64 +1,5 @@
   <!-- ======================================================= -->
 
-<%
-  def dami_fg_func_links(txt_sectionTitle, arr_linkList)
-      %>
-
-      <!-- ======================================================= -->
-
-      <div class="dami_fg_col dark_blue
-                  col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <h3>
-            <%= txt_sectionTitle %>
-          </h3>
-          <div class="border"></div>
-
-          <ul class="media-list">
-
-            <% arr_linkList.each do |p| %>
-
-            <li class="media">
-              <a href="<%= p['dami_fg_link_path'] %>">
-                <div class="media-left">
-                  <i class="fa <%= p['dami_fg_link_icon'] %> fa-3x"></i>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading">
-                    <%= p['dami_fg_link_name'] %>
-                  </h4>
-                  <p style="display: none;">
-                    <%= p['dami_fg_link_path'] %>
-                  </p>
-                </div>
-              </a>
-            </li>
-
-            <% end %>
-
-          </ul>
-
-      </div> 
-
-      <!-- ======================================================= -->
-
-      <%
-  end
-%>
-
-  <!-- ======================================================= -->
-
-<%
-  def dami_fg_func_sections(arr_sectionLinkListData)
-
-    arr_sectionLinkListData.each do |p| 
-      dami_fg_func_links(p['dami_fg_txt_sectionTitle'], p['dami_fg_arr_linkList'])
-    end
-
-  end
-%>
-
-  <!-- ======================================================= -->
-
 <div class="page_wrap" id="fiduciary_guide">
 
   <%= render 'layouts/header' %>
@@ -129,6 +70,10 @@
 
   <!-- ======================================================= -->
 
+<%  
+  @dami_fg_txt_sectionLinkListData = "fa-file-pdf-o"
+%>
+
 <%
 @dami_fg_txt_sectionLinkListData =
 [
@@ -137,7 +82,7 @@
     "dami_fg_arr_linkList"=>
     [
       { "dami_fg_link_path"=>"/pdf/DAMI-Fiduciary-Guide-FINAL-ELECTRONIC-VERSION.pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
+        "dami_fg_link_icon"=>@dami_fg_txt_sectionLinkListData, 
         "dami_fg_link_name"=>"Fiduciary Guide to Investing with Diverse Asset Managers and Firms"}
     ]
   },
@@ -146,7 +91,7 @@
     "dami_fg_arr_linkList"=>
     [
       { "dami_fg_link_path"=>"/pdf/Section 1 Fulfilling Your Fiduciary Obligations_DAMI Fid Guide.pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
+        "dami_fg_link_icon"=>@dami_fg_txt_sectionLinkListData, 
         "dami_fg_link_name"=>"Fulfilling Your Fiduciary Obligations: How a Commitment to Diversity Can Generate Better Returns"}
     ]
   },
@@ -155,25 +100,25 @@
     "dami_fg_arr_linkList"=>
     [
       { "dami_fg_link_path"=>"/pdf/Step 1_DAMI Fid Guide.pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
+        "dami_fg_link_icon"=>@dami_fg_txt_sectionLinkListData, 
         "dami_fg_link_name"=>"Step 1: Understanding the Current State of Your Institution" },
       { "dami_fg_link_path"=>"/pdf/Step 2_DAMI Fid Guide.pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
+        "dami_fg_link_icon"=>@dami_fg_txt_sectionLinkListData, 
         "dami_fg_link_name"=>"Step 2: Building Support from Trustee, Board, and Staff Leadership" },
       { "dami_fg_link_path"=>"/pdf/Step 3_ DAMI Fid Guide.pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
+        "dami_fg_link_icon"=>@dami_fg_txt_sectionLinkListData, 
         "dami_fg_link_name"=>"Step 3: Creating a Clear Mission and Commitment to Investing with Diverse Managers"  },
       { "dami_fg_link_path"=>"/pdf/Step 4_DAMI Fid Guide.pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
+        "dami_fg_link_icon"=>@dami_fg_txt_sectionLinkListData, 
         "dami_fg_link_name"=>"Step 4: Sourcing Qualified Diverse Managers and Firms" },
       { "dami_fg_link_path"=>"/pdf/Step 5_DAMI Fid Guide.pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
+        "dami_fg_link_icon"=>@dami_fg_txt_sectionLinkListData, 
         "dami_fg_link_name"=>"Step 5: Working with Investment Consultants" },
       { "dami_fg_link_path"=>"/pdf/Step 6_DAMI Fid Guide.pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
-        "dami_fg_link_name"=>"Step 6: Ensuring Accountability 30 " },
+        "dami_fg_link_icon"=>@dami_fg_txt_sectionLinkListData, 
+        "dami_fg_link_name"=>"Step 6: Ensuring Accountability" },
       { "dami_fg_link_path"=>"/pdf/Step 7_DAMI Fid Guide.pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
+        "dami_fg_link_icon"=>@dami_fg_txt_sectionLinkListData, 
         "dami_fg_link_name"=>"Step 7: Sharing Your Success and Experience " } 
     ]
   },
@@ -182,7 +127,7 @@
     "dami_fg_arr_linkList"=>
     [
       { "dami_fg_link_path"=>"/pdf/Common FAQ_DAMI Fid Guide.pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
+        "dami_fg_link_icon"=>@dami_fg_txt_sectionLinkListData, 
         "dami_fg_link_name"=>"Common FAQ"}
     ]
   },
@@ -191,19 +136,19 @@
     "dami_fg_arr_linkList"=>
     [
       { "dami_fg_link_path"=>"/pdf/Case Studies All_DAMI Fid Guide.pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
+        "dami_fg_link_icon"=>@dami_fg_txt_sectionLinkListData, 
         "dami_fg_link_name"=>"All Case Studies" },
       { "dami_fg_link_path"=>"/pdf/Case Study-Knight Foundation_DAMI Fid Guide.pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
+        "dami_fg_link_icon"=>@dami_fg_txt_sectionLinkListData, 
         "dami_fg_link_name"=>"John S. and James L. Knight Foundation " },
       { "dami_fg_link_path"=>"/pdf/Case Study-NYC Comptroller's Office.pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
+        "dami_fg_link_icon"=>@dami_fg_txt_sectionLinkListData, 
         "dami_fg_link_name"=>"New York City Comptroller’s Office" },
       { "dami_fg_link_path"=>"/pdf/Case Study-Exelon Corporation_DAMI Fid Guide.pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
+        "dami_fg_link_icon"=>@dami_fg_txt_sectionLinkListData, 
         "dami_fg_link_name"=>"Exelon Corporation" },
       { "dami_fg_link_path"=>"/pdf/Case Study-IL State_DAMI Fid Guide.pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
+        "dami_fg_link_icon"=>@dami_fg_txt_sectionLinkListData, 
         "dami_fg_link_name"=>"State of Illinois"} 
     ]
   },
@@ -212,22 +157,22 @@
     "dami_fg_arr_linkList"=>
     [
       { "dami_fg_link_path"=>"/pdf/Appendix All_DAMI Fid Guide.pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
+        "dami_fg_link_icon"=>@dami_fg_txt_sectionLinkListData, 
         "dami_fg_link_name"=>"Appendix All" },
       { "dami_fg_link_path"=>"/pdf/Appendix 1_DAMI Fid Guide.pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
+        "dami_fg_link_icon"=>@dami_fg_txt_sectionLinkListData, 
         "dami_fg_link_name"=>"Appendix 1: Template Memo from Trustee to CIO on the Current State of Institutional Diversity" },
       { "dami_fg_link_path"=>"/pdf/Appendix 2_DAMI Fid Guide.pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
+        "dami_fg_link_icon"=>@dami_fg_txt_sectionLinkListData, 
         "dami_fg_link_name"=>"Appendix 2: Template Investment Policy" },
       { "dami_fg_link_path"=>"/pdf/Appendix 3_DAMI Fid Guide.pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
+        "dami_fg_link_icon"=>@dami_fg_txt_sectionLinkListData, 
         "dami_fg_link_name"=>"Appendix 3: Template Memo from Board of Trustees/CIO to Investment Staff/Consultant on Sourcing Qualified Minority Managers" },
       { "dami_fg_link_path"=>"/pdf/Appendix 4_DAMI Fid Guide.pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
+        "dami_fg_link_icon"=>@dami_fg_txt_sectionLinkListData, 
         "dami_fg_link_name"=>"Appendix 4: Template Memo from Board of Trustees/CIO to Investment Consultant on Internal Consultant Firm Diversity and Asset Manager Diversity" },
       { "dami_fg_link_path"=>"/pdf/Appendix 5_DAMI Fid Guide.pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
+        "dami_fg_link_icon"=>@dami_fg_txt_sectionLinkListData, 
         "dami_fg_link_name"=>"Appendix 5: Sample Social Media Kit" }  
     ]
   },
@@ -236,48 +181,15 @@
     "dami_fg_arr_linkList"=>
     [
       { "dami_fg_link_path"=>"/pdf/Bibliography_DAMI Fid Guide.pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
+        "dami_fg_link_icon"=>@dami_fg_txt_sectionLinkListData, 
         "dami_fg_link_name"=>"Bibliography"}
-    ]
-  },
-  {
-    "dami_fg_txt_sectionTitle"=>"Additional Resources",
-    "dami_fg_arr_linkList"=>
-    [
-      { "dami_fg_link_path"=>"/pdf/Letter to SEIU Trustees from Mary Kay Henry, SEIU International President (August 2015).pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
-        "dami_fg_link_name"=>"Appendix 4: Letter to SEIU Trustees from Mary Kay Henry, SEIU International President (2015)"},
-
-      { "dami_fg_link_path"=>"/pdf/SEIU Pension Fund Consultant Diversity Survey.pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
-        "dami_fg_link_name"=>"SEIU Pension Fund Consultant Diversity Survey Questions"},
-
-      { "dami_fg_link_path"=>"/pdf/NYC Diversity Profile.pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
-        "dami_fg_link_name"=>"NYC Diversity Profile"},
-
-      { "dami_fg_link_path"=>"/pdf/NYC Due Diligence Questionnaire.pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
-        "dami_fg_link_name"=>"NYC Due Diligence Questionnaire"},
-
-      { "dami_fg_link_path"=>"/pdf/SURS Illinois State Senate Questionnaire (November 2015).pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
-        "dami_fg_link_name"=>"Diversity Questionnaire for the State Universities Retirement System of Illinois (SURS)"},
-
-      { "dami_fg_link_path"=>"/pdf/SURS Diversity Report (November 2015).PDF", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
-        "dami_fg_link_name"=>"SURS Diversity Report"},
-
-      { "dami_fg_link_path"=>"/pdf/DAMI REMARKS - DIVERSITY HEARINGS (8 10 16) (1).pdf", 
-        "dami_fg_link_icon"=>"fa-file-pdf-o", 
-        "dami_fg_link_name"=>"DAMI’s testimony at the August 2016 Illinois State Diversity Hearings"}         
     ]
   }
 ]
 
-dami_fg_func_sections(@dami_fg_txt_sectionLinkListData)
-
 %>
+
+<%= render partial: "fiduciary_guide_links", locals: { dami_fg_txt_sectionLinkListData: @dami_fg_txt_sectionLinkListData } %>
 
   <!-- ======================================================= --> 
 
